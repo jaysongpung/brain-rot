@@ -1,5 +1,8 @@
 {
   "name": "dongascience0903",
+  "engines": {
+    "node": ">=21.0.0" 
+  },
   "version": "0.1.0",
   "private": true,
   "scripts": {
