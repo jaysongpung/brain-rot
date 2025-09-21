@@ -13,8 +13,9 @@ export default function Mask() {
         let lastTime = performance.now();
 
         const topMin = 5, topMax = 15;
-        const bottomMin = 25, bottomMax = 70;
+        const bottomMin = 5, bottomMax = 70;
         let currentTop = topMax, currentBottom = bottomMin;
+        let rafId;
 
         function update() {
             const now = performance.now();
@@ -65,18 +66,37 @@ export default function Mask() {
                 foregroundRef.current.style.transform = `translateY(${-window.scrollY}px)`;
             }
 
-            requestAnimationFrame(update);
+            rafId = requestAnimationFrame(update);
+
         }
 
-        requestAnimationFrame(update);
+        rafId = requestAnimationFrame(update);
+
+        const observer = new IntersectionObserver(
+            ([entry], obs) => {
+                if (entry.isIntersecting) {
+
+                    setTimeout(() => {
+                        instaRef.current.style.opacity = 1;
+                        instaRef.current.play();
+                    }, 1000);
+
+                    obs.unobserve(entry.target);
+                }
+            },
+            { threshold: 0.5 }
+        )
+
+        if (instaRef.current) {
+            observer.observe(instaRef.current);
+        }
+
+        return () => {
+            if (rafId) cancelAnimationFrame(rafId);
+            if (instaRef.current) observer.unobserve(instaRef.current);
+        }
 
     }, []);
-
-    function playVid() {
-        instaRef.current.style.opacity = 1;
-        instaRef.current.play();
-        console.log('asdf')
-    }
 
     return (
         <div>
@@ -96,7 +116,8 @@ export default function Mask() {
                 overflow-hidden
             "
                 style={{
-                    mask: 'url(#rectMask)'
+                    mask: 'url(#rectMask)',
+                    WebkitMask: 'url(#rectMask)'
                 }}
             >
                 <div ref={foregroundRef} id="foreground">
@@ -114,10 +135,12 @@ export default function Mask() {
                             <div className="d30"></div>
                             <div className="paragraph">당신이 소셜미디어에 접속했을 때, 사용자 인터페이스(UI) 뒤로 어떤 일이 생기는지 알고 계시나요? 소셜미디어 추천 시스템의 주요 특징을 살펴보세요.</div>
                             <div className="d30"></div>
-                            <div className="media instagram" id="insta_video" onClick={playVid}>
+                            <div className="media instagram" id="insta_video">
                                 <div id="instaContainer">
-                                    <div id="insta_line" ></div>
-                                    <video id="insta_vidvid" ref={instaRef} src="/instagram.mp4"></video>
+                                    <div id="insta_line"></div>
+                                    <video id="insta_vidvid" ref={instaRef} src="/instagram.mp4" muted playsInline></video>
+                                    <div className="hideline"></div>
+                                    <div className="hideline" id="hdRight"></div>
                                 </div>
                             </div>
                             <div className="d30"></div>
@@ -125,8 +148,8 @@ export default function Mask() {
                             <div className="d30"></div>
                             <div className="paragraph">당신이 클릭했던 콘텐츠는 모두 당신을 더 잘 파악하는 데 활용됩니다. 추천 알고리즘이 고도화되는 과정이죠. 만약 당신이 고양이 콘텐츠를 즐겨보는 사람이라고 가정해 보겠습니다. 당신이 고양이 영상C을 클릭해 봤다면, 고양이 영상C를 본 다른 사용자들이 소비한 고양이 영상A와 고양이 영상T를 당신에게 추천하죠.</div>
                             <div className="d30"></div>
-                            <div>
-
+                            <div className="rec">
+                                <div className="recImg media" id="recImgFg"></div>
                             </div>
                         </div>
 
@@ -137,7 +160,6 @@ export default function Mask() {
                     borderSvg
                 "
                 >
-                    {/* 테두리 */}
                     <rect ref={borderRectRef} x="0" y="0" width="100%" height="100%" fill="none" stroke="white" strokeWidth="2" />
                 </svg>
             </div>
