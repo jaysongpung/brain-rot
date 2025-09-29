@@ -26,4 +26,4 @@ jobs:
           port: ${{ secrets.SSH_PORT }}
           key: ${{ secrets.SSH_KEY }}
           script: |
-            bash /home/velcro/deploy.sh
+            bash ~/deploy.sh
