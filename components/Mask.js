@@ -3,18 +3,21 @@
 import { useEffect, useRef } from "react";
 
 export default function Mask() {
-    const maskRectRef = useRef(null);
-    const borderRectRef = useRef(null);
     const foregroundRef = useRef(null);
     const instaRef = useRef(null);
+    const recRef = useRef(null);
+
+    const borderRef = useRef(null);
+    const borderSvgRef = useRef(null);
 
     useEffect(() => {
         let lastScrollY = window.scrollY;
         let lastTime = performance.now();
 
-        const topMin = 5, topMax = 15;
-        const bottomMin = 5, bottomMax = 70;
+        const topMin = 3, topMax = 15;
+        const bottomMin = 10, bottomMax = 70;
         let currentTop = topMax, currentBottom = bottomMin;
+
         let rafId;
 
         function update() {
@@ -43,27 +46,19 @@ export default function Mask() {
             const topPx = (vh * currentTop) / 100;
             const bottomPx = (vh * currentBottom) / 100;
 
-            const rectX = leftPx;
-            const rectY = topPx;
-            const rectW = vw - leftPx - rightPx;
-            const rectH = vh - topPx - bottomPx;
-
-            if (maskRectRef.current) {
-                maskRectRef.current.setAttribute("x", rectX);
-                maskRectRef.current.setAttribute("y", rectY);
-                maskRectRef.current.setAttribute("width", rectW);
-                maskRectRef.current.setAttribute("height", rectH);
-            }
-
-            if (borderRectRef.current) {
-                borderRectRef.current.setAttribute("x", rectX);
-                borderRectRef.current.setAttribute("y", rectY);
-                borderRectRef.current.setAttribute("width", rectW);
-                borderRectRef.current.setAttribute("height", rectH);
-            }
-
             if (foregroundRef.current) {
                 foregroundRef.current.style.transform = `translateY(${-window.scrollY}px)`;
+            }
+
+            if (borderRef.current) {
+                borderRef.current.style.clipPath = `inset(${topPx}px ${rightPx}px ${bottomPx}px ${leftPx}px)`;
+            }
+
+            if (borderSvgRef.current) {
+                borderSvgRef.current.setAttribute("x", leftPx);
+                borderSvgRef.current.setAttribute("y", topPx);
+                borderSvgRef.current.setAttribute("width", vw - leftPx - rightPx);
+                borderSvgRef.current.setAttribute("height", vh - topPx - bottomPx);
             }
 
             rafId = requestAnimationFrame(update);
@@ -72,42 +67,51 @@ export default function Mask() {
 
         rafId = requestAnimationFrame(update);
 
-        const observer = new IntersectionObserver(
-            ([entry], obs) => {
-                if (entry.isIntersecting) {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (!entry.isIntersecting) return;
+                const video = entry.target;
 
-                    setTimeout(() => {
-                        instaRef.current.style.opacity = 1;
-                        instaRef.current.play();
-                    }, 1000);
-
-                    obs.unobserve(entry.target);
+                // 같은 wrapper 안에서 .fade-line 모두 찾기
+                const wrapper = video.closest("div");
+                if (wrapper) {
+                    wrapper.querySelectorAll(".fadeLine").forEach(line => {
+                        line.style.transition = "opacity 1s ease";
+                        line.style.opacity = 0.1;
+                    });
                 }
-            },
-            { threshold: 0.5 }
-        )
 
-        if (instaRef.current) {
-            observer.observe(instaRef.current);
-        }
+                // 비디오 재생
+                video.muted = true;
+                video.play().catch(() => {
+                    const once = () => {
+                        video.play();
+                        video.removeEventListener("pointerdown", once);
+                    };
+                    video.addEventListener("pointerdown", once, { once: true });
+                });
+
+                observer.unobserve(video);
+            });
+        }, { threshold: 0.3 });
+
+
+        if (instaRef.current) observer.observe(instaRef.current)
+        if (recRef.current) observer.observe(recRef.current);
 
         return () => {
             if (rafId) cancelAnimationFrame(rafId);
             if (instaRef.current) observer.unobserve(instaRef.current);
+            if (recRef.current) observer.unobserve(recRef.current);
         }
 
     }, []);
 
     return (
         <div>
-            <svg width="0" height="0">
-                <mask id="rectMask">
-                    <rect ref={maskRectRef} id="maskRect" x="0" y="0" width="100%" height="100%" fill="white" />
-                </mask>
-            </svg>
             <div
+                ref={borderRef}
                 className="
-                maskedArea
                 fixed
                 top-0
                 left-0
@@ -115,10 +119,6 @@ export default function Mask() {
                 h-screen
                 overflow-hidden
             "
-                style={{
-                    mask: 'url(#rectMask)',
-                    WebkitMask: 'url(#rectMask)'
-                }}
             >
                 <div ref={foregroundRef} id="foreground">
                     <div className="container">
@@ -137,10 +137,8 @@ export default function Mask() {
                             <div className="d30"></div>
                             <div className="media instagram" id="insta_video">
                                 <div id="instaContainer">
-                                    <div id="insta_line"></div>
-                                    <video id="insta_vidvid" ref={instaRef} src="/instagram.mp4" muted playsInline></video>
-                                    <div className="hideline"></div>
-                                    <div className="hideline" id="hdRight"></div>
+                                    <video id="insta_vidvid" ref={instaRef} src="/instagram.mp4" muted playsInline autoPlay loop preload="metadata"></video>
+                                    <div className="fadeLine" id="insta_line"></div>
                                 </div>
                             </div>
                             <div className="d30"></div>
@@ -149,20 +147,27 @@ export default function Mask() {
                             <div className="paragraph">당신이 클릭했던 콘텐츠는 모두 당신을 더 잘 파악하는 데 활용됩니다. 추천 알고리즘이 고도화되는 과정이죠. 만약 당신이 고양이 콘텐츠를 즐겨보는 사람이라고 가정해 보겠습니다. 당신이 고양이 영상C을 클릭해 봤다면, 고양이 영상C를 본 다른 사용자들이 소비한 고양이 영상A와 고양이 영상T를 당신에게 추천하죠.</div>
                             <div className="d30"></div>
                             <div className="rec">
-                                <div className="recImg media" id="recImgFg"></div>
+                                <div className="recVidWrap">
+                                    <video id="rec_vid" ref={recRef} src="/recommendation.mp4" muted playsInline autoPlay loop preload="metadata"></video>
+                                    <div className="recImg fadeLine" id="recImgFg"></div>
+                                </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
-                <svg
-                    className="
-                    borderSvg
-                "
-                >
-                    <rect ref={borderRectRef} x="0" y="0" width="100%" height="100%" fill="none" stroke="white" strokeWidth="2" />
-                </svg>
             </div>
-        </div>
+            <svg className="pointer-events-none fixed top-0 left-0 w-full h-screen">
+                <rect
+                    ref={borderSvgRef}
+                    x="0"
+                    y="0"
+                    width="100%"
+                    height="100%"
+                    fill="none"
+                    stroke="white"
+                    strokeWidth="1"
+                />
+            </svg>
+        </div >
     );
 }
