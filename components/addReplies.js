@@ -46,7 +46,7 @@ export default function GuestbookForm() {
           className="mb-1 p-4 
           placeholder-zinc-500 
           rounded-lg w-full m-0 text-base negative-shadow bg-[#e3cebc]"
-          placeholder="성함 또는 닉네임"/>
+          placeholder="성함 또는 닉네임 + 자동 배포"/>
         <textarea
           className="min-h-36 p-4 
           placeholder-zinc-500 
