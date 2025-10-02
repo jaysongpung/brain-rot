@@ -30,6 +30,11 @@ body {
 
 /*--------- COMMON ---------*/
 
+#foreground,
+svg rect,
+.fadeLine {
+  opacity: 0;
+}
 
 .content {
   /* 본문 감싸기 */
@@ -105,19 +110,48 @@ body {
   top: -500px;
 }
 
+.logos {
+  height: 300px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.logo_subtitle {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.para_subtitle {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.subtitleLine {
+  letter-spacing: -2.5px;
+}
 
 /*--------- BACKGROUND ---------*/
 
 .container {
   max-width: 800px;
   margin: 0px auto;
-  height: 3000px;
+  height: 5000px;
 }
 
 .keyVisual {
   height: 700px;
   background-image: url('/plaster.png');
   position: relative;
+  background-size: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .titleContainer {
@@ -165,6 +199,30 @@ body {
   background-image: url('/grid.png');
 }
 
+#twitterBg {
+  background-image: url('/phone_twitter.png');
+  height: 500px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#logo_insta {
+  background-image: url('/logo_instagram.png');
+}
+
+#logo_twitter {
+  background-image: url('/logo_twitter.png');
+}
+
+#logo_youtube {
+  background-image: url('/logo_youtube.png');
+}
+
+.para_subtitle_bg {
+  font-size: 20px;
+}
+
 
 /*--------- FOREGROUND ---------*/
 
@@ -176,8 +234,11 @@ body {
 
 #fgKeyVisual {
   height: 700px;
-  background-image: url('/plaster2.png');
+  background-image: url('/plaster_line.png');
   position: relative;
+  background-size: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 #fgTitleContainer {
@@ -271,4 +332,44 @@ body {
   margin: 0px auto;
   width: 360px;
   height: 500px;
+}
+
+#twitterLine {
+  background-image: url('/phone_line.svg');
+  width: 500px;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin: 0px auto;
+  background-color: black;
+}
+
+@media (max-width:500px) {
+  #twitterLine {
+    left: calc((100vw - 500px) / 2);
+  }
+}
+
+#twitter_vid {
+  margin: 0px auto;
+  width: 360px;
+  height: 500px;
+  opacity: 1;
+}
+
+#twitterContainer {
+  height: 500px;
+}
+
+#logo_blur_insta {
+  background-image: url('/logo_blur_instagram.png');
+}
+
+#logo_blur_twitter {
+  background-image: url('/logo_blur_twitter.png');
+}
+
+#logo_blur_youtube {
+  background-image: url('/logo_blur_youtube.png');
 }

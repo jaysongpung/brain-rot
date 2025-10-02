@@ -6,6 +6,7 @@ export default function Mask() {
     const foregroundRef = useRef(null);
     const instaRef = useRef(null);
     const recRef = useRef(null);
+    const twitterRef = useRef(null);
 
     const borderRef = useRef(null);
     const borderSvgRef = useRef(null);
@@ -38,8 +39,8 @@ export default function Mask() {
             currentTop += (targetTop - currentTop) * 0.1;
             currentBottom += (targetBottom - currentBottom) * 0.1;
 
-            const vw = window.innerWidth || 1;
-            const vh = window.innerHeight || 1;
+            const vw = window.visualViewport?.width || window.innerWidth;
+            const vh = window.visualViewport?.height || window.innerHeight;
 
             const leftPx = (vw * 3) / 100;
             const rightPx = (vw * 3) / 100;
@@ -57,7 +58,7 @@ export default function Mask() {
             if (borderSvgRef.current) {
                 borderSvgRef.current.setAttribute("x", leftPx);
                 borderSvgRef.current.setAttribute("y", topPx);
-                borderSvgRef.current.setAttribute("width", vw - leftPx - rightPx);
+                borderSvgRef.current.setAttribute("width", vw - (leftPx + rightPx) * 1);
                 borderSvgRef.current.setAttribute("height", vh - topPx - bottomPx);
             }
 
@@ -98,11 +99,30 @@ export default function Mask() {
 
         if (instaRef.current) observer.observe(instaRef.current)
         if (recRef.current) observer.observe(recRef.current);
+        if (twitterRef.current) observer.observe(twitterRef.current);
+
+
+        setTimeout(() => {
+            if (foregroundRef.current) {
+                foregroundRef.current.style.transition = '1s';
+                borderSvgRef.current.style.transition = '1s';
+                foregroundRef.current.style.opacity = 1;
+                borderSvgRef.current.style.opacity = 1;
+            }
+        }, 1000); // 1초 뒤 실행
+
+        setTimeout(() => {
+            if (foregroundRef.current) {
+                foregroundRef.current.style.transition = '0s';
+                borderSvgRef.current.style.transition = '0s';
+            }
+        }, 2000);
 
         return () => {
             if (rafId) cancelAnimationFrame(rafId);
             if (instaRef.current) observer.unobserve(instaRef.current);
             if (recRef.current) observer.unobserve(recRef.current);
+            if (twitterRef.current) observer.unobserve(twitterRef.current);
         }
 
     }, []);
@@ -151,6 +171,53 @@ export default function Mask() {
                                     <video id="rec_vid" ref={recRef} src="/recommendation.mp4" muted playsInline autoPlay loop preload="metadata"></video>
                                     <div className="recImg fadeLine" id="recImgFg"></div>
                                 </div>
+                            </div>
+                            <div className="d30"></div>
+                            <div className="paragraph">사용자와 소셜미디어 간 상호작용 횟수가 늘어남에 따라, 추천 알고리즘이 이를 학습해 사용자의 취향을 더 잘 포착할 수 있습니다.</div>
+                            <div className="d30"></div>
+                            <div className="paragraph">이원화된 추천 알고리즘은 당신의 소셜미디어 이용 시간을 늘리기 위한 전략입니다.</div>
+                            <div className="d30"></div>
+                            <div className="twitter">
+                                <div id="twitterContainer">
+                                    <video id="twitter_vid" ref={twitterRef} src="/twitter.mp4" muted playsInline autoPlay loop preload="metadata"></video>
+                                    <div className="fadeLine" id="twitterLine"></div>
+                                </div>
+                            </div>
+                            <div className="d30"></div>
+                            <div className="d30"></div>
+
+                            <div className="paragraph">
+                                <span className="para_subtitle">추천 알고리즘</span>
+                                <br />
+                                <span className="subtitleLine">----</span>
+                                <br />
+                                수천, 수만의 콘텐츠 중 당신이 가장 좋아할만한 콘텐츠를 제안하는 기술.
+                                비슷한 사용자는 비슷한 것을 좋아한다는 가정을 기반으로 한 추천 방식과 사용자가 선호하는 콘텐츠의 항목을 분석해 이와 유사한 콘텐츠를 추천하는 방식 등이 쓰인다.
+                                2010년대 중반 이후에는 딥러닝이 본격 도입됐다. 수억 건의 데이터와 수천만 개의 파라미터를 활용한 추천 시스템이 실제 서비스에서 적용되고 있다.
+                            </div>
+                            <div className="d30"></div>
+                            <div className="logos" id="logo_blur_insta">
+                                <div>인스타그램의 추천 알고리즘</div>
+                                <div className="logo_subtitle">랭킹 퍼널</div>
+                            </div>
+                            <div className="paragraph">
+                                피드, 스토리, 릴스, 탐색 탭 등 모든 콘텐츠 영역에서 딥러닝 기반 추천 알고리즘이 사용된다. 특히 탐색 탭은 세계 수억 명의 사용자를 대상으로 한 대규모 추천 시스템이다. 랭킹 퍼널이라 불리는 다단계 구조의 콘텐츠 추천이 이곳이서 이루어진다. 랭킹 퍼널은 경량 모델로 먼저 추천 후보군을 추린 뒤, 정교한 딥러닝 모델로 추천 콘텐츠의 상호작용 확률을 예측한다. 이때 사용자의 좋아요, 공유, 댓글, 무반응 등 다양한 반응이 통합적으로 고려된다.
+                            </div>
+                            <div className="d30"></div>
+                            <div className="logos" id="logo_blur_twitter">
+                                <div>X의 추천 알고리즘</div>
+                                <div className="logo_subtitle">개인화된 타임라인</div>
+                            </div>
+                            <div className="paragraph">
+                                X(구 트위터)는 개인화된 타임라인을 사용자에게 제공한다. 추천 트윗은 팔로우한 계정뿐만 아니라, 팔로우하지 않은 계정에서도 선별한다. 팔로우 계정 콘텐츠는 ‘RealGraph’라는 모델이 사용자의 상호작용 이력을 바탕으로 관련성을 점수화해 추천한다. 팔로우 외부 콘텐츠는 소셜 그래프 탐색이나 SimClusters 모델을 활용해 비슷한 관심사를 가진 다른 사용자가 주목한 콘텐츠를 추천 후보로 삼는다. 이후 딥러닝 모델로 후보를 점수화해 사용자의 리트윗, 좋아요 등 반응 확률을 예측한다.
+                            </div>
+                            <div className="d30"></div>
+                            <div className="logos" id="logo_blur_youtube">
+                                <div>유튜브의 추천 알고리즘</div>
+                                <div className="logo_subtitle">강력한 딥러닝</div>
+                            </div>
+                            <div className="paragraph">
+                                유튜브는 사용자의 전체 시청 시간을 최대화하는 것을 목표로 추천 시스템을 설계했다. 사용자의 시청 이력, 검색 기록, 클릭 패턴 등 방대한 데이터를 바탕으로 추천 콘텐츠 클릭 확률과 예상 시청 시간을 고려해 추천 콘텐츠를 배치한다. 이에 강력한 딥러닝 시스템이 필수다. 또한 ‘자동 재생’과 ‘다음 영상 추천’ 기능으로 직전 영상의 주제나 유형을 분석해 몰입도 높은 영상을 이어붙여 사용자의 능동성을 최소화한다.
                             </div>
                         </div>
                     </div>
