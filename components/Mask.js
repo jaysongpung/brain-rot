@@ -13,31 +13,47 @@ export default function Mask() {
 
     useEffect(() => {
         let lastScrollY = window.scrollY;
-        let lastTime = performance.now();
 
         const topMin = 3, topMax = 15;
-        const bottomMin = 10, bottomMax = 70;
+        const bottomMin = 10, bottomMax = 18;
         let currentTop = topMax, currentBottom = bottomMin;
 
         let rafId;
 
         function update() {
-            const now = performance.now();
-            const deltaTime = (now - lastTime) / 1000;
-            lastTime = now;
-
             const currentScrollY = window.scrollY;
             const deltaScroll = currentScrollY - lastScrollY;
             lastScrollY = currentScrollY;
 
-            const speed = Math.abs(deltaScroll) / deltaTime;
-            const normalized = Math.min(speed / 1500, 1);
+            // 스크롤 다운: 아래쪽만 아주 살짝 줄어듦 (저항감)
+            if (deltaScroll > 0) {
+                const targetBottom = bottomMin + 3;
+                currentBottom += (targetBottom - currentBottom) * 0.1;
+                // 위쪽은 천천히 원래대로
+                currentTop += (topMax - currentTop) * 0.01;
 
-            const targetTop = topMax - (topMax - topMin) * normalized;
-            const targetBottom = bottomMin + (bottomMax - bottomMin) * normalized;
-
-            currentTop += (targetTop - currentTop) * 0.1;
-            currentBottom += (targetBottom - currentBottom) * 0.1;
+                const targetTop = topMax - 3;
+                currentTop += (targetTop - currentTop) * 0.1;
+                // 아래쪽은 천천히 원래대로
+                currentBottom += (bottomMin - currentBottom) * 0.01;
+            }
+            // 스크롤 업: 위쪽만 아주 살짝 줄어듦 (저항감)
+            else if (deltaScroll < 0) {
+                const targetBottom = bottomMin - 3;
+                currentBottom += (targetBottom - currentBottom) * 0.1;
+                // 위쪽은 천천히 원래대로
+                currentTop += (topMax - currentTop) * 0.01;
+                
+                const targetTop = topMax + 3;
+                currentTop += (targetTop - currentTop) * 0.1;
+                // 아래쪽은 천천히 원래대로
+                currentBottom += (bottomMin - currentBottom) * 0.01;
+            }
+            // 스크롤 멈춤: 원래대로 복귀
+            else {
+                currentTop += (topMax - currentTop) * 0.015;
+                currentBottom += (bottomMin - currentBottom) * 0.015;
+            }
 
             const vw = window.visualViewport?.width || window.innerWidth;
             const vh = window.visualViewport?.height || window.innerHeight;
