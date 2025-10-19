@@ -245,7 +245,50 @@ export default function Mask() {
                             <div className="d30"></div>
                             <div className="rotText media"></div>
                             <div className="d30"></div>
-                            <div className="paragraph">“브레인롯(brain rot). 1854년 헨리 데이비드 소로의 저서 '월든(Walden)'에서 최초로 기록됐던 이 단어는 뇌 썩음, 부패를 뜻했습니다. 그런데 오늘날 이 단어는 새로운 의미를 갖게 됐어요. 소셜미디어에서 저품질의 온라인 콘텐츠를 과도하게 소비하며 사람들의 지적, 정신적 상태가 저하되는 것을 가리키는 용어로 사용되고 있습니다.”</div>
+                            <div className="paragraph quote">“브레인롯(brain rot). 1854년 헨리 데이비드 소로의 저서 '월든(Walden)'에서 최초로 기록됐던 이 단어는 뇌 썩음, 부패를 뜻했습니다. 그런데 오늘날 이 단어는 새로운 의미를 갖게 됐어요. 소셜미디어에서 저품질의 온라인 콘텐츠를 과도하게 소비하며 사람들의 지적, 정신적 상태가 저하되는 것을 가리키는 용어로 사용되고 있습니다.”</div>
+                            <div className="d30"></div>
+                            <div className="quoteFrom">-샘슨 니반스 스웨덴 카롤린스카연구소 신경과학부 연구원</div>
+                            <div className="d30"></div>
+                            <div className="d30"></div>
+                            <div className="d30"></div>
+                            <div className="paragraph">소셜미디어 속 저품질 콘텐츠를 과도하게 소비하면 정말로 우리의 지적, 정신적 상태가 저하될까? 그 답을 찾고자 신경과학자, 컴퓨터공학자, 실험심리학자를 만나 ‘내 뇌가 썩고 있다’는 사람들의 호소를 어떻게 분석할 수 있을지 물어봤다.</div>
+                            <div className="d30"></div>
+                            <div className="media sweden">
+                                <div className="worldText">
+                                    스웨덴, 스톡홀름<br />카롤린스카 연구소
+                                </div>
+                            </div>
+                            <div className="d30"></div>
+                            <div className="d30"></div>
+                            <div className="media peopleSweden"></div>
+                            <div className="d30"></div>
+                            <div className="paragraph quote">“브레인롯은 뇌에 과부하가 걸린 현상을 의미합니다. 뇌는 <mark>작업기억</mark>과 <mark>주의</mark>에 기울일 수 있는 용량이 제한적인데 소셜미디어는 구조적으로 사용자가 계속해서 콘텐츠를 소비하게 만들고, 이로 인해 동일하거나 유사한 자극이 반복적으로 제시되거든요. 부하가 증가해 인지적 피로와 집중력 저하가 발생하는 거죠.”</div>
+                            <div className="d30"></div>
+                            <div className="quoteFrom">-샘슨 니반스 스웨덴 카롤린스카연구소 신경과학부 연구원</div>
+                            <div className="d30"></div>
+                            <div className="d30"></div>
+                            <div className="paragraph">
+                                <mark>작업기억</mark>(working memory)은 뇌가 짧은 시간 동안 정보를 유지하고 조작하는 인지 과정이다. 일종의 ‘실시간 작업 수행 능력’이다.
+                            </div>
+                            <div className="d30"></div>
+                            <div className="paragraph">
+                                <mark>주의</mark>(attention)는 뇌가 들어오는 정보 중 일부를 선택해 더 깊게 처리하는 과정이다. 시끄러운 카페에서 친구의 말소리에 주의를 기울할 때, 뇌 기능이 이 특정 자극의 정보 처리에 집중할 수 있게 해준다.
+                            </div>
+                            <div className="d30"></div>
+                            <div className="d30"></div>
+                            <div className="d30"></div>
+                            <div className="paragraph">
+                                작업기억과 주의를 담당하는 주요 뇌 영역<br />
+                                1. 배외측 전전두엽 - 이마 바로 뒤쪽, 뇌의 가장 앞부분이다. 정보를 잠시 보관하면서 동시에 조작하는, 작업기억의 핵심 영역이다.
+                            </div>
+                            <div className="d30"></div>
+                            <div className="paragraph">
+                                2. 전측 대상피질 - 대상피질은 뇌의 한가운데를 가로지르는 띠 모양의 피질 구조다. 대상피질의 앞쪽 구역을 전측 대상피질이라 부른다. 중요한 정보에 집중하고 산만한 자극을 억제하는 역할을 한다.
+                            </div>
+                            <div className="d30"></div>
+                            <div className="paragraph">
+                                3. 두정엽 - 두정엽은 정수리 쪽에 위치해 있다. 짧은 시간 동안 무언가를 기억할 때 두정엽이 활성화된다. 특히 전두엽-두정엽 간 네트워크가 주의 및 과제 수행 시에 활성화된다.
+                            </div>
                         </div>
                     </div>
                 </div>
