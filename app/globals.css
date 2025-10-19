@@ -372,3 +372,9 @@ svg rect {
 #logo_blur_youtube {
   background-image: url('/logo_blur_youtube.png');
 }
+
+.rotText {
+  background-image: url('/rot_text.png');
+  width: 100%;
+  height: 90px;
+}

@@ -235,6 +235,17 @@ export default function Mask() {
                             <div className="paragraph">
                                 유튜브는 사용자의 전체 시청 시간을 최대화하는 것을 목표로 추천 시스템을 설계했다. 사용자의 시청 이력, 검색 기록, 클릭 패턴 등 방대한 데이터를 바탕으로 추천 콘텐츠 클릭 확률과 예상 시청 시간을 고려해 추천 콘텐츠를 배치한다. 이에 강력한 딥러닝 시스템이 필수다. 또한 &apos;자동 재생&apos;과 &apos;다음 영상 추천&apos; 기능으로 직전 영상의 주제나 유형을 분석해 몰입도 높은 영상을 이어붙여 사용자의 능동성을 최소화한다.
                             </div>
+                            <div className="d30"></div>
+                            <div className="d30"></div>
+                            <div className="d30"></div>
+                            <div className="d30"></div>
+                            <div className="d30"></div>
+                            <div className="d30"></div>
+                            <div className="part">Part II</div>
+                            <div className="d30"></div>
+                            <div className="rotText media"></div>
+                            <div className="d30"></div>
+                            <div className="paragraph">“브레인롯(brain rot). 1854년 헨리 데이비드 소로의 저서 '월든(Walden)'에서 최초로 기록됐던 이 단어는 뇌 썩음, 부패를 뜻했습니다. 그런데 오늘날 이 단어는 새로운 의미를 갖게 됐어요. 소셜미디어에서 저품질의 온라인 콘텐츠를 과도하게 소비하며 사람들의 지적, 정신적 상태가 저하되는 것을 가리키는 용어로 사용되고 있습니다.”</div>
                         </div>
                     </div>
                 </div>
