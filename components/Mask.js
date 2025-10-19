@@ -24,44 +24,38 @@ export default function Mask() {
             const currentScrollY = window.scrollY;
             const deltaScroll = currentScrollY - lastScrollY;
             lastScrollY = currentScrollY;
+            const delta = 50;
+            const threshold = 0.1;
 
             // 스크롤 다운: 아래쪽만 아주 살짝 줄어듦 (저항감)
             if (deltaScroll > 0) {
-                const targetBottom = bottomMin + 3;
-                currentBottom += (targetBottom - currentBottom) * 0.1;
-                // 위쪽은 천천히 원래대로
-                currentTop += (topMax - currentTop) * 0.01;
+                const targetBottom = bottomMin + delta;
+                currentBottom += (targetBottom - currentBottom) * threshold/5;
 
-                const targetTop = topMax - 3;
-                currentTop += (targetTop - currentTop) * 0.1;
-                // 아래쪽은 천천히 원래대로
-                currentBottom += (bottomMin - currentBottom) * 0.01;
+                const targetTop = topMax - delta;
+                currentTop += (targetTop - currentTop) * threshold;
             }
             // 스크롤 업: 위쪽만 아주 살짝 줄어듦 (저항감)
             else if (deltaScroll < 0) {
-                const targetBottom = bottomMin - 3;
-                currentBottom += (targetBottom - currentBottom) * 0.1;
-                // 위쪽은 천천히 원래대로
-                currentTop += (topMax - currentTop) * 0.01;
+                const targetBottom = bottomMin - delta;
+                currentBottom += (targetBottom - currentBottom) * threshold/5;
 
-                const targetTop = topMax + 3;
-                currentTop += (targetTop - currentTop) * 0.1;
-                // 아래쪽은 천천히 원래대로
-                currentBottom += (bottomMin - currentBottom) * 0.01;
+                const targetTop = topMax + delta;
+                currentTop += (targetTop - currentTop) * threshold;
             }
             // 스크롤 멈춤: 원래대로 복귀
             else {
-                currentTop += (topMax - currentTop) * 0.015;
-                currentBottom += (bottomMin - currentBottom) * 0.015;
+                currentTop += (topMax - currentTop) * threshold;
+                currentBottom += (bottomMin - currentBottom) * threshold;
             }
 
             const vw = window.visualViewport?.width || window.innerWidth;
             const vh = window.visualViewport?.height || window.innerHeight;
 
-            const leftPx = (vw * 3) / 100;
-            const rightPx = (vw * 3) / 100;
-            const topPx = (vh * currentTop) / 100;
-            const bottomPx = (vh * currentBottom) / 100;
+            const leftPx = (vw ) / 100;
+            const rightPx = (vw ) / 100;
+            const topPx = (vh*3 ) / 100 + currentTop;
+            const bottomPx = (vh*3 ) / 100 + currentBottom;
 
             if (foregroundRef.current) {
                 foregroundRef.current.style.transform = `translateY(${-window.scrollY}px)`;
