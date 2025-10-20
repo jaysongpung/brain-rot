@@ -7,71 +7,56 @@ import Part3Content from "./part3";
 
 export default function Mask() {
     const foregroundRef = useRef(null);
-
-    const borderRef = useRef(null);
-    const borderSvgRef = useRef(null);
+    const maskRef = useRef(null);
 
     const [currentBrainImage, setCurrentBrainImage] = useState(null);
 
     useEffect(() => {
         let lastScrollY = window.scrollY;
 
-        const topMin = 3, topMax = 15;
-        const bottomMin = 10, bottomMax = 18;
-        let currentTop = topMax, currentBottom = bottomMin;
+        const vh = window.innerHeight;
+        const vw = window.innerWidth;
+        const idleTop = vh / 10;
+        const threshold = 0.1;
+        const scrollThreshold = 5;
+        const contentMaxWidth = 1200;
+        const contentWidth = Math.min(contentMaxWidth, vw);
+        const leftPx = (vw - contentWidth) / 2;
+        const idleTop2 = idleTop * 2;
 
+        let currentTop = idleTop;
         let rafId;
+
+        // 초기 고정값 설정
+        if (maskRef.current) {
+            maskRef.current.style.left = `${leftPx}px`;
+            maskRef.current.style.width = `${contentWidth}px`;
+        }
 
         function update() {
             const currentScrollY = window.scrollY;
             const deltaScroll = currentScrollY - lastScrollY;
             lastScrollY = currentScrollY;
-            const delta = 100;
-            const threshold = 0.1;
 
-            // 스크롤 다운: 아래쪽만 아주 살짝 줄어듦 (저항감)
-            if (deltaScroll > 0) {
-                const targetBottom = bottomMin + delta;
-                currentBottom += (targetBottom - currentBottom) * threshold / 5;
-
-                const targetTop = topMax - delta;
+            // 스크롤 다운/업: 저항감
+            if (Math.abs(deltaScroll) > scrollThreshold) {
+                const targetTop = Math.max(currentTop - deltaScroll);
                 currentTop += (targetTop - currentTop) * threshold;
-            }
-            // 스크롤 업: 위쪽만 아주 살짝 줄어듦 (저항감)
-            else if (deltaScroll < 0) {
-                const targetBottom = bottomMin - delta;
-                currentBottom += (targetBottom - currentBottom) * threshold;
-
-                const targetTop = topMax + delta;
-                currentTop += (targetTop - currentTop) * threshold / 5;
             }
             // 스크롤 멈춤: 원래대로 복귀
             else {
-                currentTop += (topMax - currentTop) * threshold;
-                currentBottom += (bottomMin - currentBottom) * threshold;
+                currentTop += (idleTop - currentTop) * threshold;
             }
 
-            const vw = window.visualViewport?.width || window.innerWidth;
-            const vh = window.visualViewport?.height || window.innerHeight;
-
-            const leftPx = (vw) / 100;
-            const rightPx = (vw) / 100;
-            const topPx = (vh * 14) / 100 + currentTop;
-            const bottomPx = (vh * 14) / 100 + currentBottom;
+            const maskHeight = vh - (idleTop2 + Math.abs(deltaScroll));
 
             if (foregroundRef.current) {
-                foregroundRef.current.style.transform = `translateY(${-window.scrollY}px)`;
+                foregroundRef.current.style.transform = `translateY(${-currentScrollY - currentTop}px)`;
             }
 
-            if (borderRef.current) {
-                borderRef.current.style.clipPath = `inset(${topPx}px ${rightPx}px ${bottomPx}px ${leftPx}px)`;
-            }
-
-            if (borderSvgRef.current) {
-                borderSvgRef.current.setAttribute("x", leftPx);
-                borderSvgRef.current.setAttribute("y", topPx);
-                borderSvgRef.current.setAttribute("width", vw - (leftPx + rightPx) * 1);
-                borderSvgRef.current.setAttribute("height", vh - topPx - bottomPx);
+            if (maskRef.current) {
+                maskRef.current.style.top = `${currentTop}px`;
+                maskRef.current.style.height = `${maskHeight}px`;
             }
 
             // Brain image 위치 계산
@@ -127,24 +112,23 @@ export default function Mask() {
             }
 
             rafId = requestAnimationFrame(update);
-
         }
 
-        rafId = requestAnimationFrame(update);
+        update();
 
         setTimeout(() => {
-            if (foregroundRef.current) {
-                foregroundRef.current.style.transition = '1s';
-                borderSvgRef.current.style.transition = '1s';
+            if (foregroundRef.current && maskRef.current) {
+                foregroundRef.current.style.transition = 'opacity 1s';
+                maskRef.current.style.transition = 'opacity 1s';
                 foregroundRef.current.style.opacity = 1;
-                borderSvgRef.current.style.opacity = 1;
+                maskRef.current.style.opacity = 1;
             }
-        }, 1000); // 1초 뒤 실행
+        }, 1000);
 
         setTimeout(() => {
-            if (foregroundRef.current) {
-                foregroundRef.current.style.transition = '0s';
-                borderSvgRef.current.style.transition = '0s';
+            if (foregroundRef.current && maskRef.current) {
+                foregroundRef.current.style.transition = '';
+                maskRef.current.style.transition = '';
             }
         }, 2000);
 
@@ -193,49 +177,33 @@ export default function Mask() {
     }, []);
 
     return (
-        <div>
-            <div
-                ref={borderRef}
-                className="
-                fixed
-                top-0
-                left-0
-                w-full
-                h-screen
-                overflow-hidden
-            "
-            >
-
-                <div ref={foregroundRef} id="foreground">
-                    <div className="container">
-                        <div id="fgKeyVisual">
-                            <div id="fgTitleContainer">
-                                <div id="fgTitle"></div>
-                                <div id="fgText">
-                                    브레인 롯은 뇌가 손상되거나 썩은 상태란 뜻으로, 사소하거나 불필요한 정보를 과잉 소비한 결과, 개인의 정신적 지적 상태가 퇴보하는 것을 의미한다. 옥스퍼드대 출판부는 2024년 올해의 단어로 &apos;브레인 롯&apos;을 선정했다.
-                                </div>
+        <div
+            ref={maskRef}
+            className="
+            fixed
+            overflow-hidden
+        "
+            style={{
+                border: '1px solid white',
+            }}
+        >
+            <div ref={foregroundRef} id="foreground">
+                <div className="container">
+                    <div id="fgKeyVisual">
+                        <div id="fgTitleContainer">
+                            <div id="fgTitle"></div>
+                            <div id="fgText">
+                                브레인 롯은 뇌가 손상되거나 썩은 상태란 뜻으로, 사소하거나 불필요한 정보를 과잉 소비한 결과, 개인의 정신적 지적 상태가 퇴보하는 것을 의미한다. 옥스퍼드대 출판부는 2024년 올해의 단어로 &apos;브레인 롯&apos;을 선정했다.
                             </div>
                         </div>
-                        <div className="content">
-                            <Part1Content />
-                            <Part2Content />
-                            <Part3Content />
-                        </div>
+                    </div>
+                    <div className="content">
+                        <Part1Content />
+                        <Part2Content />
+                        <Part3Content />
                     </div>
                 </div>
             </div>
-            <svg className="pointer-events-none fixed top-0 left-0 w-full h-screen">
-                <rect
-                    ref={borderSvgRef}
-                    x="0"
-                    y="0"
-                    width="100%"
-                    height="100%"
-                    fill="none"
-                    stroke="white"
-                    strokeWidth="1"
-                />
-            </svg>
             {currentBrainImage && (
                 <div
                     className="brain-fixed-image"
