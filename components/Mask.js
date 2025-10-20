@@ -1,15 +1,17 @@
 'use client'
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import Part1Content from "./part1";
 import Part2Content from "./part2";
 import Part3Content from "./part3";
 
 export default function Mask() {
     const foregroundRef = useRef(null);
-    
+
     const borderRef = useRef(null);
     const borderSvgRef = useRef(null);
+
+    const [currentBrainImage, setCurrentBrainImage] = useState(null);
 
     useEffect(() => {
         let lastScrollY = window.scrollY;
@@ -72,6 +74,58 @@ export default function Mask() {
                 borderSvgRef.current.setAttribute("height", vh - topPx - bottomPx);
             }
 
+            // Brain image 위치 계산
+            const screenCenterY = vh / 2;
+            const centerThreshold = 200; // 화면 중앙에서 허용 범위 (px)
+
+            const triggers = document.querySelectorAll('[data-brain-trigger]');
+            let closestTrigger = null;
+            let closestDistance = Infinity;
+
+            triggers.forEach(trigger => {
+                const rect = trigger.getBoundingClientRect();
+                const elementCenterY = rect.top + (rect.height / 2);
+                const distance = Math.abs(elementCenterY - screenCenterY);
+
+                if (distance < closestDistance && distance <= centerThreshold) {
+                    closestDistance = distance;
+                    closestTrigger = trigger;
+                }
+            });
+
+            // 상태 업데이트
+            if (closestTrigger) {
+                const triggerValue = closestTrigger.getAttribute('data-brain-trigger');
+                setCurrentBrainImage(triggerValue);
+
+                // 모든 화살표와 텍스트 비활성화
+                document.querySelectorAll('.brain-arrow').forEach(arrow => {
+                    arrow.classList.remove('active');
+                });
+                document.querySelectorAll('.brain-text').forEach(text => {
+                    text.classList.remove('active');
+                });
+
+                // 현재 화살표와 텍스트 활성화
+                const currentArrow = document.querySelector(`[data-arrow-for="${triggerValue}"]`);
+                const currentText = document.querySelector(`[data-text-for="${triggerValue}"]`);
+                if (currentArrow) {
+                    currentArrow.classList.add('active');
+                }
+                if (currentText) {
+                    currentText.classList.add('active');
+                }
+            } else {
+                setCurrentBrainImage(null);
+                // 모든 화살표와 텍스트 비활성화
+                document.querySelectorAll('.brain-arrow').forEach(arrow => {
+                    arrow.classList.remove('active');
+                });
+                document.querySelectorAll('.brain-text').forEach(text => {
+                    text.classList.remove('active');
+                });
+            }
+
             rafId = requestAnimationFrame(update);
 
         }
@@ -100,6 +154,44 @@ export default function Mask() {
 
     }, []);
 
+    // spiralText Intersection Observer
+    useEffect(() => {
+        const spiralObserverOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1 // 요소의 10%가 보이면 트리거
+        };
+
+        const spiralObserverCallback = (entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    // visible 클래스 추가
+                    entry.target.classList.add('visible');
+                    // 한번 나타난 후에는 관찰 중지 (다시 사라지지 않도록)
+                    observer.unobserve(entry.target);
+                }
+            });
+        };
+
+        const spiralObserver = new IntersectionObserver(spiralObserverCallback, spiralObserverOptions);
+
+        // spiralText 요소들 관찰 시작
+        const setupSpiralObserver = () => {
+            const spiralTexts = document.querySelectorAll('.spiralText');
+            spiralTexts.forEach(text => {
+                spiralObserver.observe(text);
+            });
+        };
+
+        // 약간의 딜레이를 두고 실행 (DOM이 완전히 렌더링되도록)
+        const timeoutId = setTimeout(setupSpiralObserver, 100);
+
+        return () => {
+            clearTimeout(timeoutId);
+            spiralObserver.disconnect();
+        };
+    }, []);
+
     return (
         <div>
             <div
@@ -113,7 +205,7 @@ export default function Mask() {
                 overflow-hidden
             "
             >
-            
+
                 <div ref={foregroundRef} id="foreground">
                     <div className="container">
                         <div id="fgKeyVisual">
@@ -125,9 +217,9 @@ export default function Mask() {
                             </div>
                         </div>
                         <div className="content">
-                            <Part1Content/>
-                            <Part2Content/>
-                            <Part3Content/>
+                            <Part1Content />
+                            <Part2Content />
+                            <Part3Content />
                         </div>
                     </div>
                 </div>
@@ -144,6 +236,14 @@ export default function Mask() {
                     strokeWidth="1"
                 />
             </svg>
+            {currentBrainImage && (
+                <div
+                    className="brain-fixed-image"
+                    style={{
+                        backgroundImage: `url('/${currentBrainImage}.png')`
+                    }}
+                />
+            )}
         </div >
     );
 }

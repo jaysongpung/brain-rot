@@ -1,4 +1,4 @@
-export default function Part2Content(){
+export default function Part2Content() {
     return (
         <>
             <div className="part">Part II</div>
@@ -41,18 +41,23 @@ export default function Part2Content(){
             </div>
             <div className="d30"></div>
             <div className="paragraph">
-                1. 배외측 전전두엽<br />
-                이마 바로 뒤쪽, 뇌의 가장 앞부분이다. 정보를 잠시 보관하면서 동시에 조작하는, 작업기억의 핵심 영역이다.
+                <span className="brain-text" data-brain-trigger="brain1" data-text-for="brain1">1. 배외측 전전두엽</span>
+                <span className="brain-arrow" data-arrow-for="brain1">←</span><br />
+                이마 바로 뒤쪽, 뇌의 가장 앞부분이다.<br />정보를 잠시 보관하면서 동시에 조작하는, 작업기억의 핵심 영역이다.
             </div>
             <div className="d30"></div>
-            <div className="paragraph">
-                2. 전측 대상피질<br />
-                대상피질은 뇌의 한가운데를 가로지르는 띠 모양의 피질 구조다. 대상피질의 앞쪽 구역을 전측 대상피질이라 부른다. 중요한 정보에 집중하고 산만한 자극을 억제하는 역할을 한다.
-            </div>
             <div className="d30"></div>
             <div className="paragraph">
-                3. 두정엽 <br />
-                두정엽은 정수리 쪽에 위치해 있다. 짧은 시간 동안 무언가를 기억할 때 두정엽이 활성화된다. 특히 전두엽-두정엽 간 네트워크가 주의 및 과제 수행 시에 활성화된다.
+                <span className="brain-text" data-brain-trigger="brain2" data-text-for="brain2">2. 전측 대상피질</span>
+                <span className="brain-arrow" data-arrow-for="brain2">←</span><br />
+                대상피질은 뇌의 한가운데를 가로지르는 띠 모양의 피질 구조다. <br />대상피질의 앞쪽 구역을 전측 대상피질이라 부른다. <br />중요한 정보에 집중하고 산만한 자극을 억제하는 역할을 한다.
+            </div>
+            <div className="d30"></div>
+            <div className="d30"></div>
+            <div className="paragraph">
+                <span className="brain-text" data-brain-trigger="brain3" data-text-for="brain3">3. 두정엽</span>
+                <span className="brain-arrow" data-arrow-for="brain3">←</span> <br />
+                두정엽은 정수리 쪽에 위치해 있다. <br />짧은 시간 동안 무언가를 기억할 때 두정엽이 활성화된다. <br />특히 전두엽-두정엽 간 네트워크가 주의 및 과제 수행 시에 활성화된다.
             </div>
             <div className="d30"></div>
             <div className="d30"></div>
@@ -69,8 +74,7 @@ export default function Part2Content(){
             <div className="d30"></div>
             <div className="d30"></div>
             <div className="media austrailia world"></div>
-            <div className="d30"></div>
-            <div className="media peopleSweden"></div>
+            <div className="media peopleAus"></div>
             <div className="d30"></div>
             <div className="d30"></div>
             <div className="d30"></div>
@@ -82,7 +86,7 @@ export default function Part2Content(){
             <div className="d30"></div>
             <div className="media uk world"></div>
             <div className="d30"></div>
-            <div className="media peopleSweden"></div>
+            <div className="media peopleUk"></div>
             <div className="d30"></div>
             <div className="d30"></div>
             <div className="d30"></div>
@@ -110,7 +114,11 @@ export default function Part2Content(){
                     <span>맥락을 복원</span><br />
                     소셜미디어 속 콘텐츠는 다양하고 복합적이며, 무엇보다 해당 콘텐츠를 소비하는 상황과 맥락이 함께 존재한다. 유튜브를 60분가량 시청하면서도 어떤 영상을 어떤 목적에 의해 보는지에 따라 사용자의 경험과 소셜미디어가 미치는 영향은 다르다. 소셜미디어의 실제 효과와 영향력을 제대로 측정하려면 이런 맥락을 살펴야 한다.
                 </div>
+
             </div>
+            <div className="d30"></div>
+            <div className="d30"></div>
+            <div className="d30"></div>
         </>
 
     )
