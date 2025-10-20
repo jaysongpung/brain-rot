@@ -30,8 +30,7 @@ body {
 
 /*--------- COMMON ---------*/
 
-#foreground,
-svg rect {
+#foreground {
   opacity: 0;
 }
 
