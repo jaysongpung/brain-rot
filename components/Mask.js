@@ -7,12 +7,13 @@ import Part3Content from "./part3";
 
 export default function Mask() {
     const foregroundRef = useRef(null);
-    const maskRef = useRef(null);
 
+    const maskRef = useRef(null);
     const [currentBrainImage, setCurrentBrainImage] = useState(null);
 
     useEffect(() => {
         let lastScrollY = window.scrollY;
+
 
         const vh = window.innerHeight;
         const vw = window.innerWidth;
@@ -112,6 +113,7 @@ export default function Mask() {
             }
 
             rafId = requestAnimationFrame(update);
+
         }
 
         update();
