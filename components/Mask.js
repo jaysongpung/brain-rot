@@ -23,7 +23,8 @@ export default function Mask() {
         const threshold = 0.1;
         const scrollThreshold = 5;
         const contentMaxWidth = 800;
-        const contentWidth = Math.min(contentMaxWidth, vw);
+        const calculatedWidth = vw * 0.9;
+        const contentWidth = Math.min(contentMaxWidth, calculatedWidth);
         const leftPx = (vw - contentWidth) / 2;
 
         let currentTop = idleTop;
