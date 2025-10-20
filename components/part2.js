@@ -5,7 +5,7 @@ export default function Part2Content() {
             <div className="d30"></div>
             <div className="rotText media"></div>
             <div className="d30"></div>
-            <div className="paragraph quote">“브레인롯(brain rot). 1854년 헨리 데이비드 소로의 저서 '월든(Walden)'에서 최초로 기록됐던 이 단어는 뇌 썩음, 부패를 뜻했습니다. 그런데 오늘날 이 단어는 새로운 의미를 갖게 됐어요. 소셜미디어에서 저품질의 온라인 콘텐츠를 과도하게 소비하며 사람들의 지적, 정신적 상태가 저하되는 것을 가리키는 용어로 사용되고 있습니다.”</div>
+            <div className="paragraph quote">“브레인롯(brain rot). 1854년 헨리 데이비드 소로의 저서 &apos;월든(Walden)&apos;에서 최초로 기록됐던 이 단어는 뇌 썩음, 부패를 뜻했습니다. 그런데 오늘날 이 단어는 새로운 의미를 갖게 됐어요. 소셜미디어에서 저품질의 온라인 콘텐츠를 과도하게 소비하며 사람들의 지적, 정신적 상태가 저하되는 것을 가리키는 용어로 사용되고 있습니다.”</div>
             <div className="d30"></div>
             <div className="quoteFrom">-샘슨 니반스 스웨덴 카롤린스카연구소 신경과학부 연구원</div>
             <div className="d30"></div>
@@ -13,7 +13,9 @@ export default function Part2Content() {
             <div className="d30"></div>
             <div className="paragraph">소셜미디어 속 저품질 콘텐츠를 과도하게 소비하면 정말로 우리의 지적, 정신적 상태가 저하될까? 그 답을 찾고자 신경과학자, 컴퓨터공학자, 실험심리학자를 만나 ‘내 뇌가 썩고 있다’는 사람들의 호소를 어떻게 분석할 수 있을지 물어봤다.</div>
             <div className="d30"></div>
-            <div className="media sweden world"></div>
+            <div className="world">
+                <div className="worldImg sweden"></div>
+            </div>
             <div className="d30"></div>
             <div className="d30"></div>
             <div className="media peopleSweden"></div>
@@ -73,7 +75,9 @@ export default function Part2Content() {
             <div className="d30"></div>
             <div className="d30"></div>
             <div className="d30"></div>
-            <div className="media austrailia world"></div>
+            <div className="world">
+                <div className="worldImg aus"></div>
+            </div>
             <div className="media peopleAus"></div>
             <div className="d30"></div>
             <div className="d30"></div>
@@ -84,7 +88,9 @@ export default function Part2Content() {
             <div className="d30"></div>
             <div className="d30"></div>
             <div className="d30"></div>
-            <div className="media uk world"></div>
+            <div className="world">
+                <div className="worldImg uk"></div>
+            </div>
             <div className="d30"></div>
             <div className="media peopleUk"></div>
             <div className="d30"></div>
