@@ -14,69 +14,53 @@ export default function Mask() {
 
         const vh = window.innerHeight;
         const vw = window.innerWidth;
-        const littleMax = vh / 40;
-        const bigMax = vh/20;
         const idleTop = vh / 10;
+        const threshold = 0.1;
+        const scrollThreshold = 5;
+        const contentMaxWidth = 1200;
+        const contentWidth = Math.min(contentMaxWidth, vw);
+        const leftPx = (vw - contentWidth) / 2;
+        const idleTop2 = idleTop * 2;
 
         let currentTop = idleTop;
-        let currentBottom = idleTop;
-
         let rafId;
+
+        // 초기 고정값 설정
+        if (maskRef.current) {
+            maskRef.current.style.left = `${leftPx}px`;
+            maskRef.current.style.width = `${contentWidth}px`;
+        }
 
         function update() {
             const currentScrollY = window.scrollY;
             const deltaScroll = currentScrollY - lastScrollY;
             lastScrollY = currentScrollY;
-            
-            const threshold = 0.1;
-            const scrollThreshold = 0.5;
 
-            // 스크롤 다운: 아래쪽만 아주 살짝 줄어듦 (저항감)
-            if (deltaScroll > scrollThreshold) {
+            // 스크롤 다운/업: 저항감
+            if (Math.abs(deltaScroll) > scrollThreshold) {
                 const targetTop = Math.max(currentTop - deltaScroll);
-                const targetBottom = Math.max(currentBottom - deltaScroll );
                 currentTop += (targetTop - currentTop) * threshold;
-                currentBottom += (targetBottom - currentBottom) * threshold;
             }
-            // 스크롤 업: 위쪽만 아주 살짝 줄어듦 (저항감)
-            else if (deltaScroll < -scrollThreshold) {
-                const targetTop = Math.max(currentTop - deltaScroll );
-                const targetBottom = Math.max(currentBottom - deltaScroll);
-                currentTop += (targetTop - currentTop) * threshold;
-                currentBottom += (targetBottom - currentBottom) * threshold;
-            }
-            // // 스크롤 멈춤: 원래대로 복귀
+            // 스크롤 멈춤: 원래대로 복귀
             else {
                 currentTop += (idleTop - currentTop) * threshold;
-                currentBottom += (idleTop - currentBottom) * threshold;
             }
 
-            const topPx = currentTop;
-
-            // 콘텐츠 중앙 정렬을 위한 좌우 패딩 계산
-            const contentMaxWidth = 800;
-            const contentWidth = Math.min(contentMaxWidth, vw);
-            const leftPx = (vw - contentWidth) / 2;
-
-            const maskWidth = contentWidth;
-            const maskHeight = vh - (idleTop*2 + Math.abs(deltaScroll));
+            const maskHeight = vh - (idleTop2 + Math.abs(deltaScroll));
 
             if (foregroundRef.current) {
-                foregroundRef.current.style.transform = `translateY(${-window.scrollY - topPx}px)`;
+                foregroundRef.current.style.transform = `translateY(${-currentScrollY - currentTop}px)`;
             }
 
             if (maskRef.current) {
-                maskRef.current.style.top = `${topPx}px`;
-                maskRef.current.style.left = `${leftPx}px`;
-                maskRef.current.style.width = `${maskWidth}px`;
+                maskRef.current.style.top = `${currentTop}px`;
                 maskRef.current.style.height = `${maskHeight}px`;
             }
 
             rafId = requestAnimationFrame(update);
-
         }
 
-        rafId = requestAnimationFrame(update);
+        update();
 
         setTimeout(() => {
             if (foregroundRef.current && maskRef.current) {
@@ -85,7 +69,7 @@ export default function Mask() {
                 foregroundRef.current.style.opacity = 1;
                 maskRef.current.style.opacity = 1;
             }
-        }, 1000); // 1초 뒤 실행
+        }, 1000);
 
         setTimeout(() => {
             if (foregroundRef.current && maskRef.current) {
