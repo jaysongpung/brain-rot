@@ -17,13 +17,14 @@ export default function Mask() {
 
         const vh = window.innerHeight;
         const vw = window.innerWidth;
-        const idleTop = vh / 10;
+        const idleTop = vh / 5;
+        const idleTop2 = idleTop * 2;
+
         const threshold = 0.1;
         const scrollThreshold = 5;
-        const contentMaxWidth = 1200;
+        const contentMaxWidth = 800;
         const contentWidth = Math.min(contentMaxWidth, vw);
         const leftPx = (vw - contentWidth) / 2;
-        const idleTop2 = idleTop * 2;
 
         let currentTop = idleTop;
         let rafId;
@@ -38,18 +39,20 @@ export default function Mask() {
             const currentScrollY = window.scrollY;
             const deltaScroll = currentScrollY - lastScrollY;
             lastScrollY = currentScrollY;
+            let deltaTop = 0;
 
             // 스크롤 다운/업: 저항감
             if (Math.abs(deltaScroll) > scrollThreshold) {
                 const targetTop = Math.max(currentTop - deltaScroll);
-                currentTop += (targetTop - currentTop) * threshold;
+                deltaTop = (targetTop - currentTop) * threshold;
+                currentTop += deltaTop
             }
             // 스크롤 멈춤: 원래대로 복귀
             else {
                 currentTop += (idleTop - currentTop) * threshold;
             }
 
-            const maskHeight = vh - (idleTop2 + Math.abs(deltaScroll));
+            const maskHeight = vh - (idleTop2 - Math.abs(deltaTop));
 
             if (foregroundRef.current) {
                 foregroundRef.current.style.transform = `translateY(${-currentScrollY - currentTop}px)`;
@@ -83,33 +86,8 @@ export default function Mask() {
             if (closestTrigger) {
                 const triggerValue = closestTrigger.getAttribute('data-brain-trigger');
                 setCurrentBrainImage(triggerValue);
-
-                // 모든 화살표와 텍스트 비활성화
-                document.querySelectorAll('.brain-arrow').forEach(arrow => {
-                    arrow.classList.remove('active');
-                });
-                document.querySelectorAll('.brain-text').forEach(text => {
-                    text.classList.remove('active');
-                });
-
-                // 현재 화살표와 텍스트 활성화
-                const currentArrow = document.querySelector(`[data-arrow-for="${triggerValue}"]`);
-                const currentText = document.querySelector(`[data-text-for="${triggerValue}"]`);
-                if (currentArrow) {
-                    currentArrow.classList.add('active');
-                }
-                if (currentText) {
-                    currentText.classList.add('active');
-                }
             } else {
                 setCurrentBrainImage(null);
-                // 모든 화살표와 텍스트 비활성화
-                document.querySelectorAll('.brain-arrow').forEach(arrow => {
-                    arrow.classList.remove('active');
-                });
-                document.querySelectorAll('.brain-text').forEach(text => {
-                    text.classList.remove('active');
-                });
             }
 
             rafId = requestAnimationFrame(update);
@@ -139,6 +117,37 @@ export default function Mask() {
         }
 
     }, []);
+
+    // currentBrainImage 변경 시 active 클래스 업데이트
+    useEffect(() => {
+        console.log('Brain image changed:', currentBrainImage);
+
+        // 모든 화살표와 텍스트 비활성화
+        document.querySelectorAll('.brain-arrow').forEach(arrow => {
+            arrow.classList.remove('active');
+        });
+        document.querySelectorAll('.brain-text').forEach(text => {
+            text.classList.remove('active');
+        });
+
+        // 현재 화살표와 텍스트 활성화
+        if (currentBrainImage) {
+            const currentArrow = document.querySelector(`[data-arrow-for="${currentBrainImage}"]`);
+            const currentText = document.querySelector(`[data-text-for="${currentBrainImage}"]`);
+
+            console.log('Selected arrow:', currentArrow);
+            console.log('Selected text:', currentText);
+
+            if (currentArrow) {
+                currentArrow.classList.add('active');
+                console.log('Arrow class added');
+            }
+            if (currentText) {
+                currentText.classList.add('active');
+                console.log('Text class added');
+            }
+        }
+    }, [currentBrainImage]);
 
     // spiralText Intersection Observer
     useEffect(() => {

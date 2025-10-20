@@ -92,22 +92,22 @@ export default function Background() {
                 </div>
                 <div className="d30"></div>
                 <div className="paragraph">
-                    <span className="brain-text" data-brain-trigger="brain1" data-text-for="brain1">1. 배외측 전전두엽</span>
-                    <span className="brain-arrow" data-arrow-for="brain1">←</span><br />
+                    <span className="brain-text">1. 배외측 전전두엽</span>
+                    <span className="brain-arrow">←</span><br />
                     이마 바로 뒤쪽, 뇌의 가장 앞부분이다.<br />정보를 잠시 보관하면서 동시에 조작하는, 작업기억의 핵심 영역이다.
                 </div>
                 <div className="d30"></div>
                 <div className="d30"></div>
                 <div className="paragraph">
-                    <span className="brain-text" data-brain-trigger="brain2" data-text-for="brain2">2. 전측 대상피질</span>
-                    <span className="brain-arrow" data-arrow-for="brain2">←</span><br />
+                    <span className="brain-text">2. 전측 대상피질</span>
+                    <span className="brain-arrow">←</span><br />
                     대상피질은 뇌의 한가운데를 가로지르는 띠 모양의 피질 구조다. <br />대상피질의 앞쪽 구역을 전측 대상피질이라 부른다. <br />중요한 정보에 집중하고 산만한 자극을 억제하는 역할을 한다.
                 </div>
                 <div className="d30"></div>
                 <div className="d30"></div>
                 <div className="paragraph">
-                    <span className="brain-text" data-brain-trigger="brain3" data-text-for="brain3">3. 두정엽</span>
-                    <span className="brain-arrow" data-arrow-for="brain3">←</span> <br />
+                    <span className="brain-text">3. 두정엽</span>
+                    <span className="brain-arrow">←</span> <br />
                     두정엽은 정수리 쪽에 위치해 있다. <br />짧은 시간 동안 무언가를 기억할 때 두정엽이 활성화된다. <br />특히 전두엽-두정엽 간 네트워크가 주의 및 과제 수행 시에 활성화된다.
                 </div>
                 <div className="d30"></div>
