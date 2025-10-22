@@ -118,6 +118,10 @@ export default function Background() {
                     <br />
                     <span className="subtitleLine">----</span>
                 </div>
+                <div className="repeatCarouselPlaceholder"></div>
+                <div className="d30"></div>
+                <div className="d30"></div>
+                <div className="d30"></div>
                 <div className="paragraphBg">■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■</div>
                 <div className="d30"></div>
                 <div className="quoteFromBg">-■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■</div>
@@ -161,6 +165,6 @@ export default function Background() {
                 <div className="d30"></div>
                 <div className="d30"></div>
             </div>
-        </div>
+        </div >
     );
 }

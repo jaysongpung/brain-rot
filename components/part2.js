@@ -1,3 +1,5 @@
+import RepeatCarousel from './RepeatCarousel';
+
 export default function Part2Content() {
     return (
         <>
@@ -69,6 +71,10 @@ export default function Part2Content() {
                 <br />
                 <span className="subtitleLine">----</span>
             </div>
+            <RepeatCarousel />
+            <div className="d30"></div>
+            <div className="d30"></div>
+            <div className="d30"></div>
             <div className="paragraph quote">&quot;대부분의 사람들이 뇌가 왜, 그리고 어떻게 피로해지는지 모르기 때문에 이를 &apos;뇌가 썩었다&apos;고 표현하는 겁니다.&quot;</div>
             <div className="d30"></div>
             <div className="quoteFrom">-샘슨 니반스 스웨덴 카롤린스카연구소 신경과학부 연구원</div>

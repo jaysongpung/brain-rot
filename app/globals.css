@@ -626,3 +626,70 @@ mark {
 .brain-text.active {
   color: #39FF27;
 }
+
+/*--------- CAROUSEL ---------*/
+
+.repeatCarouselContainer {
+  width: 100%;
+  max-width: 500px;
+  height: 500px;
+  margin: 30px auto;
+  padding: 0 30px;
+}
+
+.repeatSwiper {
+  width: 100%;
+}
+
+.repeatSlide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.repeatSlideImage {
+  width: 100%;
+  height: 300px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.repeatSlideTitle {
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  padding: 0 10px;
+  margin-bottom: 0px;
+}
+
+.repeatSlideText {
+  font-size: 14px;
+  line-height: 1.6;
+  text-align: left;
+  padding: 0 10px;
+}
+
+/* Swiper navigation arrows */
+.repeatSwiper .swiper-button-next,
+.repeatSwiper .swiper-button-prev {
+  color: white;
+  width: 40px;
+  height: 40px;
+}
+
+.repeatSwiper .swiper-button-next::after,
+.repeatSwiper .swiper-button-prev::after {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Carousel placeholder for background layer */
+.repeatCarouselPlaceholder {
+  width: 100%;
+  max-width: 500px;
+  height: 500px;
+  margin: 30px auto;
+  padding: 0 30px;
+}
