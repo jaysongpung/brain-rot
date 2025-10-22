@@ -50,6 +50,7 @@ body {
 
 .paragraph {
   margin: 0px 30px;
+  line-height: 1.5;
 }
 
 mark {
@@ -87,6 +88,7 @@ mark {
   letter-spacing: -1px;
   word-break: break-all;
   margin: 0px 30px;
+  line-height: 1.5;
 }
 
 .d30 {
@@ -611,6 +613,7 @@ mark {
   transition: opacity 0.3s ease-in-out, color 0.3s ease-in-out;
   color: white;
   font-size: 18px;
+  line-height: 1.5;
 }
 
 .brain-arrow.active {
@@ -621,6 +624,7 @@ mark {
 .brain-text {
   transition: color 0.3s ease-in-out;
   color: white;
+  line-height: 1.5;
 }
 
 .brain-text.active {

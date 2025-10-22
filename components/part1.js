@@ -53,31 +53,31 @@ export default function Part1Content() {
         <>
             <div className="part">Part I</div>
             <div className="d30"></div>
-            <div className="paragraph">당신이 소셜미디어에 접속했을 때, 사용자 인터페이스(UI) 뒤로 어떤 일이 생기는지 알고 계시나요? 소셜미디어 추천 시스템의 주요 특징을 살펴보세요.</div>
+            <div className="paragraph" data-sync-id="p1-intro">당신이 소셜미디어에 접속했을 때, 사용자 인터페이스(UI) 뒤로 어떤 일이 생기는지 알고 계시나요? 소셜미디어 추천 시스템의 주요 특징을 살펴보세요.</div>
             <div className="d30"></div>
-            <div className="media instagram" id="insta_video">
+            <div className="media instagram" id="insta_video" data-sync-id="p1-insta-video">
                 <div id="instaContainer">
                     <video id="insta_vidvid" ref={instaRef} src="/instagram.mp4" muted playsInline autoPlay loop preload="metadata"></video>
                     <div className="fadeLine" id="insta_line"></div>
                 </div>
             </div>
             <div className="d30"></div>
-            <div className="paragraph">당신에게 어떤 콘텐츠를 추천할지, 소셜 미디어는 빠르게 점수를 계산합니다. 점수를 매길 때, 소셜미디어는 당신과 취향이 비슷한 다른 사용자들이 클릭했던 콘텐츠를 참고하기도 합니다.</div>
+            <div className="paragraph" data-sync-id="p1-para1">당신에게 어떤 콘텐츠를 추천할지, 소셜 미디어는 빠르게 점수를 계산합니다. 점수를 매길 때, 소셜미디어는 당신과 취향이 비슷한 다른 사용자들이 클릭했던 콘텐츠를 참고하기도 합니다.</div>
             <div className="d30"></div>
-            <div className="paragraph">당신이 클릭했던 콘텐츠는 모두 당신을 더 잘 파악하는 데 활용됩니다. 추천 알고리즘이 고도화되는 과정이죠. 만약 당신이 고양이 콘텐츠를 즐겨보는 사람이라고 가정해 보겠습니다. 당신이 고양이 영상C을 클릭해 봤다면, 고양이 영상C를 본 다른 사용자들이 소비한 고양이 영상A와 고양이 영상T를 당신에게 추천하죠.</div>
+            <div className="paragraph" data-sync-id="p1-para2">당신이 클릭했던 콘텐츠는 모두 당신을 더 잘 파악하는 데 활용됩니다. 추천 알고리즘이 고도화되는 과정이죠. 만약 당신이 고양이 콘텐츠를 즐겨보는 사람이라고 가정해 보겠습니다. 당신이 고양이 영상C을 클릭해 봤다면, 고양이 영상C를 본 다른 사용자들이 소비한 고양이 영상A와 고양이 영상T를 당신에게 추천하죠.</div>
             <div className="d30"></div>
-            <div className="rec">
+            <div className="rec" data-sync-id="p1-rec">
                 <div className="recVidWrap">
                     <video id="rec_vid" ref={recRef} src="/recommendation.mp4" muted playsInline autoPlay loop preload="metadata"></video>
                     <div className="recImg fadeLine" id="recImgFg"></div>
                 </div>
             </div>
             <div className="d30"></div>
-            <div className="paragraph">사용자와 소셜미디어 간 상호작용 횟수가 늘어남에 따라, 추천 알고리즘이 이를 학습해 사용자의 취향을 더 잘 포착할 수 있습니다.</div>
+            <div className="paragraph" data-sync-id="p1-para3">사용자와 소셜미디어 간 상호작용 횟수가 늘어남에 따라, 추천 알고리즘이 이를 학습해 사용자의 취향을 더 잘 포착할 수 있습니다.</div>
             <div className="d30"></div>
-            <div className="paragraph">이원화된 추천 알고리즘은 당신의 소셜미디어 이용 시간을 늘리기 위한 전략입니다.</div>
+            <div className="paragraph" data-sync-id="p1-para4">이원화된 추천 알고리즘은 당신의 소셜미디어 이용 시간을 늘리기 위한 전략입니다.</div>
             <div className="d30"></div>
-            <div className="twitter">
+            <div className="twitter" data-sync-id="p1-twitter">
                 <div id="twitterContainer">
                     <video id="twitter_vid" ref={twitterRef} src="/twitter.mp4" muted playsInline autoPlay loop preload="metadata"></video>
                     <div className="fadeLine" id="twitterLine"></div>
@@ -86,7 +86,7 @@ export default function Part1Content() {
             <div className="d30"></div>
             <div className="d30"></div>
 
-            <div className="paragraph">
+            <div className="paragraph" data-sync-id="p1-algo-desc">
                 <span className="para_subtitle">추천 알고리즘</span>
                 <br />
                 <span className="subtitleLine">----</span>
@@ -96,7 +96,7 @@ export default function Part1Content() {
                 2010년대 중반 이후에는 딥러닝이 본격 도입됐다. 수억 건의 데이터와 수천만 개의 파라미터를 활용한 추천 시스템이 실제 서비스에서 적용되고 있다.
             </div>
             <div className="d30"></div>
-            <div className="logos" id="logo_blur_insta">
+            <div className="logos" id="logo_blur_insta" data-sync-id="p1-logo-insta">
                 <div>인스타그램의 추천 알고리즘</div>
                 <div className="logo_subtitle">랭킹 퍼널</div>
                 <div className="logo_text">
@@ -104,7 +104,7 @@ export default function Part1Content() {
                 </div>
             </div>
             <div className="d30"></div>
-            <div className="logos" id="logo_blur_twitter">
+            <div className="logos" id="logo_blur_twitter" data-sync-id="p1-logo-twitter">
                 <div>X의 추천 알고리즘</div>
                 <div className="logo_subtitle">개인화된 타임라인</div>
                 <div className="logo_text">
@@ -112,7 +112,7 @@ export default function Part1Content() {
                 </div>
             </div>
             <div className="d30"></div>
-            <div className="logos" id="logo_blur_youtube">
+            <div className="logos" id="logo_blur_youtube" data-sync-id="p1-logo-youtube">
                 <div>유튜브의 추천 알고리즘</div>
                 <div className="logo_subtitle">강력한 딥러닝</div>
                 <div className="logo_text">

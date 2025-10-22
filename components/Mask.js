@@ -16,7 +16,7 @@ export default function Mask() {
 
 
         const vh = window.innerHeight;
-        const vw = window.innerWidth;
+        const vw = document.documentElement.clientWidth;
         const idleTop = vh / 5;
         const idleTop2 = idleTop * 2;
 
@@ -149,6 +149,27 @@ export default function Mask() {
             }
         }
     }, [currentBrainImage]);
+
+    // Height synchronization
+    useEffect(() => {
+        const syncHeights = () => {
+            const foregroundElements = document.querySelectorAll('[data-sync-id]');
+
+            foregroundElements.forEach(element => {
+                const syncId = element.getAttribute('data-sync-id');
+                const height = element.offsetHeight;
+
+                // Background의 대응 요소 찾기
+                const bgElement = document.querySelector(`[data-sync-bg="${syncId}"]`);
+                if (bgElement) {
+                    bgElement.style.height = `${height}px`;
+                }
+            });
+        };
+
+        // DOM이 완전히 로드된 후 실행
+        setTimeout(syncHeights, 500);
+    }, []);
 
     // spiralText Intersection Observer
     useEffect(() => {

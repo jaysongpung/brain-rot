@@ -1,7 +1,7 @@
 export default function Part2Content() {
     return (
         <>
-            <div className="part">Part III</div>
+            <div className="part" data-sync-id="p3-part">Part III</div>
         </>
 
     )

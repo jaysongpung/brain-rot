@@ -12,28 +12,28 @@ export default function Background() {
             <div className="content">
                 <div className="part">Part I</div>
                 <div className="d30"></div>
-                <div className="paragraphBg">■■■■■■■■■■■■■■■■■■■■■■■■,■■■■■■■■■■■■■(■)■■■■■■■■■■■■■■■■■■■■■■■■■■■■?■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.</div>
+                <div className="paragraphBg" data-sync-bg="p1-intro">■■■■■■■■■■■■■■■■■■■■■■■■,■■■■■■■■■■■■■(■)■■■■■■■■■■■■■■■■■■■■■■■■■■■■?■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.</div>
                 <div className="d30"></div>
-                <div className="media instagram" id="instagram"></div>
+                <div className="media instagram" id="instagram" data-sync-bg="p1-insta-video"></div>
                 <div className="d30"></div>
-                <div className="paragraphBg">■■■■■■■■■■■■■■■■■■■■■■■■,■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.■■■■■■■■■■,■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.</div>
+                <div className="paragraphBg" data-sync-bg="p1-para1">■■■■■■■■■■■■■■■■■■■■■■■■,■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.■■■■■■■■■■,■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.</div>
                 <div className="d30"></div>
-                <div className="paragraphBg">■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.■■■■■■■■■■■■■■■■■■■■■■■■■■■.■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.■■■■■■■■■■■■■■■■■■■■■■■■■■■,■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.</div>
+                <div className="paragraphBg" data-sync-bg="p1-para2">■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.■■■■■■■■■■■■■■■■■■■■■■■■■■■.■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.■■■■■■■■■■■■■■■■■■■■■■■■■■■,■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.</div>
                 <div className="d30"></div>
-                <div className="rec">
+                <div className="rec" data-sync-bg="p1-rec">
                     <div className="recImg media" id="recImgBg"></div>
                 </div>
                 <div className="d30"></div>
-                <div className="paragraphBg">■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■,■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.</div>
+                <div className="paragraphBg" data-sync-bg="p1-para3">■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■,■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.</div>
                 <div className="d30"></div>
-                <div className="paragraphBg">■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.</div>
+                <div className="paragraphBg" data-sync-bg="p1-para4">■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.</div>
                 <div className="d30"></div>
-                <div className="twitter">
+                <div className="twitter" data-sync-bg="p1-twitter">
                     <div id="twitterBg"></div>
                 </div>
                 <div className="d30"></div>
                 <div className="d30"></div>
-                <div className="paragraphBg">
+                <div className="paragraphBg" data-sync-bg="p1-algo-desc">
                     <span className="para_subtitle_bg">■■■■■■■■■</span>
                     <br />
                     <span className="subtitleLine">----</span>
@@ -41,11 +41,11 @@ export default function Background() {
                     ■■■,■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.
                 </div>
                 <div className="d30"></div>
-                <div className="logos" id="logo_insta"></div>
+                <div className="logos" id="logo_insta" data-sync-bg="p1-logo-insta"></div>
                 <div className="d30"></div>
-                <div className="logos" id="logo_twitter"></div>
+                <div className="logos" id="logo_twitter" data-sync-bg="p1-logo-twitter"></div>
                 <div className="d30"></div>
-                <div className="logos" id="logo_youtube"></div>
+                <div className="logos" id="logo_youtube" data-sync-bg="p1-logo-youtube"></div>
                 <div className="d30"></div>
                 <div className="d30"></div>
                 <div className="d30"></div>
@@ -54,49 +54,49 @@ export default function Background() {
                 <div className="d30"></div>
                 <div className="part">Part II</div>
                 <div className="d30"></div>
-                <div className="media rotText2"></div>
+                <div className="media rotText2" data-sync-bg="p2-rot-text"></div>
                 <div className="d30"></div>
-                <div className="paragraphBg">&quot;■■■■■■■(■■■■■■).■■■■■■■■■■■■■■■■■■■■■■■■■■■&apos;■■■■(■■■■■)&apos;■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■,■■■■■■■■■■■■■■■.■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■,■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.&quot;</div>
+                <div className="paragraphBg" data-sync-bg="p2-quote1">&quot;■■■■■■■(■■■■■■).■■■■■■■■■■■■■■■■■■■■■■■■■■■&apos;■■■■(■■■■■)&apos;■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■,■■■■■■■■■■■■■■■.■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■,■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.&quot;</div>
                 <div className="d30"></div>
-                <div className="quoteFromBg">-■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■</div>
-                <div className="d30"></div>
-                <div className="d30"></div>
-                <div className="d30"></div>
-                <div className="paragraphBg">■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■,■■■■■■■■■■■■■■■■■?■■■■■■■■■■■■■■■■■■■,■■■■■■■■■■,■■■■■■■■■■■■■■■&apos;■■■■■■■■■■■&apos;■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.</div>
-                <div className="d30"></div>
-                <div className="media worldnull"></div>
+                <div className="quoteFromBg" data-sync-bg="p2-quotefrom1">-■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■</div>
                 <div className="d30"></div>
                 <div className="d30"></div>
-                <div className="media peoplenull"></div>
                 <div className="d30"></div>
-                <div className="paragraphBg">&quot;■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■,■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.&quot;</div>
+                <div className="paragraphBg" data-sync-bg="p2-para1">■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■,■■■■■■■■■■■■■■■■■?■■■■■■■■■■■■■■■■■■■,■■■■■■■■■■,■■■■■■■■■■■■■■■&apos;■■■■■■■■■■■&apos;■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.</div>
                 <div className="d30"></div>
-                <div className="quoteFromBg">-■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■</div>
+                <div className="media worldnull" data-sync-bg="p2-world-sweden"></div>
                 <div className="d30"></div>
                 <div className="d30"></div>
-                <div className="paragraphBg">
+                <div className="media peoplenull" data-sync-bg="p2-people-sweden"></div>
+                <div className="d30"></div>
+                <div className="paragraphBg" data-sync-bg="p2-quote2">&quot;■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■,■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.&quot;</div>
+                <div className="d30"></div>
+                <div className="quoteFromBg" data-sync-bg="p2-quotefrom2">-■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■</div>
+                <div className="d30"></div>
+                <div className="d30"></div>
+                <div className="paragraphBg" data-sync-bg="p2-para-memory">
                     ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
                 </div>
                 <div className="d30"></div>
-                <div className="paragraphBg">
+                <div className="paragraphBg" data-sync-bg="p2-para-attention">
                     ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
                 </div>
                 <div className="d30"></div>
                 <div className="d30"></div>
                 <div className="d30"></div>
-                <div className="paragraphBg">
+                <div className="paragraphBg" data-sync-bg="p2-brain-title">
                     <span className="para_subtitle_bg">■■■■■■■■■■■■■■■■■■■<br />■■■■■■■■</span>
                     <br />
                     <span className="subtitleLine">----</span>
                 </div>
                 <div className="d30"></div>
-                <div className="paragraphBg">
+                <div className="paragraphBg" data-sync-bg="brain1">
                     1. ■■■■■■■■■■■<br />
                     ■■■■■■■■■■■■■■■■■■■■■■■■■■■<br />■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.
                 </div>
                 <div className="d30"></div>
                 <div className="d30"></div>
-                <div className="paragraphBg">
+                <div className="paragraphBg" data-sync-bg="brain2">
                     2. ■■■■■■■■■■■<br />
                     ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.<br />
                     ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.<br />
@@ -104,7 +104,7 @@ export default function Background() {
                 </div>
                 <div className="d30"></div>
                 <div className="d30"></div>
-                <div className="paragraphBg">
+                <div className="paragraphBg" data-sync-bg="brain3">
                     3. ■■■■■<br />
                     ■■■■■■■■■■■■■■■■■■■■.<br />
                     ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.<br />
@@ -113,50 +113,50 @@ export default function Background() {
                 <div className="d30"></div>
                 <div className="d30"></div>
                 <div className="d30"></div>
-                <div className="paragraphBg">
+                <div className="paragraphBg" data-sync-bg="p2-repeat-title">
                     <span className="para_subtitle_bg">■■■■■■■■■■■■■■■■■■■<br />■■■■■■■■</span>
                     <br />
                     <span className="subtitleLine">----</span>
                 </div>
-                <div className="repeatCarouselPlaceholder"></div>
+                <div className="repeatCarouselPlaceholder" data-sync-bg="p2-carousel"></div>
                 <div className="d30"></div>
                 <div className="d30"></div>
                 <div className="d30"></div>
-                <div className="paragraphBg">■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■</div>
+                <div className="paragraphBg" data-sync-bg="p2-quote3">■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■</div>
                 <div className="d30"></div>
-                <div className="quoteFromBg">-■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■</div>
-                <div className="d30"></div>
-                <div className="d30"></div>
-                <div className="d30"></div>
-                <div className="media worldnull"></div>
-                <div className="media peopleAus"></div>
+                <div className="quoteFromBg" data-sync-bg="p2-quotefrom3">-■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■</div>
                 <div className="d30"></div>
                 <div className="d30"></div>
                 <div className="d30"></div>
-                <div className="paragraphBg">■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■</div>
-                <div className="d30"></div>
-                <div className="quoteFromBg">-■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■</div>
-                <div className="d30"></div>
-                <div className="d30"></div>
-                <div className="d30"></div>
-                <div className="media worldnull"></div>
-                <div className="d30"></div>
-                <div className="media peopleUk"></div>
+                <div className="media worldnull" data-sync-bg="p2-world-aus"></div>
+                <div className="media peopleAus" data-sync-bg="p2-people-aus"></div>
                 <div className="d30"></div>
                 <div className="d30"></div>
                 <div className="d30"></div>
-                <div className="paragraphBg">■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■</div>
+                <div className="paragraphBg" data-sync-bg="p2-quote4">■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■</div>
                 <div className="d30"></div>
-                <div className="quoteFromBg">-■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■</div>
+                <div className="quoteFromBg" data-sync-bg="p2-quotefrom4">-■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■</div>
                 <div className="d30"></div>
                 <div className="d30"></div>
                 <div className="d30"></div>
-                <div className="paragraphBg">
+                <div className="media worldnull" data-sync-bg="p2-world-uk"></div>
+                <div className="d30"></div>
+                <div className="media peopleUk" data-sync-bg="p2-people-uk"></div>
+                <div className="d30"></div>
+                <div className="d30"></div>
+                <div className="d30"></div>
+                <div className="paragraphBg" data-sync-bg="p2-quote5">■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■</div>
+                <div className="d30"></div>
+                <div className="quoteFromBg" data-sync-bg="p2-quotefrom5">-■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■</div>
+                <div className="d30"></div>
+                <div className="d30"></div>
+                <div className="d30"></div>
+                <div className="paragraphBg" data-sync-bg="p2-research-title">
                     <span className="para_subtitle_bg">■■■■■■■■■■■■■■■■■■■<br />■■■■■■■■■■■■■■■■■■</span>
                     <br />
                     <span className="subtitleLine">----</span>
                 </div>
-                <div className="media spiral2">
+                <div className="media spiral2" data-sync-bg="p2-spiral">
                 </div>
                 <div className="d30"></div>
                 <div className="d30"></div>
