@@ -130,6 +130,9 @@ export default function Part2Content() {
             <div className="d30"></div>
             <div className="d30"></div>
             <div className="d30"></div>
+            <div className="d30"></div>
+            <div className="d30"></div>
+            <div className="d30"></div>
         </>
 
     )

@@ -5,32 +5,64 @@ export default function Background() {
                 <div className="titleContainer">
                     <div className="title"></div>
                     <div className="subTitle">
-                        ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■,■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■,■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■&apos;■■■■■■&apos;■■■■■■■■.
+                        ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■,■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■,■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■&apos;■■■■■■&apos;(■■■■■■■)■■■■■■■■.
                     </div>
                 </div>
             </div>
             <div className="content">
+                <div className="d30"></div>
+                <div className="d30"></div>
                 <div className="part">Part I</div>
                 <div className="d30"></div>
-                <div className="paragraphBg" data-sync-bg="p1-intro">■■■■■■■■■■■■■■■■■■■■■■■■,■■■■■■■■■■■■■(■)■■■■■■■■■■■■■■■■■■■■■■■■■■■■?■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.</div>
+                <div className="paragraphBg" data-sync-bg="p1-intro">
+                    <span className="para_subtitle_bg">■■■■■■■■■■■■■■■■■■■■■■■■</span>
+                    <br />
+                    <span className="subtitleLine">----</span>
+                    <br />
+                    ■■■■■■■■■■■■■■■■■■■■■■■■,■■■■■■■■■■■■■(■)■■■■■■■■■■■■■■■■■■■■■■■■■■■■?■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.</div>
+                <div className="d30"></div>
                 <div className="d30"></div>
                 <div className="media instagram" id="instagram" data-sync-bg="p1-insta-video"></div>
                 <div className="d30"></div>
-                <div className="paragraphBg" data-sync-bg="p1-para1">■■■■■■■■■■■■■■■■■■■■■■■■,■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.■■■■■■■■■■,■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.</div>
                 <div className="d30"></div>
-                <div className="paragraphBg" data-sync-bg="p1-para2">■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.■■■■■■■■■■■■■■■■■■■■■■■■■■■.■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.■■■■■■■■■■■■■■■■■■■■■■■■■■■,■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.</div>
+                <div className="paragraphBg" data-sync-bg="p1-para1">
+                    <span className="para_subtitle_bg">■■■■■■■■,■■■■■■■■■■</span>
+                    <br />
+                    <span className="subtitleLine">----</span>
+                    <br />
+                    ■■■■■■■■■■■■■■■■■■■■■■■■,■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.■■■■■■■■■■,■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■&apos;■■■■(■■■■■■■)&apos;■■■■■■■■■■■■■■■■■■.</div>
+                <div className="d30"></div>
+                <div className="d30"></div>
+                <div className="d30"></div>
+                <div className="paragraphBg" data-sync-bg="p1-para2">
+                    <span className="para_subtitle_bg">■■■■■■■■■■,■■■■■■■■■■</span>
+                    <br />
+                    <span className="subtitleLine">----</span>
+                    <br />
+                    ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.■■■■■■■■■■■■■■■■■■■■■■■■■■■.■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.■■■■■■■■■■■■■■■■■■■■■■■■■■■,■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.</div>
+                <div className="d30"></div>
                 <div className="d30"></div>
                 <div className="rec" data-sync-bg="p1-rec">
                     <div className="recImg media" id="recImgBg"></div>
                 </div>
                 <div className="d30"></div>
-                <div className="paragraphBg" data-sync-bg="p1-para3">■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■,■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.</div>
+                <div className="paragraphBg" data-sync-bg="p1-para3">
+                    ■■■■■■■■■■■■■■■.■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■,■&apos;■■■■■■■&apos;■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■,■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.</div>
                 <div className="d30"></div>
-                <div className="paragraphBg" data-sync-bg="p1-para4">■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.</div>
+                <div className="d30"></div>
+                <div className="d30"></div>
+                <div className="paragraphBg" data-sync-bg="p1-para4">
+                    <span className="para_subtitle_bg">■■■■■■■■■■■■■■■■</span>
+                    <br />
+                    <span className="subtitleLine">----</span>
+                    <br />
+                    ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■,■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■?■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■&apos;■■■■■&apos;■■■■■■■■■■■■■■■■■■■■■■■■■■■.■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.■■&apos;■■■&apos;■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■,■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.</div>
+                <div className="d30"></div>
                 <div className="d30"></div>
                 <div className="twitter" data-sync-bg="p1-twitter">
                     <div id="twitterBg"></div>
                 </div>
+                <div className="d30"></div>
                 <div className="d30"></div>
                 <div className="d30"></div>
                 <div className="paragraphBg" data-sync-bg="p1-algo-desc">
@@ -38,12 +70,15 @@ export default function Background() {
                     <br />
                     <span className="subtitleLine">----</span>
                     <br />
-                    ■■■,■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.
+                    ■■■,■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■(■■■■■■■■■)■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■(■■■■■■■■■■■■■)■■■■■■■■■■■■■■■■■■■■■.■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.
                 </div>
+                <div className="d30"></div>
                 <div className="d30"></div>
                 <div className="logos" id="logo_insta" data-sync-bg="p1-logo-insta"></div>
                 <div className="d30"></div>
+                <div className="d30"></div>
                 <div className="logos" id="logo_twitter" data-sync-bg="p1-logo-twitter"></div>
+                <div className="d30"></div>
                 <div className="d30"></div>
                 <div className="logos" id="logo_youtube" data-sync-bg="p1-logo-youtube"></div>
                 <div className="d30"></div>
@@ -164,6 +199,24 @@ export default function Background() {
                 <div className="d30"></div>
                 <div className="d30"></div>
                 <div className="d30"></div>
+                <div className="part">Part III</div>
+                <div>
+                    asdfasdf<br />
+                    asdfasdf<br />
+                    asdfasdf<br />
+                    asdfasdf<br />
+                    asdfasdf<br />
+                    asdfasdf<br />
+                    asdfasdf<br />
+                    asdfasdf<br />
+                    asdfasdf<br />
+                    asdfasdf<br />
+                    asdfasdf<br />
+                    asdfasdf<br />
+                    asdfasdf<br />
+                    asdfasdf<br />
+                    asdfasdf<br />
+                </div>
             </div>
         </div >
     );
