@@ -53,13 +53,12 @@ export default function Part1Content() {
         <>
             <div className="d30"></div>
             <div className="d30"></div>
-            <div className="part">Part I</div>
+            <div className="partTitle">
+                <span>추천 알고리즘</span>은<br />당신을 알고 있다
+            </div>
+            <div className="d30"></div>
             <div className="d30"></div>
             <div className="paragraph" data-sync-id="p1-intro">
-                <span className="para_subtitle">추천 알고리즘은 당신을 알고 있다</span>
-                <br />
-                <span className="subtitleLine">----</span>
-                <br />
                 당신이 소셜미디어에 접속했을 때, 사용자 인터페이스(UI) 뒤로 어떤 일이 생기는지 알고 계시나요? 소셜미디어 추천 시스템의 주요 특징을 살펴보세요.</div>
             <div className="d30"></div>
             <div className="d30"></div>
