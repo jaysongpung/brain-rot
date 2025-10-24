@@ -42,8 +42,8 @@ export default function Part3Content() {
             </div>
             <div className="d30"></div>
             <div className="paragraph">
-                <span class="bold">29명</span>의 참가자 중 중도이탈자는 단 3명이었습니다.<br />
-                <span class="bold">26명</span>의 이야기를 과학적으로 분석해봤습니다.
+                <span className="bold">29명</span>의 참가자 중 중도이탈자는 단 3명이었습니다.<br />
+                <span className="bold">26명</span>의 이야기를 과학적으로 분석해봤습니다.
             </div>
             <div className="d30"></div>
             <div className="littlequote">*김주현 한국뇌연구원 선임연구원과 조철현 고려대 정신건강의학과 교수가 챌린지 설계와 결과 분석 등의 자문을 맡았습니다.</div>

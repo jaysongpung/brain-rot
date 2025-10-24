@@ -9,7 +9,11 @@ export default function Mask() {
     const foregroundRef = useRef(null);
 
     const maskRef = useRef(null);
+    const decorRef = useRef(null);
+    const prevBrainImageRef = useRef(null);
     const [currentBrainImage, setCurrentBrainImage] = useState(null);
+    const [scrollNumber, setScrollNumber] = useState(0);
+    const [shouldAnimate, setShouldAnimate] = useState(false);
 
     useEffect(() => {
         let lastScrollY = window.scrollY;
@@ -35,6 +39,10 @@ export default function Mask() {
             maskRef.current.style.left = `${leftPx}px`;
             maskRef.current.style.width = `${contentWidth}px`;
         }
+        if (decorRef.current) {
+            decorRef.current.style.left = `${leftPx}px`;
+            decorRef.current.style.width = `${contentWidth}px`;
+        }
 
         function update() {
             const currentScrollY = window.scrollY;
@@ -55,6 +63,9 @@ export default function Mask() {
 
             const maskHeight = vh - (idleTop2 - Math.abs(deltaTop));
 
+            // 스크롤 기반 숫자 업데이트 (빠르게 변화)
+            setScrollNumber(Math.floor(currentScrollY * 10 + Math.random() * 100));
+
             if (foregroundRef.current) {
                 foregroundRef.current.style.transform = `translateY(${-currentScrollY - currentTop}px)`;
             }
@@ -62,6 +73,10 @@ export default function Mask() {
             if (maskRef.current) {
                 maskRef.current.style.top = `${currentTop}px`;
                 maskRef.current.style.height = `${maskHeight}px`;
+            }
+            if (decorRef.current) {
+                decorRef.current.style.top = `${currentTop}px`;
+                decorRef.current.style.height = `${maskHeight}px`;
             }
 
             // Brain image 위치 계산
@@ -98,18 +113,22 @@ export default function Mask() {
         update();
 
         setTimeout(() => {
-            if (foregroundRef.current && maskRef.current) {
+            if (foregroundRef.current && maskRef.current && decorRef.current) {
+                console.log("makssa")
                 foregroundRef.current.style.transition = 'opacity 1s';
                 maskRef.current.style.transition = 'opacity 1s';
+                decorRef.current.style.transition = 'opacity 1s';
                 foregroundRef.current.style.opacity = 1;
                 maskRef.current.style.opacity = 1;
+                decorRef.current.style.opacity = 1;
             }
         }, 1000);
 
         setTimeout(() => {
-            if (foregroundRef.current && maskRef.current) {
+            if (foregroundRef.current && maskRef.current && decorRef.current) {
                 foregroundRef.current.style.transition = '';
                 maskRef.current.style.transition = '';
+                decorRef.current.style.transition = '';
             }
         }, 2000);
 
@@ -122,6 +141,17 @@ export default function Mask() {
     // currentBrainImage 변경 시 active 클래스 업데이트
     useEffect(() => {
         console.log('Brain image changed:', currentBrainImage);
+        console.log('Previous brain image:', prevBrainImageRef.current);
+
+        // 이전 값이 null이고 현재 값이 있으면 애니메이션
+        if (prevBrainImageRef.current === null && currentBrainImage !== null) {
+            setShouldAnimate(true);
+        } else {
+            setShouldAnimate(false);
+        }
+
+        // 이전 값 업데이트
+        prevBrainImageRef.current = currentBrainImage;
 
         // 모든 화살표와 텍스트 비활성화
         document.querySelectorAll('.brain-arrow').forEach(arrow => {
@@ -210,41 +240,64 @@ export default function Mask() {
     }, []);
 
     return (
-        <div
-            ref={maskRef}
-            className="
-            fixed
-            overflow-hidden
-        "
-            style={{
-                border: '1px solid white',
-            }}
-        >
-            <div ref={foregroundRef} id="foreground">
-                <div className="container">
-                    <div id="fgKeyVisual">
-                        <div id="fgTitleContainer">
-                            <div id="fgTitle"></div>
-                            <div id="fgText">
-                                브레인 롯은 뇌가 손상되거나 썩은 상태란 뜻으로, 사소하거나 불필요한 정보를 과잉 소비한 결과, 개인의 정신적 지적 상태가 퇴보하는 것을 의미한다. 영국 옥스퍼드대 출판부는 2024년 올해의 단어로 &apos;브레인 롯&apos;(brain rot)을 선정했다.
+        <>
+            {/* X-ray 장식선 컨테이너 (마스크 밖) */}
+            <div
+                ref={decorRef}
+                className="fixed xray-decor-container"
+                style={{
+                    opacity: 0,
+                    pointerEvents: 'none',
+                }}
+            >
+                <div className="xray-line xray-top"></div>
+                <div className="xray-line xray-bottom"></div>
+                <div className="xray-line xray-left"></div>
+                <div className="xray-line xray-right"></div>
+
+                {/* 스크롤 기반 숫자 표시 */}
+                <div className="scroll-number">{scrollNumber}</div>
+            </div>
+
+            {/* 마스크 컨테이너 */}
+            <div
+                ref={maskRef}
+                className="
+                fixed
+                overflow-hidden
+                mask-container
+            "
+                style={{
+                    border: '1px solid white',
+                    opacity: 0,
+                }}
+            >
+                <div ref={foregroundRef} id="foreground">
+                    <div className="container">
+                        <div id="fgKeyVisual">
+                            <div id="fgTitleContainer">
+                                <div id="fgTitle"></div>
+                                <div id="fgText">
+                                    브레인 롯은 뇌가 손상되거나 썩은 상태란 뜻으로, 사소하거나 불필요한 정보를 과잉 소비한 결과, 개인의 정신적 지적 상태가 퇴보하는 것을 의미한다. 영국 옥스퍼드대 출판부는 2024년 올해의 단어로 &apos;브레인 롯&apos;(brain rot)을 선정했다.
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div className="content">
-                        <Part1Content />
-                        <Part2Content />
-                        <Part3Content />
+                        <div className="content">
+                            <Part1Content />
+                            <Part2Content />
+                            <Part3Content />
+                        </div>
                     </div>
                 </div>
-            </div>
-            {currentBrainImage && (
-                <div
-                    className="brain-fixed-image"
-                    style={{
-                        backgroundImage: `url('/${currentBrainImage}.png')`
-                    }}
-                />
-            )}
-        </div >
+                {currentBrainImage && (
+                    <div
+                        className={`brain-fixed-image ${shouldAnimate ? 'brain-animate' : ''}`}
+                        style={{
+                            '--brain-bg-image': `url('/${currentBrainImage}.png')`
+                        }}
+                    />
+                )}
+            </div >
+        </>
     );
 }
