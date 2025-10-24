@@ -13,6 +13,7 @@ export default function Mask() {
     const prevBrainImageRef = useRef(null);
     const [currentBrainImage, setCurrentBrainImage] = useState(null);
     const [scrollNumber, setScrollNumber] = useState(0);
+    const [scrollNumber2, setScrollNumber2] = useState(0);
     const [shouldAnimate, setShouldAnimate] = useState(false);
 
     useEffect(() => {
@@ -64,7 +65,8 @@ export default function Mask() {
             const maskHeight = vh - (idleTop2 - Math.abs(deltaTop));
 
             // 스크롤 기반 숫자 업데이트 (빠르게 변화)
-            setScrollNumber(Math.floor(currentScrollY * 10 + Math.random() * 100));
+            setScrollNumber(Math.floor(currentScrollY * 10));
+            setScrollNumber2(100000 - Math.floor(currentScrollY * 10));
 
             if (foregroundRef.current) {
                 foregroundRef.current.style.transform = `translateY(${-currentScrollY - currentTop}px)`;
@@ -257,6 +259,7 @@ export default function Mask() {
 
                 {/* 스크롤 기반 숫자 표시 */}
                 <div className="scroll-number">{scrollNumber}</div>
+                <div className="scroll-number2">{scrollNumber2}</div>
             </div>
 
             {/* 마스크 컨테이너 */}
