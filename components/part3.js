@@ -42,8 +42,8 @@ export default function Part3Content() {
             </div>
             <div className="d30"></div>
             <div className="paragraph">
-                <span class="bold">29명</span>의 참가자 중 중도이탈자는 단 3명이었습니다.<br />
-                <span class="bold">26명</span>의 이야기를 과학적으로 분석해봤습니다.
+                <span className="bold">29명</span>의 참가자 중 중도이탈자는 단 3명이었습니다.<br />
+                <span className="bold">26명</span>의 이야기를 과학적으로 분석해봤습니다.
             </div>
             <div className="d30"></div>
             <div className="littlequote">*김주현 한국뇌연구원 선임연구원과 조철현 고려대 정신건강의학과 교수가 챌린지 설계와 결과 분석 등의 자문을 맡았습니다.</div>
@@ -81,7 +81,30 @@ export default function Part3Content() {
                 챌린지 전, 브레인롯 증상을 보이며 숏폼 앱 이용시간이 긴 참가자들의 뇌는 어떻게 다른지 궁금했습니다.
                 챌린지 후, 이들이 4주간 숏폼을 끊고 나면, 뇌가 실제로 회복할지도 알고 싶었습니다.
                 그래서 뇌파 측정 전문 기업 &apos;아이메디신&apos;의 비침습형 뇌파 측정 장치 &apos;아이싱크웨이브&apos;를 이용해 뇌파를 측정했습니다. 아이싱크웨이브는 19개의 전극으로 뇌의 각 부위에서 관찰되는 뇌파를 주파수 대역별로 측정합니다.
-
+            </div>
+            <div className="d30"></div>
+            <div className="media machineFg"></div>
+            <div className="d30"></div>
+            <div className="d30"></div>
+            <div className="d30"></div>
+            <div className="paragraph">
+                <span className="para_subtitle">BEFORE<br />
+                    숏폼에 잠식된 뇌, 이렇게 보였다
+                </span>
+                <br />
+                <span className="subtitleLine">----</span>
+                <br />
+                뇌파 측정은 다음과 같은 방식으로 이뤄졌습니다.
+            </div>
+            <div className="d30"></div>
+            <div className="process">
+                <div className="process_item">
+                    <div className="pi_icon eye"></div>
+                    <div className="pi_text">
+                        <div className="pit_title">눈을 뜬 상태로 뇌파 측정</div>
+                        <div className="pit_subtitle">3분 30초</div>
+                    </div>
+                </div>
             </div>
         </>
 

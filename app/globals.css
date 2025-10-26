@@ -740,6 +740,21 @@ mark {
   }
 }
 
+.machineFg {
+  background-image: url('/machine1.png');
+  width: 100%;
+  height: 300px;
+}
+
+.pi_icon {
+  width: 20px;
+  height: 20px;
+}
+
+.pi_icon.eye {
+  background-image: url('/ic_eye.png');
+}
+
 /*--------- CAROUSEL ---------*/
 
 .repeatCarouselContainer {
