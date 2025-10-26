@@ -97,16 +97,188 @@ export default function Part3Content() {
                 뇌파 측정은 다음과 같은 방식으로 이뤄졌습니다.
             </div>
             <div className="d30"></div>
+            <div className="d30"></div>
             <div className="process">
+                <div className="process_line"></div>
                 <div className="process_item">
-                    <div className="pi_icon eye"></div>
+                    <div className="pi_dot"></div>
+                    <div className="media pi_icon eye"></div>
+                    <div className="pi_text">
+                        <div className="pit_title">눈을 뜬 상태로 뇌파 측정</div>
+                        <div className="pit_subtitle">3분 30초</div>
+                    </div>
+                </div>
+                <div className="process_item">
+                    <div className="pi_dot"></div>
+                    <div className="media pi_icon eyeclosed"></div>
+                    <div className="pi_text">
+                        <div className="pit_title">눈을 감고 뇌파 측정</div>
+                        <div className="pit_subtitle">3분 30초</div>
+                    </div>
+                </div>
+                <div className="process_item">
+                    <div className="pi_dot"></div>
+                    <div className="media pi_icon holdphone"></div>
+                    <div className="pi_text">
+                        <div className="pit_title">숏폼 콘텐츠 시청</div>
+                        <div className="pit_subtitle">10분</div>
+                    </div>
+                </div>
+                <div className="process_item">
+                    <div className="pi_dot"></div>
+                    <div className="media pi_icon eye"></div>
+                    <div className="pi_text">
+                        <div className="pit_title">눈을 뜬 상태로 뇌파 측정</div>
+                        <div className="pit_subtitle">3분 30초</div>
+                    </div>
+                </div>
+                <div className="process_item">
+                    <div className="pi_dot"></div>
+                    <div className="media pi_icon eyeclosed"></div>
                     <div className="pi_text">
                         <div className="pit_title">눈을 뜬 상태로 뇌파 측정</div>
                         <div className="pit_subtitle">3분 30초</div>
                     </div>
                 </div>
             </div>
+            <div className="d30"></div>
+            <div className="d30"></div>
+            <div className="paragraph">숏폼을 보기 전과 후, 세타파를 비교했습니다.
+                세타파(4~8Hz)는 명상이나 기억처리 등 내면에 집중해 사고할 때 두드러집니다.
+            </div>
+            <div className="d30"></div>
+            <div className="media tar tar1"></div>
+            <div className="d30"></div>
+            <div className="paragraph">세타파가 강하게 발생하는 부분은 <mark className="red">빨간색</mark>, 세타파가 약하게 발생하는 부분은 <mark className="blue">파란색</mark>으로 나타납니다.
+            </div>
+            <div className="d30"></div>
+            <div className="paragraph">
+                숏폼을 본 후, 뇌 전체적으로 세타파의 강도가 낮아졌습니다.
+                이는 &quot;숏폼을 본 직후의 뇌는 아무것도 보지 않고 쉴 때조차 내면에서 벌어지는 생각에 주의를 기울이기 어려운 상태&quot;라는 의미입니다.
+            </div>
+            <div className="d30"></div>
+            <div className="d30"></div>
+            <div className="d30"></div>
+            <div className="paragraph">
+                이번에는 숏폼을 보기 전과 후, 눈을 뜨고 외부 정보를 받아들이는 뇌를 TAR 지표를 기준으로 살펴봤습니다.
+            </div>
+            <div className="d30"></div>
+            <div className="media tar tar2"></div>
+            <div className="d30"></div>
+            <div className="paragraph">TAR 지표가 <mark className="blue">낮으면</mark> 뇌가 각성상태에 이르렀다는 의미입니다. TAR 지표가 <mark className="red">높으면</mark> 뇌가 뇌의 처리 속도가 느려지고, 주의 분산 상태에 이르렀다는 의미입니다.
+            </div>
+            <div className="d30"></div>
+            <div className="paragraph">
+                전체적으로 TAR 지표가 높아졌습니다.
+                눈을 뜨고 외부 자극을 인지하는 중임에도, 집중력이 저하된 상태로 해석됩니다.
+            </div>
+            <div className="d30"></div>
+            <div className="paragraph">
+                숏폼을 본 뒤 뇌는 쉴 때에도 제대로 쉬지 못하고, 눈을 뜨고 있어도 정보를 제대로 인식하지 못하는 상태에 이르렀다고 볼 수 있습니다.
+            </div>
+            <div className="d30"></div>
+            <div className="d30"></div>
+            <div className="d30"></div>
+            <div className="paragraph">
+                <span className="para_subtitle">AFTER<br />
+                    숏폼 끊은 뇌, 이렇게 변했다
+                </span>
+                <br />
+                <span className="subtitleLine">----</span>
+                <br />
+                이제 4주간 숏폼을 끊은 참가자들의 뇌파를 살펴볼까요.
+                결론부터 말하자면, 숏폼을 끊은 다음 뇌파에선 부분적 회복 징후가 나타났습니다.
+                완전한 정상화는 아니었어요. 그렇지만 뇌가 서서히, 변했음이 드러났습니다.
+            </div>
+            <div className="d30"></div>
+            <div className="paragraph">
+                숏폼을 끊기 이전, 눈을 감은 상태의 전두엽 뇌파 활성도는 참가자 전체 평균 <span className="bold">16.811%</span>로 과각성된 상태였습니다. 이 수치가 4주간 숏폼을 끊은 이후, <span className="bold">12.253%</span>까지 낮아졌어요. 4주간 숏폼을 끊은 이후, 전두엽이 과각성되고 과부화된 상태에서 벗어났다는 이야기입니다.
+            </div>
+            <div className="d30"></div>
+            <div className="paragraph">
+                눈을 뜬 상태의 측정 데이터를 비교했더니, 뇌의 전체적인 신경 활성도가 향상된 것도 드러났습니다.
+            </div>
+            <div className="d30"></div>
+            <div className="paragraph">
+                아래 그래프를 한번 볼까요?
+            </div>
+            <div className="media graph"></div>
+            <div className="d30"></div>
+            <div className="paragraph">
+                <div className="graph_line_flex">
+                    <div className="graph_line gl_red"></div>
+                    <div className="graph_line_text">붉은 선은 숏폼을 끊기 전, 뇌의 신경 활성도를 뜻합니다.</div>
+                </div>
+                <div className="graph_line_flex">
+                    <div className="graph_line gl_blue"></div>
+                    <div className="graph_line_text">푸른 선은 숏폼을 끊은 뒤, 뇌의 신경 활성도를 뜻합니다.</div>
+                </div>
+            </div>
+            <div className="d30"></div>
+            <div className="paragraph">푸른 선이 전반적으로 더 높은 값을 보입니다.
+                숏폼을 끊고 나니, 뇌의 전체적인 신경 활성도가 향상됐습니다. 건강해진 거죠.
+            </div>
+            <div className="d30"></div>
+            <div className="d30"></div>
+            <div className="d30"></div>
+            <div className="paragraph">
+                <span className="para_subtitle">뇌파엔 담지 못한 4주 뒤의 이야기
+                </span>
+                <br />
+                <span className="subtitleLine">----</span>
+                <br />
+                뇌파가 전부는 아니었습니다. 참가자 26명을 대상으로 한 설문조사에서도 재미있는 경향성이 발견됐거든요.
+            </div>
+            <div className="d30"></div>
+            <div className="paragraph"><span className="bold">&quot;업무, 학업 등 작업을 시작하고 유지하는 데 드는 노력은 어느 정도입니까?&quot;</span><br />
+                이 질문에 &apos;작업을 시작하기 다소 어렵다&apos; 또는 &apos;작업을 시작하기 매우 어렵다&apos;고 답한 사람의 비율은
+                76.7%에서 30.4%까지 떨어졌습니다.
+            </div>
+            <div className="d30"></div>
+            <div className="paragraph"><span className="bold">&quot;최근 2주간 피로감(또는 무기력감)을 얼마나 자주 겪었습니까?&quot;</span><br />
+                이 질문에 &apos;자주 피로했음(주 4~5일)&apos; 또는 &apos;거의 항상 피로했음(주 6~7일)&apos;이라고 답한 이들은 73.3%에서 21.7%로 떨어졌죠.
+            </div>
+            <div className="d30"></div>
+            <div className="paragraph">그 외에도 실험 참가자들이 4주간의 챌린지를 끝내고 전해온 이야기들도 많이 쌓여있습니다.
+                브레인롯을 탈출한 이야기들이죠.
+                어쩌면 앞으로 우리가 꿈꿔야 할 미래의 이야기인지도 모릅니다.
+            </div>
+            <div className="d30"></div>
+            <div className="chatContainer">
+                <div className="chat chat-left">처음엔 무의식적으로 앱을 켜려고 하는 저를 발견했습니다. 그래도 시간이 조금 지나자 숏폼 콘텐츠 생각이 안나더라고요.</div><br />
+                <div className="chat chat-right">이제는 시간이 많이 남아요. 그 시간에 저를 위한 활동을 하기 시작했어요.</div><br />
+                <div className="chat chat-left">만화책을 정주행했습니다. 넷플릭스도 보고요.</div><br />
+                <div className="chat chat-right">숏폼을 끊으면서 느꼈는데, 숏폼 콘텐츠를 한창 볼 때는 저도 모르게 피곤함을 겪고 있었더라고요. 요즘은 아침에 일어나면 몸이 맑아지는 느낌이 확실히 들어요.</div><br />
+                <div className="chat chat-left">주변 사람들에게 추천해주고 싶어요. 이제는 내가 보고 싶은 것, 알고 싶은 것 위주로 숏폼을 골라보고 있어요.</div><br />
+                <div className="chat chat-right">수면시간을 많이 앞당길 수 있었어요.</div><br />
+                <div className="chat chat-left">소셜미디어를 멀리하니까, 주변인의 화려한 모습을 보면서 생기는 FOMO가 줄어들었습니다. 안 보는 게 속 편하더라고요.</div><br />
+                <div className="chat chat-right">제가 얼마나 스스로를 잠시도 쉬지 못하게 했는지, 알게 됐어요.</div>
+            </div>
+            <div className="d30"></div>
+            <div className="paragraph">이번 4주간의 실험은 개인의 노력이 실제 변화를 만들어낼 수 있음을 보여줬습니다. 하지만 숏폼을 끊는 건 생각보다 쉽지 않습니다. 의지만으로 버티기엔 이미 숏폼은 일상 깊숙이 스며든 기술과 알고리즘의 영역이니까요.
+            </div>
+            <div className="d30"></div>
+            <div className="d30"></div>
+            <div className="d30"></div>
+            <div className="paragraph">시선을 조금 넓혀보면, 해외에서는 정부가 나서 플랫폼에 청소년 야간 사용 제한, 자동 재생 중단, 휴식 알림 설정 같은 조치를 도입하고 있습니다. 우리 사회도 이제 &apos;뇌의 건강한 사용법&apos;을 함께 설계할 때입니다. 어떤 노력이 우리 사회에 필요하다고 생각하시나요. 소중한 의견을 기다립니다.
+            </div>
+            <div className="d30"></div>
+            <div className="paragraph">댓글 ZONE
+            </div>
+            <div className="d30"></div>
+            <div className="paragraph">
+                <span className="bold">기획·진행</span><br />
+                과학동아 김태희, 김소연 기자<br /><br />
+                <span className="bold">도움·감수</span><br />
+                김주현 한국뇌연구원 정서·인지질환 연구그룹 선임연구원, 조철현 고려대 정신건강의학과 교수, 강유 서울대 컴퓨터공학과 데이터 마이닝 연구실<br /><br />
+                <span className="bold">제작</span><br />
+                Studio Velcro<br /><br />
+                <span className="bold">지원</span><br />
+                언론진흥재단
+            </div>
+            <div className="d30"></div>
+            <div className="littlequote">본 기획물은 정부광고 수수료로 조성된 언론진흥기금의 지원을 받았습니다.
+            </div>
         </>
-
     )
 }

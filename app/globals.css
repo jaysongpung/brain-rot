@@ -87,6 +87,7 @@ body {
   letter-spacing: 1px;
   text-shadow: 0 0 5px rgba(0, 255, 0, 0.5);
 }
+
 /* 스크롤 기반 숫자 표시 */
 .scroll-number2 {
   position: absolute;
@@ -132,6 +133,14 @@ body {
 
 mark {
   background-color: rgb(0, 255, 76);
+}
+
+.red {
+  background-color: rgb(255, 0, 0);
+}
+
+.blue {
+  background-color: rgb(31, 31, 255);
 }
 
 .subpar {
@@ -734,15 +743,19 @@ mark {
   0% {
     background-size: 0% 1px, 1px 0%, 0% 1px, 1px 0%;
   }
+
   25% {
     background-size: 100% 1px, 1px 0%, 0% 1px, 1px 0%;
   }
+
   50% {
     background-size: 100% 1px, 1px 100%, 0% 1px, 1px 0%;
   }
+
   75% {
     background-size: 100% 1px, 1px 100%, 100% 1px, 1px 0%;
   }
+
   100% {
     background-size: 100% 1px, 1px 100%, 100% 1px, 1px 100%;
   }
@@ -752,6 +765,7 @@ mark {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -761,6 +775,7 @@ mark {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -881,13 +896,105 @@ mark {
   height: 300px;
 }
 
+.process {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  position: relative;
+}
+
+.process_item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0px 30px;
+}
+
+.process_line {
+  position: absolute;
+  border-left: 1px dashed rgb(162, 162, 162);
+  width: 1px;
+  height: 310px;
+  left: 33px;
+  top: 24px;
+  z-index: -1;
+}
+
+.pi_dot {
+  width: 7px;
+  height: 7px;
+  background-color: white;
+  border-radius: 7px;
+  margin-right: 16px;
+}
+
 .pi_icon {
-  width: 20px;
-  height: 20px;
+  width: 50px;
+  height: 50px;
 }
 
 .pi_icon.eye {
   background-image: url('/ic_eye.png');
+}
+
+.pi_icon.eyeclosed {
+  background-image: url('/ic_eyeclosed.png');
+}
+
+.pi_icon.holdphone {
+  background-image: url('/ic_phone.png');
+}
+
+.pi_text {
+  font-size: 14px;
+}
+
+.pit_subtitle {
+  color: #999;
+}
+
+.tar {
+  width: 100%;
+  aspect-ratio: 2 / 1;
+  max-width: 600px;
+  margin: 0px auto;
+}
+
+.tar1 {
+  background-image: url('/tar1.png');
+}
+
+.tar2 {
+  background-image: url('/tar2.png');
+}
+
+.graph {
+  background-image: url('/graph.png');
+  width: 100%;
+  max-width: 500px;
+  aspect-ratio: 1 / 1;
+  margin: 0px auto;
+}
+
+.graph_line {
+  border-top: 1px solid;
+  width: 30px;
+  height: 1px;
+}
+
+.graph_line_flex {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+}
+
+.gl_red {
+  border-color: red;
+}
+
+.gl_blue {
+  border-color: blue;
 }
 
 /*--------- CAROUSEL ---------*/
