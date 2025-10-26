@@ -34,6 +34,71 @@ body {
   opacity: 0;
 }
 
+/* X-ray 장식선 컨테이너 */
+.xray-decor-container {
+  z-index: 10000;
+}
+
+.xray-line {
+  position: absolute;
+  background-color: white;
+}
+
+.xray-top {
+  top: -13px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1px;
+  height: 12px;
+}
+
+.xray-bottom {
+  bottom: -13px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1px;
+  height: 12px;
+}
+
+.xray-left {
+  left: -13px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 12px;
+  height: 1px;
+}
+
+.xray-right {
+  right: -13px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 12px;
+  height: 1px;
+}
+
+/* 스크롤 기반 숫자 표시 */
+.scroll-number {
+  position: absolute;
+  top: -20px;
+  left: 0px;
+  font-family: monospace;
+  font-size: 10px;
+  color: #00ff00;
+  letter-spacing: 1px;
+  text-shadow: 0 0 5px rgba(0, 255, 0, 0.5);
+}
+/* 스크롤 기반 숫자 표시 */
+.scroll-number2 {
+  position: absolute;
+  bottom: -20px;
+  right: 0px;
+  font-family: monospace;
+  font-size: 10px;
+  color: #00ff00;
+  letter-spacing: 1px;
+  text-shadow: 0 0 5px rgba(0, 255, 0, 0.5);
+}
+
 .content {
   /* 본문 감싸기 */
   margin-top: 150px;
@@ -610,22 +675,92 @@ mark {
   right: 20px;
   width: 30vh;
   height: 30vh;
+  z-index: 9999;
+  opacity: 1;
+  pointer-events: none;
+  background-color: black;
+}
+
+/* 애니메이션이 필요한 경우에만 페이드인 */
+.brain-fixed-image.brain-animate {
+  opacity: 0;
+  animation: brainFadeIn 0.8s ease-out forwards;
+}
+
+.brain-fixed-image::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image:
+    linear-gradient(white, white),
+    linear-gradient(white, white),
+    linear-gradient(white, white),
+    linear-gradient(white, white);
+  background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+  background-size: 100% 1px, 1px 100%, 100% 1px, 1px 100%;
+  background-repeat: no-repeat;
+}
+
+/* 애니메이션이 필요한 경우에만 외곽선 그리기 */
+.brain-fixed-image.brain-animate::before {
+  background-size: 0% 1px, 1px 0%, 0% 1px, 1px 0%;
+  animation: brainBorderDraw 0.8s ease-out forwards;
+}
+
+.brain-fixed-image::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: var(--brain-bg-image);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  z-index: 9999;
-  opacity: 0;
-  animation: fadeIn 0.5s ease-in-out forwards;
-  pointer-events: none;
-  background-color: black;
-  border: 1px solid white;
+  opacity: 1;
 }
 
-@keyframes fadeIn {
+/* 애니메이션이 필요한 경우에만 이미지 페이드인 */
+.brain-fixed-image.brain-animate::after {
+  opacity: 0;
+  animation: brainImageFadeIn 0.3s ease-out 0.8s forwards;
+}
+
+@keyframes brainBorderDraw {
+  0% {
+    background-size: 0% 1px, 1px 0%, 0% 1px, 1px 0%;
+  }
+  25% {
+    background-size: 100% 1px, 1px 0%, 0% 1px, 1px 0%;
+  }
+  50% {
+    background-size: 100% 1px, 1px 100%, 0% 1px, 1px 0%;
+  }
+  75% {
+    background-size: 100% 1px, 1px 100%, 100% 1px, 1px 0%;
+  }
+  100% {
+    background-size: 100% 1px, 1px 100%, 100% 1px, 1px 100%;
+  }
+}
+
+@keyframes brainFadeIn {
   from {
     opacity: 0;
   }
+  to {
+    opacity: 1;
+  }
+}
 
+@keyframes brainImageFadeIn {
+  from {
+    opacity: 0;
+  }
   to {
     opacity: 1;
   }
