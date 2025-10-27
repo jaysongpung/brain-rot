@@ -60,7 +60,7 @@ export default function GuestbookForm() {
         <button disalbed={waitResponse ? 'disabled' : 'false'} className={`text-base block w-full bg-zinc-200 backdrop-blur-md text-black p-4 rounded-lg
           ${waitResponse ? 'pointer-events-none' : ''}
         `} 
-          type="submit">{waitResponse ? '등록중..' : '등록'}</button>
+          type="submit">{waitResponse ? '등록중..' : '남기기'}</button>
       </form>
     </div>
   );

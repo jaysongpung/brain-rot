@@ -90,8 +90,8 @@ export default function RepliesList() {
   };
 
   return (
-    <div className="mb-20">
-      <div className="grid grid-cols-1 mx-auto mt-10 border-collapse">
+    <div className="">
+      <div className="grid grid-cols-1 mx-auto mt-10 border-collapse border-b-1 border-zinc-700">
         {entries.map((entry, index) => (
           <div className="border-collapse border-t-1 border-zinc-700 py-3 flex flex-col w-full" key={entry._id}>
             <div className="w-full items-center h-full text-left">
@@ -113,9 +113,9 @@ export default function RepliesList() {
         <p className="mb-20 block my-4 mx-auto px-4 py-2 rounded-full text-base">
           Loading...
         </p>
-      ) : hasMore ? (
+      ) : true ? (
         <button 
-          className="mb-20 block my-4 mx-auto px-4 py-2 text-white bg-black rounded-full text-base" 
+          className="block my-4 ml-auto px-4 py-2 underline text-white bg-black rounded-full text-sm" 
           onClick={handleLoadMore} 
           disabled={isLoading}
         >
