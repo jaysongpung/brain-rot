@@ -75,7 +75,7 @@ export default function RepliesList() {
             if (!exists) {
               setPage(0); // Reset to first page
               setTimeout(fetchTotalCount, 200);
-              return [update.result]; // Start fresh with new entry
+              return [update.result, ...prevEntries]; // Add new entry at the top
             }
             return prevEntries;
           });
@@ -113,7 +113,7 @@ export default function RepliesList() {
         <p className="mb-20 block my-4 mx-auto px-4 py-2 rounded-full text-base">
           Loading...
         </p>
-      ) : true ? (
+      ) : hasMore ? (
         <button 
           className="block my-4 ml-auto px-4 py-2 underline text-white bg-black rounded-full text-sm" 
           onClick={handleLoadMore} 
