@@ -1,5 +1,7 @@
 'use client';
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
+import AddReplies from './addReplies';
+import RepliesList from './listReplies';
 
 export default function Part3Content() {
     return (
@@ -263,7 +265,9 @@ export default function Part3Content() {
             <div className="paragraph">시선을 조금 넓혀보면, 해외에서는 정부가 나서 플랫폼에 청소년 야간 사용 제한, 자동 재생 중단, 휴식 알림 설정 같은 조치를 도입하고 있습니다. 우리 사회도 이제 &apos;뇌의 건강한 사용법&apos;을 함께 설계할 때입니다. 어떤 노력이 우리 사회에 필요하다고 생각하시나요. 소중한 의견을 기다립니다.
             </div>
             <div className="d30"></div>
-            <div className="paragraph">댓글 ZONE
+            <div className="paragraph">
+                <RepliesList/>
+                <AddReplies/>
             </div>
             <div className="d30"></div>
             <div className="paragraph">

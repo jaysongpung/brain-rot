@@ -90,23 +90,20 @@ export default function RepliesList() {
   };
 
   return (
-    <div className="p-4 mb-20">
-      <div className="grid grid-cols-2 md:grid-cols-4 mx-auto max-w-[1020px] mt-10 border-collapse">
+    <div className="mb-20">
+      <div className="grid grid-cols-1 mx-auto mt-10 border-collapse">
         {entries.map((entry, index) => (
-          <div className="fake-border-x px-2 border-collapse" key={entry._id}>
-            <div className="fake-border-y flex flex-col mx-2 py-2 h-full min-h-64 text-center">
-              <div className="py-2 mx-auto">
-                <img src={`/imgs/flower${(index) % 3}.png`} alt="Flower decoration" />
+          <div className="border-collapse border-t-1 border-zinc-700 py-3 flex flex-col w-full" key={entry._id}>
+            <div className="w-full items-center h-full text-left">
+              {/* <div className="text-xs">{Math.max(1, totalCount - index)}번째 메시지</div> */}
+              <div className="text-base mb-2 font-bold">
+                {entry.user && <>{entry.user}</>}
               </div>
-              <div className="text-xs">{Math.max(1, totalCount - index)}번째 메시지</div>
-              <div className="text-base font-bold leading-6 pb-8 break-keep mt-4 break-words">
+              <div className="text-base leading-6 break-keep break-words">
                 {entry.text}
               </div>
-              <div className="text-xs mt-auto pb-1">
-                {entry.user && <>{entry.user}님</>}
-              </div>
-              <small className="mt-2 text-xs">
-                {new Date(entry.date).toLocaleDateString()}
+              <small className="text-xs text-zinc-700">
+                {new Date(entry.date).toLocaleDateString()} {new Date(entry.date).toLocaleTimeString()}
               </small>
             </div>
           </div>
