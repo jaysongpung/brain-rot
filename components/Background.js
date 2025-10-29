@@ -231,367 +231,204 @@ export default function Background() {
                 <div className="d30"></div>
                 <div className="d30"></div>
                 <div className="d30"></div>
-                <div>
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
-                    asdfasdf<br />
+                {/* part 3 */}
+                <div className="partTitleBg" data-sync-bg="p3-title">
+                    브레인롯 탈출할 수 있을까?<br />
+                    <span>숏폼 4주 끊기</span>챌린지
+                </div>
+                <div className="d30"></div>
+                <div className="d30"></div>
+                <div className="d30"></div>
+                <div className="chatContainer" data-sync-bg="p3-chat1">
+                </div>
+                <div className="d30"></div>
+                <div className="d30"></div>
+                <div className="d30"></div>
+                <div className="paragraphBg" data-sync-bg="p3-para1">
+                    ■■■■■■■■■■■■■■■■■.■■■■■■■■■■■■■■■■■■■■■■■■■.■■■■■■■■■■■■■■&apos;■■■■■■■■■■&apos;■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■,■■■■■■&apos;■■■■■■■■■■■■■■■■■■■■■■,■■■■■■■■■■■■■■■■■■■■■■■■■■■■■&apos;■■■■■■■■■■■.
+                </div>
+                <div className="d30"></div>
+                <div className="paragraphBg" data-sync-bg="p3-para2">
+                    ■■■■■■■■■,■■■■■■■■■.■■■■■■■■■■■■■■■?
+                </div>
+                <div className="d30"></div>
+                <div className="d30"></div>
+                <div className="d30"></div>
+                <div className="paragraphBg" data-sync-bg="p3-para3">
+                    ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■&apos;■■■■■■■■■&apos;■■■■■■■■■■■■■■■■■.
+                    ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■,■■■■■■■■,X,■■■■■■■■■■■.
+                    ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.
+                </div>
+                <div className="d30"></div>
+                <div className="paragraphBg" data-sync-bg="p3-para4">
+                    ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.<br />
+                    ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.
+                </div>
+                <div className="d30"></div>
+                <div className="littlequoteBg" data-sync-bg="p3-note">*■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.</div>
+                <div className="d30"></div>
+                <div className="d30"></div>
+                <div className="d30"></div>
+                <div className="paragraphBg" data-sync-bg="p3-para5">
+                    ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.
+                </div>
+                <div className="d30"></div>
+                <div className="paragraphBg" data-sync-bg="p3-para6">
+                    ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■,■■■■■■■■■■■■■■■■■
+                </div>
+                <div className="d30"></div>
+                <div className="hourglass-container" data-sync-bg="p3-hourglass">
+
+                </div>
+                <div className="d30"></div>
+                <div className="d30"></div>
+                <div className="d30"></div>
+                <div className="paragraphBg" data-sync-bg="p3-brain-title">
+                    <span className="para_subtitle_bg">■■■</span>
+                    <br />
+                    <span className="subtitleLine">----</span>
+                    <br />
+                    ■■■■■■■■■■,■■■■■■■■■■■■■■■■■■■■■■■■■■.■■■■■■■,■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.■■■■■■■,■■■■■■■■■■■■■■■■■■■■■■,■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.■■■■■■■■■■■■■■■■■■■&apos;■■■■■■■■&apos;■■■■■■■■■■■■■■■■■■■■&apos;■■■■■■■■■■&apos;■■■■■■■■■■■■■■■■■■■■.■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.
+                </div>
+                <div className="d30"></div>
+                <div className="media machineBg" data-sync-bg="p3-machine"></div>
+                <div className="d30"></div>
+                <div className="d30"></div>
+                <div className="d30"></div>
+                <div className="paragraphBg" data-sync-bg="p3-before-title">
+                    <span className="para_subtitle_bg">■■■■■■■<br />
+                        ■■■■■■■■■■■■,■■■■■■■■■
+                    </span>
+                    <br />
+                    <span className="subtitleLine">----</span>
+                    <br />
+                    ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.
+                </div>
+                <div className="d30"></div>
+                <div className="d30"></div>
+                <div className="process" data-sync-bg="p3-process"></div>
+                <div className="d30"></div>
+                <div className="d30"></div>
+                <div className="paragraphBg" data-sync-bg="p3-theta">■■■■■■■■■■■■■■,■■■■■■■■■■■■■■■■■.■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.
+                </div>
+                <div className="d30"></div>
+                <div className="media tar tarBg1" data-sync-bg="p3-tar1"></div>
+                <div className="d30"></div>
+                <div className="paragraphBg" data-sync-bg="p3-tar-desc1">■■■■■■■■■■■■■■■■■■■■■■■■■■■■■,■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.
+                </div>
+                <div className="d30"></div>
+                <div className="paragraphBg" data-sync-bg="p3-tar-result1">
+                    ■■■■■■■■■,■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.■■■&quot;■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■&quot;■■■■■■■■■■■.
+                </div>
+                <div className="d30"></div>
+                <div className="d30"></div>
+                <div className="d30"></div>
+                <div className="paragraphBg" data-sync-bg="p3-tar-intro2">
+                    ■■■■■■■■■■■■■■■■■■■■■,■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.
+                </div>
+                <div className="d30"></div>
+                <div className="media tar tarBg2" data-sync-bg="p3-tar2"></div>
+                <div className="d30"></div>
+                <div className="paragraphBg" data-sync-bg="p3-tar-desc2">
+                    ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■,■■■■■■■■■■■■■■■■■■■■■■■■■■■■.
+                </div>
+                <div className="d30"></div>
+                <div className="paragraphBg" data-sync-bg="p3-tar-result2">
+                    ■■■■■■■■■■■■■■■■■■■■■■■■■■■.■■■■■■■■■■■■■■■■■■■■■■■■■■■■■,■■■■■■■■■■■■■■■■■■■■■■■■■■.
+                </div>
+                <div className="d30"></div>
+                <div className="paragraphBg" data-sync-bg="p3-summary1">
+                    ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■,■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.
+                </div>
+                <div className="d30"></div>
+                <div className="d30"></div>
+                <div className="d30"></div>
+                <div className="paragraphBg" data-sync-bg="p3-after-title">
+                    <span className="para_subtitle_bg">■■■■■<br />
+                        ■■■■■■■■■,■■■■■■■■■
+                    </span>
+                    <br />
+                    <span className="subtitleLine">----</span>
+                    <br />
+                    ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.■■■■■■■■■■■■■,■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.■■■■■■■■■■■■■■■■■■■■.■■■■■■■■■■■■■■■■,■■■■■■■■■■■■■■■■.
+                </div>
+                <div className="d30"></div>
+                <div className="paragraphBg" data-sync-bg="p3-result1">
+                    ■■■■■■■■■■■■,■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.■■■%■■■■■■■■■■■■■■■■■■.■■■■■■■■■■■■■■■■■■■■■■■■■■,■■.■■■%■■■■■■■■■■■■.■■■■■■■■■■■■■■■■■,■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.
+                </div>
+                <div className="d30"></div>
+                <div className="paragraphBg" data-sync-bg="p3-result2">
+                    ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■,■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.
+                </div>
+                <div className="d30"></div>
+                <div className="paragraphBg" data-sync-bg="p3-graph-intro">
+                    ■■■■■■■■■■■■■■■■■■■?
+                </div>
+                <div className="media graphBg" data-sync-bg="p3-graph"></div>
+                <div className="d30"></div>
+                <div className="paragraphBg" data-sync-bg="p3-graph-legend">
+                    <div className="graph_line_flex">
+                        <div className="graph_line gl_red"></div>
+                        <div className="graph_line_text">■■■■■■■■■■■■■■■■■■,■■■■■■■■■■■■■■■■■■■■.</div>
+                    </div>
+                    <div className="graph_line_flex">
+                        <div className="graph_line gl_blue"></div>
+                        <div className="graph_line_text">■■■■■■■■■■■■■■■■■■,■■■■■■■■■■■■■■■■■■■■.</div>
+                    </div>
+                </div>
+                <div className="d30"></div>
+                <div className="paragraphBg" data-sync-bg="p3-graph-result">■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.■■■■■■■■■■■■■,■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.■■■■■■■■■■■.
+                </div>
+                <div className="d30"></div>
+                <div className="d30"></div>
+                <div className="d30"></div>
+                <div className="paragraphBg" data-sync-bg="p3-survey-title">
+                    <span className="para_subtitle_bg">■■■■■■■■■■■■■■■■■■■■■■■■</span>
+                    <br />
+                    <span className="subtitleLine">----</span>
+                    <br />
+                    ■■■■■■■■■■■■■■■■■■■■.■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.
+                </div>
+                <div className="d30"></div>
+                <div className="paragraphBg" data-sync-bg="p3-survey1">&quot;■■■,■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■?&quot;<br />
+                    ■■■■■■■&apos;■■■■■■■■■■■■■■■■■■■■&apos;■■■&apos;■■■■■■■■■■■■■■■■■■■■■&apos;■■■■■■■■■■■■■■■■■■■%■■■■■■■■%■■■■■■■■■■■■■■.
+                </div>
+                <div className="d30"></div>
+                <div className="paragraphBg" data-sync-bg="p3-survey2">&quot;■■■■■■■■■■■■■(■■■■■■■■■)■■■■■■■■■■■■■■■■■■■?&quot;<br />
+                    ■■■■■■■&apos;■■■■■■■■■■(■■■~■■)&apos;■■■&apos;■■■■■■■■■■■■■■(■■~■■■)&apos;■■■■■■■■■■■■■■■■■■%■■■■■■■%■■■■■■■■.
+                </div>
+                <div className="d30"></div>
+                <div className="paragraphBg" data-sync-bg="p3-testimonial-intro">■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.■■■■■■■■■■■■■■■■■■■■■■■■.■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.
+                </div>
+                <div className="d30"></div>
+                <div className="chatContainer" data-sync-bg="p3-chat2"></div>
+                <div className="d30"></div>
+                <div className="paragraphBg" data-sync-bg="p3-conclusion1">■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.
+                </div>
+                <div className="d30"></div>
+                <div className="d30"></div>
+                <div className="d30"></div>
+                <div className="paragraphBg" data-sync-bg="p3-conclusion2">■■■■■■■■■■■■■■■,■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■,■■■■■■■■■■■,■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.■■■■■■■■■■■■&apos;■■■■■■■■■■■■■&apos;■■■■■■■■■■■■■■■■■.■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.■■■■■■■■■■■■■■■■■■.
+                </div>
+                <div className="d30"></div>
+                <div className="d30"></div>
+                <div className="d30"></div>
+                <div className="paragraphBg" data-sync-bg="p3-replies">
+
+                </div>
+                <div className="d30"></div>
+                <div className="paragraphBg" data-sync-bg="p3-credits">
+                    <span className="bold">■■·■■</span><br />
+                    ■■■■■■,■■■■<br /><br />
+                    <span className="bold">■■·■■</span><br />
+                    ■■■■■■■■■■■■■■■■,■■■■■■■■■■■■■,■■■■■■■■■■■■■■<br /><br />
+                    <span className="bold">■■</span><br />
+                    Studio Velcro<br /><br />
+                    <span className="bold">■■</span><br />
+                    ■■■■■
+                </div>
+                <div className="d30"></div>
+                <div className="littlequote" data-sync-bg="p3-footer">■■■■■■■■■■■■■■■■■■■■■■■■■.
                 </div>
             </div>
         </div >
