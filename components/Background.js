@@ -435,6 +435,11 @@ export default function Background() {
                     <AddReplies />
                 </div>
                 <div className="d30"></div>
+                <div className="d30"></div>
+                <div className="d30"></div>
+                <div className="d30"></div>
+                <div className="d30"></div>
+                <div className="d30"></div>
                 <div className="paragraph" data-sync-id="p3-credits">
                     <span className="bold">기획·진행</span><br />
                     과학동아 김태희, 김소연 기자<br /><br />

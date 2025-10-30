@@ -88,11 +88,8 @@ export default function Mask() {
                 const repliesRect = repliesElement.getBoundingClientRect();
                 const isBelow = repliesRect.top < vh; // replies가 화면에 들어왔는지
 
-                console.log('repliesRect.top:', repliesRect.top, 'vh:', vh, 'isBelow:', isBelow, 'maskVisibleRef:', maskVisibleRef.current);
-
                 if (isBelow) {
                     if (maskVisibleRef.current) {
-                        console.log('Hiding mask');
                         maskVisibleRef.current = false;
                         if (maskRef.current) {
                             maskRef.current.style.opacity = '0';
@@ -105,7 +102,6 @@ export default function Mask() {
                     }
                 } else {
                     if (!maskVisibleRef.current) {
-                        console.log('Showing mask');
                         maskVisibleRef.current = true;
                         if (maskRef.current) {
                             maskRef.current.style.opacity = '1';
@@ -154,7 +150,6 @@ export default function Mask() {
 
         setTimeout(() => {
             if (foregroundRef.current && maskRef.current && decorRef.current) {
-                console.log("makssa")
                 foregroundRef.current.style.transition = 'opacity 1s';
                 foregroundRef.current.style.opacity = 1;
             }
@@ -174,9 +169,6 @@ export default function Mask() {
 
     // currentBrainImage 변경 시 active 클래스 업데이트
     useEffect(() => {
-        console.log('Brain image changed:', currentBrainImage);
-        console.log('Previous brain image:', prevBrainImageRef.current);
-
         // 이전 값이 null이고 현재 값이 있으면 애니메이션
         if (prevBrainImageRef.current === null && currentBrainImage !== null) {
             setShouldAnimate(true);
@@ -200,16 +192,11 @@ export default function Mask() {
             const currentArrow = document.querySelector(`[data-arrow-for="${currentBrainImage}"]`);
             const currentText = document.querySelector(`[data-text-for="${currentBrainImage}"]`);
 
-            console.log('Selected arrow:', currentArrow);
-            console.log('Selected text:', currentText);
-
             if (currentArrow) {
                 currentArrow.classList.add('active');
-                console.log('Arrow class added');
             }
             if (currentText) {
                 currentText.classList.add('active');
-                console.log('Text class added');
             }
         }
     }, [currentBrainImage]);
@@ -270,6 +257,156 @@ export default function Mask() {
         return () => {
             clearTimeout(timeoutId);
             spiralObserver.disconnect();
+        };
+    }, []);
+
+    // chat Intersection Observer
+    useEffect(() => {
+        const chatObserverOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.3 // 요소의 30%가 보이면 트리거
+        };
+
+        const chatObserverCallback = (entries, observer) => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    // 순차적으로 나타나도록 약간의 딜레이 추가
+                    const chatElements = entry.target.parentElement.querySelectorAll('.chat');
+                    const elementIndex = Array.from(chatElements).indexOf(entry.target);
+
+                    setTimeout(() => {
+                        entry.target.classList.add('visible');
+                    }, elementIndex * 100); // 각 채팅마다 100ms 간격
+
+                    // 한번 나타난 후에는 관찰 중지
+                    observer.unobserve(entry.target);
+                }
+            });
+        };
+
+        const chatObserver = new IntersectionObserver(chatObserverCallback, chatObserverOptions);
+
+        // chat 요소들 관찰 시작
+        const setupChatObserver = () => {
+            const chats = document.querySelectorAll('.chat');
+            chats.forEach(chat => {
+                chatObserver.observe(chat);
+            });
+        };
+
+        // 약간의 딜레이를 두고 실행 (DOM이 완전히 렌더링되도록)
+        const timeoutId = setTimeout(setupChatObserver, 100);
+
+        return () => {
+            clearTimeout(timeoutId);
+            chatObserver.disconnect();
+        };
+    }, []);
+
+    // graph reveal effect
+    useEffect(() => {
+        const graphObserverOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.3
+        };
+
+        const graphElement = document.querySelector('[data-sync-id="p3-graph"]');
+
+        if (!graphElement) return;
+
+        const graphObserverCallback = (entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    // 0.5초 후 graph_large.png 표시
+                    setTimeout(() => {
+                        entry.target.classList.add('reveal');
+                    }, 500);
+                }
+            });
+        };
+
+        const graphObserver = new IntersectionObserver(graphObserverCallback, graphObserverOptions);
+
+        graphObserver.observe(graphElement);
+
+        return () => {
+            graphObserver.disconnect();
+        };
+    }, []);
+
+    // process blur effect
+    useEffect(() => {
+        const processObserverOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.3
+        };
+
+        const processElement = document.querySelector('[data-sync-id="p3-process"]');
+
+        if (!processElement) return;
+
+        const processItems = processElement.querySelectorAll('.process_item');
+        const processLine = processElement.querySelector('.process_line');
+
+        const processObserverCallback = (entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    console.log('Process section entered');
+
+                    // 즉시 line 높이를 0으로 설정 (transition 없이)
+                    if (processLine) {
+                        processLine.style.transition = 'none';
+                        processLine.style.height = '0px';
+                    }
+
+                    // 0.5초 대기
+                    setTimeout(() => {
+                        console.log('Adding blur to all items');
+
+                        // 전체 블러 적용
+                        processItems.forEach(item => {
+                            item.classList.add('blur');
+                        });
+
+                        // line transition 활성화
+                        if (processLine) {
+                            // 강제 reflow로 transition이 제대로 적용되도록
+                            processLine.offsetHeight;
+                            processLine.style.transition = 'height 0.5s ease-out';
+                        }
+
+                        // 500ms 후부터 순차적으로 블러 해제
+                        setTimeout(() => {
+                            console.log('Starting sequential blur removal');
+                            processItems.forEach((item, index) => {
+                                setTimeout(() => {
+                                    console.log(`Removing blur from item ${index}`);
+                                    item.classList.remove('blur');
+
+                                    // line 높이 조정 (79px씩 증가, 최대 316px)
+                                    if (processLine) {
+                                        const lineHeight = Math.min((index + 1) * 79, 316);
+                                        processLine.style.height = `${lineHeight}px`;
+                                    }
+                                }, index * 1000); // 각 아이템마다 1000ms(1초) 간격
+                            });
+                        }, 500);
+                    }, 500); // 0.5초 딜레이
+                }
+            });
+        };
+
+        const processObserver = new IntersectionObserver(processObserverCallback, processObserverOptions);
+
+        if (processElement) {
+            processObserver.observe(processElement);
+        }
+
+        return () => {
+            processObserver.disconnect();
         };
     }, []);
 

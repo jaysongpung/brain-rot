@@ -822,7 +822,7 @@ mark {
 .chatContainer {
   margin: 0px auto;
   max-width: 500px;
-  overflow: auto;
+  overflow: hidden;
 }
 
 .chatContainer::after {
@@ -839,6 +839,14 @@ mark {
   position: relative;
   max-width: 300px;
   margin: 12px 30px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.chat.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .chat::after {
@@ -868,6 +876,42 @@ mark {
   left: auto;
   right: 12px;
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%);
+}
+
+.process_item {
+  opacity: 1;
+  transition: opacity 0.6s ease-out;
+}
+
+.process_item.blur {
+  opacity: 0.2 !important;
+}
+
+.process_line {
+  height: 0px;
+}
+
+.graph {
+  position: relative;
+}
+
+.graph::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/graph_large.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 0.8s ease-out;
+}
+
+.graph.reveal::after {
+  opacity: 1;
 }
 
 .hourglass-container {
