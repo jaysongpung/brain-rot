@@ -1,7 +1,5 @@
 'use client';
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
-import AddReplies from './addReplies';
-import RepliesList from './listReplies';
 
 export default function Part3Content() {
     return (
@@ -265,31 +263,6 @@ export default function Part3Content() {
             <div className="paragraph" data-sync-id="p3-conclusion2">시선을 조금 넓혀보면, 해외에서는 정부가 나서 플랫폼에 청소년 야간 사용 제한, 자동 재생 중단, 휴식 알림 설정 같은 조치를 도입하고 있습니다. 우리 사회도 이제 &apos;뇌의 건강한 사용법&apos;을 함께 설계할 때입니다. 어떤 노력이 우리 사회에 필요하다고 생각하시나요. 소중한 의견을 기다립니다.
             </div>
             <div className="d30"></div>
-            <div className="d30"></div>
-            <div className="d30"></div>
-            <div className="paragraph" data-sync-id="p3-replies">
-                <span className="para_subtitle">여러분의 소중한 의견을 남겨주세요.
-                </span>
-                <br />
-                <span className="subtitleLine">----</span>
-                <br />
-                <RepliesList />
-                <AddReplies />
-            </div>
-            <div className="d30"></div>
-            <div className="paragraph" data-sync-id="p3-credits">
-                <span className="bold">기획·진행</span><br />
-                과학동아 김태희, 김소연 기자<br /><br />
-                <span className="bold">도움·감수</span><br />
-                김주현 한국뇌연구원 정서·인지질환 연구그룹 선임연구원, 조철현 고려대 정신건강의학과 교수, 강유 서울대 컴퓨터공학과 데이터 마이닝 연구실<br /><br />
-                <span className="bold">제작</span><br />
-                Studio Velcro<br /><br />
-                <span className="bold">지원</span><br />
-                언론진흥재단
-            </div>
-            <div className="d30"></div>
-            <div className="littlequote" data-sync-id="p3-footer">본 기획물은 정부광고 수수료로 조성된 언론진흥기금의 지원을 받았습니다.
-            </div>
             <div className="d30"></div>
             <div className="d30"></div>
             <div className="d30"></div>

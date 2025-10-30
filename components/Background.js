@@ -1,3 +1,6 @@
+import AddReplies from './addReplies';
+import RepliesList from './listReplies';
+
 export default function Background() {
     return (
         <div className="container">
@@ -327,7 +330,7 @@ export default function Background() {
                     ■■■■■■■■■■■■■■■■■■■■■,■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.
                 </div>
                 <div className="d30"></div>
-                <div className="media tar tarBg2" data-sync-bg="p3-tar2"></div>
+                <div className="media tar tarBg1" data-sync-bg="p3-tar2"></div>
                 <div className="d30"></div>
                 <div className="paragraphBg" data-sync-bg="p3-tar-desc2">
                     ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■,■■■■■■■■■■■■■■■■■■■■■■■■■■■■.
@@ -413,23 +416,49 @@ export default function Background() {
                 <div className="d30"></div>
                 <div className="d30"></div>
                 <div className="d30"></div>
-                <div className="paragraphBg" data-sync-bg="p3-replies">
-
+                <div className="d30"></div>
+                <div className="d30"></div>
+                <div className="d30"></div>
+                <div className="d30"></div>
+                <div className="d30"></div>
+                <div className="d30"></div>
+                <div className="d30"></div>
+                <div className="d30"></div>
+                <div className="d30"></div>
+                <div className="paragraph" data-sync-id="p3-replies">
+                    <span className="para_subtitle">여러분의 소중한 의견을 남겨주세요
+                    </span>
+                    <br />
+                    <span className="subtitleLine">----</span>
+                    <br />
+                    <RepliesList />
+                    <AddReplies />
                 </div>
                 <div className="d30"></div>
-                <div className="paragraphBg" data-sync-bg="p3-credits">
-                    <span className="bold">■■·■■</span><br />
-                    ■■■■■■,■■■■<br /><br />
-                    <span className="bold">■■·■■</span><br />
-                    ■■■■■■■■■■■■■■■■,■■■■■■■■■■■■■,■■■■■■■■■■■■■■<br /><br />
-                    <span className="bold">■■</span><br />
+                <div className="paragraph" data-sync-id="p3-credits">
+                    <span className="bold">기획·진행</span><br />
+                    과학동아 김태희, 김소연 기자<br /><br />
+                    <span className="bold">도움·감수</span><br />
+                    김주현 한국뇌연구원 정서·인지질환 연구그룹 선임연구원, 조철현 고려대 정신건강의학과 교수, 강유 서울대 컴퓨터공학과 데이터 마이닝 연구실<br /><br />
+                    <span className="bold">제작</span><br />
                     Studio Velcro<br /><br />
-                    <span className="bold">■■</span><br />
-                    ■■■■■
+                    <span className="bold">지원</span><br />
+                    언론진흥재단
                 </div>
                 <div className="d30"></div>
-                <div className="littlequote" data-sync-bg="p3-footer">■■■■■■■■■■■■■■■■■■■■■■■■■.
+                <div className="littlequote" data-sync-id="p3-footer">본 기획물은 정부광고 수수료로 조성된 언론진흥기금의 지원을 받았습니다.
                 </div>
+                <div className="d30"></div>
+                <div className="d30"></div>
+                <div className="d30"></div>
+                <div className="d30"></div>
+                <div className="d30"></div>
+                <div className="d30"></div>
+                <div className="d30"></div>
+                <div className="d30"></div>
+                <div className="d30"></div>
+                <div className="d30"></div>
+                <div className="d30"></div>
             </div>
         </div >
     );

@@ -11,6 +11,7 @@ export default function Mask() {
     const maskRef = useRef(null);
     const decorRef = useRef(null);
     const prevBrainImageRef = useRef(null);
+    const maskVisibleRef = useRef(true);
     const [currentBrainImage, setCurrentBrainImage] = useState(null);
     const [scrollNumber, setScrollNumber] = useState(0);
     const [scrollNumber2, setScrollNumber2] = useState(0);
@@ -81,6 +82,43 @@ export default function Mask() {
                 decorRef.current.style.height = `${maskHeight}px`;
             }
 
+            // p3-replies 위치 확인
+            const repliesElement = document.querySelector('[data-sync-id="p3-replies"]');
+            if (repliesElement) {
+                const repliesRect = repliesElement.getBoundingClientRect();
+                const isBelow = repliesRect.top < vh; // replies가 화면에 들어왔는지
+
+                console.log('repliesRect.top:', repliesRect.top, 'vh:', vh, 'isBelow:', isBelow, 'maskVisibleRef:', maskVisibleRef.current);
+
+                if (isBelow) {
+                    if (maskVisibleRef.current) {
+                        console.log('Hiding mask');
+                        maskVisibleRef.current = false;
+                        if (maskRef.current) {
+                            maskRef.current.style.opacity = '0';
+                            maskRef.current.style.transition = 'opacity 0.5s';
+                        }
+                        if (decorRef.current) {
+                            decorRef.current.style.opacity = '0';
+                            decorRef.current.style.transition = 'opacity 0.5s';
+                        }
+                    }
+                } else {
+                    if (!maskVisibleRef.current) {
+                        console.log('Showing mask');
+                        maskVisibleRef.current = true;
+                        if (maskRef.current) {
+                            maskRef.current.style.opacity = '1';
+                            maskRef.current.style.transition = 'opacity 0.5s';
+                        }
+                        if (decorRef.current) {
+                            decorRef.current.style.opacity = '1';
+                            decorRef.current.style.transition = 'opacity 0.5s';
+                        }
+                    }
+                }
+            }
+
             // Brain image 위치 계산
             const screenCenterY = vh / 2;
             const centerThreshold = 200; // 화면 중앙에서 허용 범위 (px)
@@ -118,19 +156,13 @@ export default function Mask() {
             if (foregroundRef.current && maskRef.current && decorRef.current) {
                 console.log("makssa")
                 foregroundRef.current.style.transition = 'opacity 1s';
-                maskRef.current.style.transition = 'opacity 1s';
-                decorRef.current.style.transition = 'opacity 1s';
                 foregroundRef.current.style.opacity = 1;
-                maskRef.current.style.opacity = 1;
-                decorRef.current.style.opacity = 1;
             }
         }, 1000);
 
         setTimeout(() => {
-            if (foregroundRef.current && maskRef.current && decorRef.current) {
+            if (foregroundRef.current) {
                 foregroundRef.current.style.transition = '';
-                maskRef.current.style.transition = '';
-                decorRef.current.style.transition = '';
             }
         }, 2000);
 
@@ -248,7 +280,7 @@ export default function Mask() {
                 ref={decorRef}
                 className="fixed xray-decor-container"
                 style={{
-                    opacity: 0,
+                    opacity: 1,
                     pointerEvents: 'none',
                 }}
             >
@@ -272,7 +304,7 @@ export default function Mask() {
             "
                 style={{
                     border: '1px solid white',
-                    opacity: 0,
+                    opacity: 1,
                 }}
             >
                 <div ref={foregroundRef} id="foreground">

@@ -187,6 +187,11 @@ mark {
   height: 30px;
 }
 
+.tarBg1 {
+
+  background-image: url('/tar_bg.png');
+}
+
 .instagram {
   height: 500px;
   overflow: hidden;
@@ -905,6 +910,12 @@ mark {
   height: 300px;
 }
 
+.machineBg {
+  background-image: url('/machine2.png');
+  width: 100%;
+  height: 300px;
+}
+
 .process {
   display: flex;
   flex-direction: column;
@@ -979,6 +990,14 @@ mark {
 
 .graph {
   background-image: url('/graph.png');
+  width: 100%;
+  max-width: 500px;
+  aspect-ratio: 1 / 1;
+  margin: 0px auto;
+}
+
+.graphBg {
+  background-image: url('/graphBg.png');
   width: 100%;
   max-width: 500px;
   aspect-ratio: 1 / 1;
