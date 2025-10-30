@@ -86,7 +86,7 @@ export default function Mask() {
             const repliesElement = document.querySelector('[data-sync-id="p3-replies"]');
             if (repliesElement) {
                 const repliesRect = repliesElement.getBoundingClientRect();
-                const isBelow = repliesRect.top < vh; // replies가 화면에 들어왔는지
+                const isBelow = repliesRect.top < vh * 0.4; // replies가 화면 상단 30% 지점을 넘었는지
 
                 if (isBelow) {
                     if (maskVisibleRef.current) {

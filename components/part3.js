@@ -274,6 +274,25 @@ export default function Part3Content() {
             <div className="d30"></div>
             <div className="d30"></div>
             <div className="d30"></div>
+            <div className="paragraph" data-sync-id="p3-replies">
+                <span className="para_subtitle">여러분의 소중한 의견을 남겨주세요
+                </span>
+                <br />
+                <span className="subtitleLine">----</span>
+                <br />
+            </div>
+            <div className="d30"></div>
+            <div className="d30"></div>
+            <div className="d30"></div>
+            <div className="d30"></div>
+            <div className="d30"></div>
+            <div className="d30"></div>
+            <div className="d30"></div>
+            <div className="d30"></div>
+            <div className="d30"></div>
+            <div className="d30"></div>
+            <div className="d30"></div>
+            <div className="d30"></div>
             <div className="d30"></div>
             <div className="d30"></div>
             <div className="d30"></div>
