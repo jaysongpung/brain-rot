@@ -91,7 +91,8 @@ export default function RepliesList() {
 
   return (
     <div className="">
-      <div className="grid grid-cols-1 mx-auto mt-10 border-collapse border-b-1 border-zinc-700">
+      <div className="text-sm text-zinc-700 mt-10 mb-4">총 {totalCount}개의 댓글</div>
+      <div className="grid grid-cols-1 mx-auto border-collapse border-b-1 border-zinc-700">
         {entries.map((entry, index) => (
           <div className="border-collapse border-t-1 border-zinc-700 py-3 flex flex-col w-full" key={entry._id}>
             <div className="w-full items-center h-full text-left">
