@@ -20,31 +20,43 @@ export default function Mask() {
     useEffect(() => {
         let lastScrollY = window.scrollY;
 
-
-        const vh = window.innerHeight;
-        const vw = document.documentElement.clientWidth;
-        const idleTop = vh / 5;
-        const idleTop2 = idleTop * 2;
+        let vh = window.innerHeight;
+        let vw = document.documentElement.clientWidth;
+        let idleTop = vh / 5;
+        let idleTop2 = idleTop * 2;
 
         const threshold = 0.1;
         const scrollThreshold = 5;
         const contentMaxWidth = 800;
-        const calculatedWidth = vw * 1.0;
-        const contentWidth = Math.min(contentMaxWidth, calculatedWidth);
-        const leftPx = (vw - contentWidth) / 2;
+        let calculatedWidth = vw * 1.0;
+        let contentWidth = Math.min(contentMaxWidth, calculatedWidth);
+        let leftPx = (vw - contentWidth) / 2;
 
         let currentTop = idleTop;
         let rafId;
 
         // 초기 고정값 설정
-        if (maskRef.current) {
-            maskRef.current.style.left = `${leftPx}px`;
-            maskRef.current.style.width = `${contentWidth}px`;
-        }
-        if (decorRef.current) {
-            decorRef.current.style.left = `${leftPx}px`;
-            decorRef.current.style.width = `${contentWidth}px`;
-        }
+        const updateDimensions = () => {
+            vh = window.innerHeight;
+            vw = document.documentElement.clientWidth;
+            idleTop = vh / 5;
+            idleTop2 = idleTop * 2;
+            calculatedWidth = vw * 1.0;
+            contentWidth = Math.min(contentMaxWidth, calculatedWidth);
+            leftPx = (vw - contentWidth) / 2;
+            currentTop = idleTop;
+
+            if (maskRef.current) {
+                maskRef.current.style.left = `${leftPx}px`;
+                maskRef.current.style.width = `${contentWidth}px`;
+            }
+            if (decorRef.current) {
+                decorRef.current.style.left = `${leftPx}px`;
+                decorRef.current.style.width = `${contentWidth}px`;
+            }
+        };
+
+        updateDimensions();
 
         function update() {
             const currentScrollY = window.scrollY;
@@ -148,6 +160,13 @@ export default function Mask() {
 
         update();
 
+        // 리사이즈 이벤트 리스너 추가
+        const handleResize = () => {
+            updateDimensions();
+        };
+
+        window.addEventListener('resize', handleResize);
+
         setTimeout(() => {
             if (foregroundRef.current && maskRef.current && decorRef.current) {
                 foregroundRef.current.style.transition = 'opacity 1s';
@@ -163,6 +182,7 @@ export default function Mask() {
 
         return () => {
             if (rafId) cancelAnimationFrame(rafId);
+            window.removeEventListener('resize', handleResize);
         }
 
     }, []);
@@ -427,8 +447,8 @@ export default function Mask() {
                 <div className="xray-line xray-right"></div>
 
                 {/* 스크롤 기반 숫자 표시 */}
-                <div className="scroll-number">{scrollNumber}</div>
-                <div className="scroll-number2">{scrollNumber2}</div>
+                {/* <div className="scroll-number">{scrollNumber}</div>
+                <div className="scroll-number2">{scrollNumber2}</div> */}
             </div>
 
             {/* 마스크 컨테이너 */}
