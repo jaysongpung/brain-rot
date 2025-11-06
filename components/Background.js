@@ -396,10 +396,12 @@ export default function Background() {
                 <div className="paragraphBg" data-sync-bg="p3-survey1">&quot;■■■,■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■?&quot;<br />
                     ■■■■■■■&apos;■■■■■■■■■■■■■■■■■■■■&apos;■■■&apos;■■■■■■■■■■■■■■■■■■■■■&apos;■■■■■■■■■■■■■■■■■■■%■■■■■■■■%■■■■■■■■■■■■■■.
                 </div>
+                <div className="lineGraph_container" data-sync-bg="p3-graph1"></div>
                 <div className="d30"></div>
                 <div className="paragraphBg" data-sync-bg="p3-survey2">&quot;■■■■■■■■■■■■■(■■■■■■■■■)■■■■■■■■■■■■■■■■■■■?&quot;<br />
                     ■■■■■■■&apos;■■■■■■■■■■(■■■~■■)&apos;■■■&apos;■■■■■■■■■■■■■■(■■~■■■)&apos;■■■■■■■■■■■■■■■■■■%■■■■■■■%■■■■■■■■.
                 </div>
+                <div className="lineGraph_container" data-sync-bg="p3-graph2"></div>
                 <div className="d30"></div>
                 <div className="paragraphBg" data-sync-bg="p3-testimonial-intro">■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.■■■■■■■■■■■■■■■■■■■■■■■■.■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.
                 </div>
@@ -444,7 +446,7 @@ export default function Background() {
                     <span className="bold">기획·진행</span><br />
                     과학동아 김태희, 김소연 기자<br /><br />
                     <span className="bold">도움·감수</span><br />
-                    김주현 한국뇌연구원 정서·인지질환 연구그룹 선임연구원, 조철현 고려대 정신건강의학과 교수, 강유 서울대 컴퓨터공학과 데이터 마이닝 연구실<br /><br />
+                    김주현 한국뇌연구원 정서·인지질환 연구그룹 선임연구원, 조철현 고려대 정신건강의학과 교수, 강유 서울대 컴퓨터공학부 데이터 마이닝 연구실 (이종은 협동과정 인공지능전공 연구원)<br /><br />
                     <span className="bold">제작</span><br />
                     Studio Velcro<br /><br />
                     <span className="bold">지원</span><br />

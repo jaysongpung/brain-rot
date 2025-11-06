@@ -25,7 +25,8 @@ export default function Part3Content() {
             <div className="d30"></div>
             <div className="d30"></div>
             <div className="paragraph" data-sync-id="p3-para1">
-                우리는 왜 피곤해졋을까. 과연 브레인롯에서 탈출할 수 있을까. 과학동아가 진행한 &apos;숏폼 4주 끊기&apos; 챌린지 참가자들이 출발선에서 한 말입니다. 브레인롯은 아직 의학적 진단명은 아니지만, 학자들은 &apos;소셜미디어를 반복해 접한 결과, 뇌에 부하가 가해지면서 생긴 인지적 피로&apos;라고 해석합니다.
+                우리는 왜 피곤해졌을까. 과연 브레인롯에서 탈출할 수 있을까.<br />
+                과학동아가 진행한 ‘숏폼 4주 끊기’ 챌린지 참가자들이 출발선에서 한 말입니다. 브레인롯은 아직 의학적 진단명은 아니지만, 학자들은 ‘소셜미디어를 반복해 접한 결과, 뇌에 부하가 가해지면서 생긴 인지적 피로’라고 해석합니다.
             </div>
             <div className="d30"></div>
 
@@ -36,8 +37,8 @@ export default function Part3Content() {
             <div className="d30"></div>
             <div className="d30"></div>
             <div className="paragraph" data-sync-id="p3-para3">
-                이 질문에 대한 답을 찾기 위해 과학동아는 8월 26일부터 9월 22일까지 약 <span className="bold">4주</span>간 29명의 참가자들과 &apos;숏폼 4주 끊기&apos; 챌린지를 시작했습니다.
-                참가자들이 끊은 소셜미디어 서비스는 <span className="bold">인스타그램 릴스, 유튜브 숏츠, X, 틱톡</span>이었습니다.
+                이 질문에 대한 답을 찾기 위해 과학동아는 8월 26일부터 9월 22일까지 약 <span className="bold">4주</span>간 29명의 참가자들과 ‘숏폼 4주 끊기’ 챌린지를 시작했습니다.
+                참가자들이 끊은 소셜미디어 서비스는 <span className="bold">인스타그램 릴스, 유튜브 숏츠, X, 틱톡</span>이었습니다.<br />
                 모두 추천 알고리즘이 숏폼을 무한히 보도록 만드는 매체입니다.
             </div>
             <div className="d30"></div>
@@ -77,10 +78,10 @@ export default function Part3Content() {
                 <br />
                 <span className="subtitleLine">----</span>
                 <br />
-                챌린지 전과 후, 가장 궁금했던 건 뇌의 변화였습니다.
-                챌린지 전, 브레인롯 증상을 보이며 숏폼 앱 이용시간이 긴 참가자들의 뇌는 어떻게 다른지 궁금했습니다.
-                챌린지 후, 이들이 4주간 숏폼을 끊고 나면, 뇌가 실제로 회복할지도 알고 싶었습니다.
-                그래서 뇌파 측정 전문 기업 &apos;아이메디신&apos;의 비침습형 뇌파 측정 장치 &apos;아이싱크웨이브&apos;를 이용해 뇌파를 측정했습니다. 아이싱크웨이브는 19개의 전극으로 뇌의 각 부위에서 관찰되는 뇌파를 주파수 대역별로 측정합니다.
+                챌린지 전과 후, 가장 궁금했던 건 뇌의 변화였습니다.<br />
+                챌린지 전, 브레인롯 증상을 호소하는 참가자들의 뇌는 어떻게 다른지 궁금했습니다.
+                챌린지 후, 이들이 4주간 숏폼을 끊고 나면, 뇌가 실제로 회복할지도 알고 싶었습니다.<br />
+                그래서 뇌파 측정 전문 기업 ‘아이메디신’의 비침습형 뇌파 측정 장치 ‘아이싱크웨이브’를 이용해 뇌파를 측정했습니다. 아이싱크웨이브는 19개의 전극으로 뇌의 각 부위에서 관찰되는 뇌파를 주파수 대역별로 측정합니다.
             </div>
             <div className="d30"></div>
             <div className="media machineFg" data-sync-id="p3-machine"></div>
@@ -136,14 +137,15 @@ export default function Part3Content() {
                     <div className="pi_dot"></div>
                     <div className="media pi_icon eyeclosed"></div>
                     <div className="pi_text">
-                        <div className="pit_title">눈을 뜬 상태로 뇌파 측정</div>
+                        <div className="pit_title">눈을 감은 상태로 뇌파 측정</div>
                         <div className="pit_subtitle">3분 30초</div>
                     </div>
                 </div>
             </div>
             <div className="d30"></div>
             <div className="d30"></div>
-            <div className="paragraph" data-sync-id="p3-theta">숏폼을 보기 전과 후, 세타파를 비교했습니다.
+            <div className="paragraph" data-sync-id="p3-theta">
+                숏폼을 보기 전과 후, 눈을 감은 상태에서 세타파를 비교했습니다.<br />
                 세타파(4~8Hz)는 명상이나 기억처리 등 내면에 집중해 사고할 때 두드러집니다.
             </div>
             <div className="d30"></div>
@@ -153,8 +155,8 @@ export default function Part3Content() {
             </div>
             <div className="d30"></div>
             <div className="paragraph" data-sync-id="p3-tar-result1">
-                숏폼을 본 후, 뇌 전체적으로 세타파의 강도가 낮아졌습니다.
-                이는 &quot;숏폼을 본 직후의 뇌는 아무것도 보지 않고 쉴 때조차 내면에서 벌어지는 생각에 주의를 기울이기 어려운 상태&quot;라는 의미입니다.
+                숏폼을 본 후, 뇌 전체적으로 세타파의 강도가 낮아졌습니다.<br />
+                이는 “숏폼을 본 직후의 뇌는 아무것도 보지 않고 쉴 때조차 내면에서 벌어지는 생각에 주의를 기울이기 어려운 상태”라는 의미입니다.
             </div>
             <div className="d30"></div>
             <div className="d30"></div>
@@ -207,11 +209,11 @@ export default function Part3Content() {
             <div className="paragraph" data-sync-id="p3-graph-legend">
                 <div className="graph_line_flex">
                     <div className="graph_line gl_red"></div>
-                    <div className="graph_line_text">붉은 선은 숏폼을 끊기 전, 뇌의 신경 활성도를 뜻합니다.</div>
+                    <div className="graph_line_text">숏폼을 끊기 전, 뇌의 신경 활성도</div>
                 </div>
                 <div className="graph_line_flex">
                     <div className="graph_line gl_blue"></div>
-                    <div className="graph_line_text">푸른 선은 숏폼을 끊은 뒤, 뇌의 신경 활성도를 뜻합니다.</div>
+                    <div className="graph_line_text">숏폼을 끊은 뒤, 뇌의 신경 활성도</div>
                 </div>
             </div>
             <div className="d30"></div>
@@ -230,14 +232,151 @@ export default function Part3Content() {
                 뇌파가 전부는 아니었습니다. 참가자 26명을 대상으로 한 설문조사에서도 재미있는 경향성이 발견됐거든요.
             </div>
             <div className="d30"></div>
-            <div className="paragraph" data-sync-id="p3-survey1"><span className="bold">&quot;업무, 학업 등 작업을 시작하고 유지하는 데 드는 노력은 어느 정도입니까?&quot;</span><br />
-                이 질문에 &apos;작업을 시작하기 다소 어렵다&apos; 또는 &apos;작업을 시작하기 매우 어렵다&apos;고 답한 사람의 비율은
+            <div className="paragraph" data-sync-id="p3-survey1"><span className="bold">“업무, 학업 등 작업을 시작하고 유지하는 데 드는 노력은 어느 정도입니까?”;</span><br />
+                이 질문에 ‘작업을 시작하기 다소 어렵다’ 또는 ‘작업을 시작하기 매우 어렵다’고 답한 사람의 비율은
                 76.7%에서 30.4%까지 떨어졌습니다.
             </div>
-            <div className="d30"></div>
-            <div className="paragraph" data-sync-id="p3-survey2"><span className="bold">&quot;최근 2주간 피로감(또는 무기력감)을 얼마나 자주 겪었습니까?&quot;</span><br />
-                이 질문에 &apos;자주 피로했음(주 4~5일)&apos; 또는 &apos;거의 항상 피로했음(주 6~7일)&apos;이라고 답한 이들은 73.3%에서 21.7%로 떨어졌죠.
+            <div className="lineGraph_container" data-sync-id="p3-graph1">
+                <div className="lineGraph_wrap">
+                    <div className="lineGraph_title">숏폼 끊기 전</div>
+                    <div className="lineGraph_sticks">
+                        <div className="lineGraph_item w-200/1000">
+                            <div className="lineGraph_stick bg-blue-500"></div>
+                            <div className="lineGraph_text">20%</div>
+                        </div>
+                        <div className="lineGraph_item w-567/1000">
+                            <div className="lineGraph_stick bg-blue-400"></div>
+                            <div className="lineGraph_text">56.7%</div>
+                        </div>
+                        <div className="lineGraph_item w-100/1000">
+                            <div className="lineGraph_stick bg-blue-300"></div>
+                            <div className="lineGraph_text">10%</div>
+                        </div>
+                        <div className="lineGraph_item w-100/1000">
+                            <div className="lineGraph_stick bg-blue-200"></div>
+                            <div className="lineGraph_text">10%</div>
+                        </div>
+                        <div className="lineGraph_item w-33/1000">
+                            <div className="lineGraph_stick bg-blue-100"></div>
+                            <div className="lineGraph_text">3.3%</div>
+                        </div>
+                    </div>
+                </div>
+                <div className="lineGraph_wrap">
+                    <div className="lineGraph_title">숏폼 끊은 후</div>
+                    <div className="lineGraph_sticks">
+                        <div className="lineGraph_item w-87/1000">
+                            <div className="lineGraph_stick bg-blue-500"></div>
+                            <div className="lineGraph_text">8.7%</div>
+                        </div>
+                        <div className="lineGraph_item w-217/1000">
+                            <div className="lineGraph_stick bg-blue-400"></div>
+                            <div className="lineGraph_text">21.7%</div>
+                        </div>
+                        <div className="lineGraph_item w-304/1000">
+                            <div className="lineGraph_stick bg-blue-300"></div>
+                            <div className="lineGraph_text">30.4%</div>
+                        </div>
+                        <div className="lineGraph_item w-261/1000">
+                            <div className="lineGraph_stick bg-blue-200"></div>
+                            <div className="lineGraph_text">26.1%</div>
+                        </div>
+                        <div className="lineGraph_item w-130/1000">
+                            <div className="lineGraph_stick bg-blue-100"></div>
+                            <div className="lineGraph_text">13%</div>
+                        </div>
+                    </div>
+                </div>
+                <div className="lineGraph_index">
+                    <div className="lgInex_item">
+                        <div className="lgIndex_box bg-blue-500"></div>
+                        <div>작업을 시작하기 매우 어렵다</div>
+                    </div>
+                    <div className="lgInex_item">
+                        <div className="lgIndex_box bg-blue-400"></div>
+                        <div>작업을 시작하기 다소 어렵다</div>
+                    </div>
+                    <div className="lgInex_item">
+                        <div className="lgIndex_box bg-blue-300"></div>
+                        <div>보통이다</div>
+                    </div>
+                    <div className="lgInex_item">
+                        <div className="lgIndex_box bg-blue-200"></div>
+                        <div>작업을 시작하기 다소 쉽다</div>
+                    </div>
+                    <div className="lgInex_item">
+                        <div className="lgIndex_box bg-blue-100"></div>
+                        <div>작업을 시작하기 매우 쉽다</div>
+                    </div>
+                </div>
             </div>
+            <div className="d30"></div>
+            <div className="paragraph" data-sync-id="p3-survey2"><span className="bold">“최근 2주간 피로감(또는 무기력감)을 얼마나 자주 겪었습니까?”;</span><br />
+                이 질문에 ‘자주 피로했음(주 4~5일)’ 또는 ‘거의 항상 피로했음(주 6~7일)’이라고 답한 이들은 73.3%에서 21.7%로 떨어졌죠.
+            </div>
+            <div className="lineGraph_container" data-sync-id="p3-graph2">
+                <div className="lineGraph_wrap">
+                    <div className="lineGraph_title">숏폼 끊기 전</div>
+                    <div className="lineGraph_sticks">
+                        <div className="lineGraph_item w-333/1000">
+                            <div className="lineGraph_stick bg-green-500"></div>
+                            <div className="lineGraph_text">33.3%</div>
+                        </div>
+                        <div className="lineGraph_item w-400/1000">
+                            <div className="lineGraph_stick bg-green-400"></div>
+                            <div className="lineGraph_text">40%</div>
+                        </div>
+                        <div className="lineGraph_item w-200/1000">
+                            <div className="lineGraph_stick bg-green-300"></div>
+                            <div className="lineGraph_text">20%</div>
+                        </div>
+                        <div className="lineGraph_item w-67/1000">
+                            <div className="lineGraph_stick bg-green-200"></div>
+                            <div className="lineGraph_text">6.7%</div>
+                        </div>
+                    </div>
+                </div>
+                <div className="lineGraph_wrap">
+                    <div className="lineGraph_title">숏폼 끊은 후</div>
+                    <div className="lineGraph_sticks">
+                        <div className="lineGraph_item w-87/1000">
+                            <div className="lineGraph_stick bg-green-500"></div>
+                            <div className="lineGraph_text">8.7%</div>
+                        </div>
+                        <div className="lineGraph_item w-130/1000">
+                            <div className="lineGraph_stick bg-green-400"></div>
+                            <div className="lineGraph_text">13%</div>
+                        </div>
+                        <div className="lineGraph_item w-652/1000">
+                            <div className="lineGraph_stick bg-green-300"></div>
+                            <div className="lineGraph_text">65.2%</div>
+                        </div>
+                        <div className="lineGraph_item w-130/1000">
+                            <div className="lineGraph_stick bg-green-200"></div>
+                            <div className="lineGraph_text">13%</div>
+                        </div>
+                    </div>
+                </div>
+                <div className="lineGraph_index">
+                    <div className="lgInex_item">
+                        <div className="lgIndex_box bg-green-500"></div>
+                        <div>거의 항상 피로했음(주6~7일)</div>
+                    </div>
+                    <div className="lgInex_item">
+                        <div className="lgIndex_box bg-green-400"></div>
+                        <div>자주 피로했음(주4~5일)</div>
+                    </div>
+                    <div className="lgInex_item">
+                        <div className="lgIndex_box bg-green-300"></div>
+                        <div>가끔 피로했음(주2~3일)</div>
+                    </div>
+                    <div className="lgInex_item">
+                        <div className="lgIndex_box bg-green-200"></div>
+                        <div>거의 피로하지 않았음(주1일 이하)</div>
+                    </div>
+                </div>
+            </div>
+
             <div className="d30"></div>
             <div className="paragraph" data-sync-id="p3-testimonial-intro">그 외에도 실험 참가자들이 4주간의 챌린지를 끝내고 전해온 이야기들도 많이 쌓여있습니다.
                 브레인롯을 탈출한 이야기들이죠.
@@ -260,7 +399,7 @@ export default function Part3Content() {
             <div className="d30"></div>
             <div className="d30"></div>
             <div className="d30"></div>
-            <div className="paragraph" data-sync-id="p3-conclusion2">시선을 조금 넓혀보면, 해외에서는 정부가 나서 플랫폼에 청소년 야간 사용 제한, 자동 재생 중단, 휴식 알림 설정 같은 조치를 도입하고 있습니다. 우리 사회도 이제 &apos;뇌의 건강한 사용법&apos;을 함께 설계할 때입니다. 어떤 노력이 우리 사회에 필요하다고 생각하시나요. 소중한 의견을 기다립니다.
+            <div className="paragraph" data-sync-id="p3-conclusion2">시선을 조금 넓혀보면, 해외에서는 정부가 나서 플랫폼에 청소년 야간 사용 제한, 자동 재생 중단, 휴식 알림 설정 같은 조치를 도입하고 있습니다. 우리 사회도 이제 ‘뇌의 건강한 사용법’을 함께 설계할 때입니다. 어떤 노력이 우리 사회에 필요하다고 생각하시나요. 소중한 의견을 기다립니다.
             </div>
             <div className="d30"></div>
             <div className="d30"></div>
