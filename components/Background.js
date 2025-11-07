@@ -248,7 +248,8 @@ export default function Background() {
                 <div className="d30"></div>
                 <div className="d30"></div>
                 <div className="paragraphBg" data-sync-bg="p3-para1">
-                    ■■■■■■■■■■■■■■■■■.■■■■■■■■■■■■■■■■■■■■■■■■■.■■■■■■■■■■■■■■&apos;■■■■■■■■■■&apos;■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■,■■■■■■&apos;■■■■■■■■■■■■■■■■■■■■■■,■■■■■■■■■■■■■■■■■■■■■■■■■■■■■&apos;■■■■■■■■■■■.
+                    ■■■■■■■■■■■■■■■■■.■■■■■■■■■■■■■■■■■■■■■■■■■.<br />
+                    ■■■■■■■■■■■■■■&apos;■■■■■■■■■■&apos;■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■,■■■■■■&apos;■■■■■■■■■■■■■■■■■■■■■■,■■■■■■■■■■■■■■■■■■■■■■■■■■■■■&apos;■■■■■■■■■■■.
                 </div>
                 <div className="d30"></div>
                 <div className="paragraphBg" data-sync-bg="p3-para2">
@@ -291,7 +292,9 @@ export default function Background() {
                     <br />
                     <span className="subtitleLine">----</span>
                     <br />
-                    ■■■■■■■■■■,■■■■■■■■■■■■■■■■■■■■■■■■■■.■■■■■■■,■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.■■■■■■■,■■■■■■■■■■■■■■■■■■■■■■,■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.■■■■■■■■■■■■■■■■■■■&apos;■■■■■■■■&apos;■■■■■■■■■■■■■■■■■■■■&apos;■■■■■■■■■■&apos;■■■■■■■■■■■■■■■■■■■■.■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.
+                    ■■■■■■■■■■,■■■■■■■■■■■■■■■■■■■■■■■■■■.<br />
+                    ■■■■■■■,■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.■■■■■■■,■■■■■■■■■■■■■■■■■■■■■■,■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.<br />
+                    ■■■■■■■■■■■■■■■■■■■&apos;■■■■■■■■&apos;■■■■■■■■■■■■■■■■■■■■&apos;■■■■■■■■■■&apos;■■■■■■■■■■■■■■■■■■■■.■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.
                 </div>
                 <div className="d30"></div>
                 <div className="media machineBg" data-sync-bg="p3-machine"></div>
@@ -312,7 +315,9 @@ export default function Background() {
                 <div className="process" data-sync-bg="p3-process"></div>
                 <div className="d30"></div>
                 <div className="d30"></div>
-                <div className="paragraphBg" data-sync-bg="p3-theta">■■■■■■■■■■■■■■,■■■■■■■■■■■■■■■■■.■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.
+                <div className="paragraphBg" data-sync-bg="p3-theta">
+                    ■■■■■■■■■■■■■■,■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.<br />
+                    ■■■■■(■■■■■)■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.
                 </div>
                 <div className="d30"></div>
                 <div className="media tar tarBg1" data-sync-bg="p3-tar1"></div>
@@ -321,7 +326,8 @@ export default function Background() {
                 </div>
                 <div className="d30"></div>
                 <div className="paragraphBg" data-sync-bg="p3-tar-result1">
-                    ■■■■■■■■■,■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.■■■&quot;■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■&quot;■■■■■■■■■■■.
+                    ■■■■■■■■■,■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.<br />
+                    ■■■&quot;■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■&quot;■■■■■■■■■■■.
                 </div>
                 <div className="d30"></div>
                 <div className="d30"></div>
@@ -372,11 +378,11 @@ export default function Background() {
                 <div className="paragraphBg" data-sync-bg="p3-graph-legend">
                     <div className="graph_line_flex">
                         <div className="graph_line gl_red"></div>
-                        <div className="graph_line_text">■■■■■■■■■■■■■■■■■■,■■■■■■■■■■■■■■■■■■■■.</div>
+                        <div className="graph_line_text">■■■■■■■■■■,■■■■■■■■■■■■</div>
                     </div>
                     <div className="graph_line_flex">
                         <div className="graph_line gl_blue"></div>
-                        <div className="graph_line_text">■■■■■■■■■■■■■■■■■■,■■■■■■■■■■■■■■■■■■■■.</div>
+                        <div className="graph_line_text">■■■■■■■■■■,■■■■■■■■■■■■</div>
                     </div>
                 </div>
                 <div className="d30"></div>
