@@ -265,6 +265,7 @@ mark {
 .logo_text {
   width: 225px;
   font-size: 13.5px;
+  text-align: center;
 }
 
 .para_subtitle {

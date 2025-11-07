@@ -232,7 +232,7 @@ export default function Part3Content() {
                 뇌파가 전부는 아니었습니다. 참가자 26명을 대상으로 한 설문조사에서도 재미있는 경향성이 발견됐거든요.
             </div>
             <div className="d30"></div>
-            <div className="paragraph" data-sync-id="p3-survey1"><span className="bold">“업무, 학업 등 작업을 시작하고 유지하는 데 드는 노력은 어느 정도입니까?”;</span><br />
+            <div className="paragraph" data-sync-id="p3-survey1"><span className="bold">“업무, 학업 등 작업을 시작하고 유지하는 데 드는 노력은 어느 정도입니까?”</span><br />
                 이 질문에 ‘작업을 시작하기 다소 어렵다’ 또는 ‘작업을 시작하기 매우 어렵다’고 답한 사람의 비율은
                 76.7%에서 30.4%까지 떨어졌습니다.
             </div>
@@ -311,7 +311,7 @@ export default function Part3Content() {
                 </div>
             </div>
             <div className="d30"></div>
-            <div className="paragraph" data-sync-id="p3-survey2"><span className="bold">“최근 2주간 피로감(또는 무기력감)을 얼마나 자주 겪었습니까?”;</span><br />
+            <div className="paragraph" data-sync-id="p3-survey2"><span className="bold">“최근 2주간 피로감(또는 무기력감)을 얼마나 자주 겪었습니까?”</span><br />
                 이 질문에 ‘자주 피로했음(주 4~5일)’ 또는 ‘거의 항상 피로했음(주 6~7일)’이라고 답한 이들은 73.3%에서 21.7%로 떨어졌죠.
             </div>
             <div className="lineGraph_container" data-sync-id="p3-graph2">
