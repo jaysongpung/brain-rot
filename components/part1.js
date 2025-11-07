@@ -71,7 +71,7 @@ export default function Part1Content() {
             <div className="d30"></div>
             <div className="d30"></div>
             <div className="paragraph" data-sync-id="p1-para1">
-                <span className="para_subtitle">콘텐츠 추천, 끊임없는 계산</span>
+                <span className="para_subtitle">하나의 추천, 그 뒤엔 수천 번의 계산이 있다</span>
                 <br />
                 <span className="subtitleLine">----</span>
                 <br />
@@ -80,7 +80,7 @@ export default function Part1Content() {
             <div className="d30"></div>
             <div className="d30"></div>
             <div className="paragraph" data-sync-id="p1-para2">
-                <span className="para_subtitle">반응하는 순간, 달라지는 추천</span>
+                <span className="para_subtitle">‘좋아요’ ‘댓글’ 반응하는 순간 추천이 달라진다</span>
                 <br />
                 <span className="subtitleLine">----</span>
                 <br />
@@ -99,7 +99,7 @@ export default function Part1Content() {
             <div className="d30"></div>
             <div className="d30"></div>
             <div className="paragraph" data-sync-id="p1-para4">
-                <span className="para_subtitle">이원화된 추천 알고리즘</span>
+                <span className="para_subtitle">친구의 친구, 그 너머까지 추천 콘텐츠를 찾는다</span>
                 <br />
                 <span className="subtitleLine">----</span>
                 <br />
@@ -116,7 +116,7 @@ export default function Part1Content() {
             <div className="d30"></div>
             <div className="d30"></div>
             <div className="paragraph" data-sync-id="p1-algo-desc">
-                <span className="para_subtitle">추천 알고리즘</span>
+                <span className="para_subtitle">플랫폼마다 ‘추천의 공식’은 조금씩 다르다</span>
                 <br />
                 <span className="subtitleLine">----</span>
                 <br />

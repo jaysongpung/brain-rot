@@ -8,7 +8,7 @@ export default function Background() {
                 <div className="titleContainer">
                     <div className="title"></div>
                     <div className="subTitle">
-                        ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■,■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■,■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■&apos;■■■■■■&apos;(■■■■■■■)■■■■■■■■.
+                        ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■,■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■,■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■&apos;■■■■■■&apos;(■■■■■■■)■■■■■■■■.■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■,■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■.
                     </div>
                 </div>
             </div>
@@ -28,7 +28,7 @@ export default function Background() {
                 <div className="d30"></div>
                 <div className="d30"></div>
                 <div className="paragraphBg" data-sync-bg="p1-para1">
-                    <span className="para_subtitle_bg">■■■■■■■■,■■■■■■■■■■</span>
+                    <span className="para_subtitle_bg">■■■■■■■■,■■■■■■■■■■■■■■■■■■■■</span>
                     <br />
                     <span className="subtitleLine">----</span>
                     <br />
@@ -37,7 +37,7 @@ export default function Background() {
                 <div className="d30"></div>
                 <div className="d30"></div>
                 <div className="paragraphBg" data-sync-bg="p1-para2">
-                    <span className="para_subtitle_bg">■■■■■■■■■■,■■■■■■■■■■</span>
+                    <span className="para_subtitle_bg">‘■■■’■‘■■’■■■■■■■■■■■■■■■■■■■■■■</span>
                     <br />
                     <span className="subtitleLine">----</span>
                     <br />
@@ -54,7 +54,7 @@ export default function Background() {
                 <div className="d30"></div>
                 <div className="d30"></div>
                 <div className="paragraphBg" data-sync-bg="p1-para4">
-                    <span className="para_subtitle_bg">■■■■■■■■■■■■■■■■</span>
+                    <span className="para_subtitle_bg">■■■■■■■■,■■■■■■■■■■■■■■■■■■■■■■■</span>
                     <br />
                     <span className="subtitleLine">----</span>
                     <br />
@@ -68,7 +68,7 @@ export default function Background() {
                 <div className="d30"></div>
                 <div className="d30"></div>
                 <div className="paragraphBg" data-sync-bg="p1-algo-desc">
-                    <span className="para_subtitle_bg">■■■■■■■■■</span>
+                    <span className="para_subtitle_bg">■■■■■■■■‘■■■■■■■■’■■■■■■■■■■■</span>
                     <br />
                     <span className="subtitleLine">----</span>
                     <br />
@@ -179,7 +179,7 @@ export default function Background() {
                 <div className="d30"></div>
                 <div className="d30"></div>
                 <div className="paragraphBg" data-sync-bg="p2-para-damage">
-                    <span className="para_subtitle_bg">■■■■■■■■■■■■■■■■■■■■</span>
+                    <span className="para_subtitle_bg">■■■■■■,■■■■■■■■■■■■■■■■■■■■■</span>
                     <br />
                     <span className="subtitleLine">----</span>
                     <br />

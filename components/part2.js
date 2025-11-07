@@ -95,7 +95,7 @@ export default function Part2Content() {
             <div className="d30"></div>
             <div className="d30"></div>
             <div className="paragraph" data-sync-id="p2-para-damage">
-                <span className="para_subtitle">약물 등에 인한 일반적인 손상</span>
+                <span className="para_subtitle">브레인롯, 약물이나 도박 중독과는 다르다</span>
                 <br />
                 <span className="subtitleLine">----</span>
                 <br />
