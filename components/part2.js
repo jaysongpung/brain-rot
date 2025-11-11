@@ -30,7 +30,7 @@ export default function Part2Content() {
             </div>
             <div className="d30"></div>
             <div className="paragraph" data-sync-id="p2-para-attention">
-                <mark>주의</mark>(attention)는 뇌가 들어오는 정보 중 일부를 선택해 더 깊게 처리하는 과정입니다. 시끄러운 카페에서 친구의 말소리에 주의를 기울할 때, 뇌 기능이 이 특정 자극의 정보 처리에 집중할 수 있게 해줍니다.
+                <mark>주의</mark>(attention)는 뇌가 들어오는 정보 중 일부를 선택해 더 깊게 처리하는 과정입니다. 시끄러운 카페에서 친구의 말소리에 주의를 기울일 때, 뇌 기능이 이 특정 자극의 정보 처리에 집중할 수 있게 해줍니다.
             </div>
             <div className="d30"></div>
             <div className="d30"></div>
