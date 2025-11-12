@@ -23,7 +23,7 @@ export default function GuestbookForm() {
         _type: 'replies',
         text,
         user: nick,
-        date: new Date().toISOString().split('T')[0], // Format as YYYY-MM-DD
+        date: new Date().toISOString(), // Format with date and time
       });
       setText('');
       setNick('');
