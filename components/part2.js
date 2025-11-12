@@ -20,17 +20,17 @@ export default function Part2Content() {
             <div className="d30"></div>
             <div className="media peopleSweden" data-sync-id="p2-people-sweden"></div>
             <div className="d30"></div>
-            <div className="paragraph quote" data-sync-id="p2-quote2">“브레인롯은 뇌에 과부하가 걸린 현상을 의미합니다. 뇌는 <mark>작업기억</mark>과 <mark>주의</mark>에 기울일 수 있는 용량이 제한적인데 소셜미디어는 구조적으로 사용자가 계속해서 콘텐츠를 소비하게 만들고, 이로 인해 동일하거나 유사한 자극이 반복적으로 제시되거든요. 부하가 증가해 인지적 피로와 집중력 저하가 발생하는 거죠.”</div>
+            <div className="paragraph quote" data-sync-id="p2-quote2">“브레인롯은 뇌에 과부하가 걸린 현상을 의미합니다. 뇌는 <mark className="green">작업기억</mark>과 <mark className="green">주의</mark>에 기울일 수 있는 용량이 제한적인데 소셜미디어는 구조적으로 사용자가 계속해서 콘텐츠를 소비하게 만들고, 이로 인해 동일하거나 유사한 자극이 반복적으로 제시되거든요. 부하가 증가해 인지적 피로와 집중력 저하가 발생하는 거죠.”</div>
             <div className="d30"></div>
             <div className="quoteFrom" data-sync-id="p2-quotefrom2">-샘슨 니반스 스웨덴 카롤린스카연구소 신경과학부 연구원</div>
             <div className="d30"></div>
             <div className="d30"></div>
             <div className="paragraph" data-sync-id="p2-para-memory">
-                <mark>작업기억</mark>(working memory)은 뇌가 짧은 시간 동안 정보를 유지하고 조작하는 인지 과정입니다. 일종의 ‘실시간 작업 수행 능력’입니다.
+                <mark className="green">작업기억</mark>(working memory)은 뇌가 짧은 시간 동안 정보를 유지하고 조작하는 인지 과정입니다. 일종의 ‘실시간 작업 수행 능력’입니다.
             </div>
             <div className="d30"></div>
             <div className="paragraph" data-sync-id="p2-para-attention">
-                <mark>주의</mark>(attention)는 뇌가 들어오는 정보 중 일부를 선택해 더 깊게 처리하는 과정입니다. 시끄러운 카페에서 친구의 말소리에 주의를 기울일 때, 뇌 기능이 이 특정 자극의 정보 처리에 집중할 수 있게 해줍니다.
+                <mark className="green">주의</mark>(attention)는 뇌가 들어오는 정보 중 일부를 선택해 더 깊게 처리하는 과정입니다. 시끄러운 카페에서 친구의 말소리에 주의를 기울일 때, 뇌 기능이 이 특정 자극의 정보 처리에 집중할 수 있게 해줍니다.
             </div>
             <div className="d30"></div>
             <div className="d30"></div>
