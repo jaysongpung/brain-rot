@@ -106,6 +106,7 @@ export default function Mask() {
                         if (maskRef.current) {
                             maskRef.current.style.opacity = '0';
                             maskRef.current.style.transition = 'opacity 0.5s';
+                            maskRef.current.style.pointerEvents = 'none';
                         }
                         if (decorRef.current) {
                             decorRef.current.style.opacity = '0';
@@ -118,6 +119,7 @@ export default function Mask() {
                         if (maskRef.current) {
                             maskRef.current.style.opacity = '1';
                             maskRef.current.style.transition = 'opacity 0.5s';
+                            maskRef.current.style.pointerEvents = 'auto';
                         }
                         if (decorRef.current) {
                             decorRef.current.style.opacity = '1';

@@ -420,25 +420,7 @@ export default function Part3Content() {
                 <span className="subtitleLine">----</span>
                 <br />
             </div>
-            <div className="d30"></div>
-            <div className="d30"></div>
-            <div className="d30"></div>
-            <div className="d30"></div>
-            <div className="d30"></div>
-            <div className="d30"></div>
-            <div className="d30"></div>
-            <div className="d30"></div>
-            <div className="d30"></div>
-            <div className="d30"></div>
-            <div className="d30"></div>
-            <div className="d30"></div>
-            <div className="d30"></div>
-            <div className="d30"></div>
-            <div className="d30"></div>
-            <div className="d30"></div>
-            <div className="d30"></div>
-            <div className="d30"></div>
-            <div className="d30"></div>
+
         </>
     )
 }
