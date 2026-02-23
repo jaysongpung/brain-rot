@@ -33,32 +33,6 @@ An interactive web article scientifically analyzing "Brain Rot" — Oxford's 202
 | Part 2 | 브레인롯의 뇌과학 | 작업기억과 주의, 뇌 영역 분석, 전문가 인터뷰 |
 | Part 3 | 숏폼 4주 끊기 챌린지 | 26명의 참가자 뇌파 측정 결과 및 설문 분석 |
 
-### 실행 방법
-
-```bash
-# 의존성 설치
-npm install
-
-# 개발 서버 실행
-npm run dev
-
-# 프로덕션 빌드
-npm run build
-```
-
-### 환경 변수
-
-`.env.example`을 `.env`로 복사한 뒤 값을 채워주세요.
-
-```bash
-cp .env.example .env
-```
-
-| 변수 | 설명 |
-|------|------|
-| `NEXT_PUBLIC_SANITY_TOKEN` | Sanity CMS API 토큰 (댓글 시스템용) |
-| `NEXT_PUBLIC_BASE_PATH` | 배포 경로 접두사 (GitHub Pages: `/brain-rot`) |
-
 ---
 
 ## English
@@ -86,31 +60,6 @@ An interactive article produced with **Donga Science** (과학동아) that scien
 | Part 2 | The Neuroscience of Brain Rot | Working memory, attention, brain regions, expert interviews |
 | Part 3 | 4-Week Short-Form Detox Challenge | EEG results and survey analysis from 26 participants |
 
-### Getting Started
-
-```bash
-# Install dependencies
-npm install
-
-# Start dev server
-npm run dev
-
-# Production build
-npm run build
-```
-
-### Environment Variables
-
-Copy `.env.example` to `.env` and fill in the values.
-
-```bash
-cp .env.example .env
-```
-
-| Variable | Description |
-|----------|-------------|
-| `NEXT_PUBLIC_SANITY_TOKEN` | Sanity CMS API token (for comment system) |
-| `NEXT_PUBLIC_BASE_PATH` | Deployment path prefix (GitHub Pages: `/brain-rot`) |
 
 ---
 
