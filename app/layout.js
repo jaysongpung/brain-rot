@@ -17,6 +17,7 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  console.log('[brain-rot] build v2 — basePath:', process.env.NEXT_PUBLIC_BASE_PATH || '(none)');
   return (
     <html lang="ko">
       <body
