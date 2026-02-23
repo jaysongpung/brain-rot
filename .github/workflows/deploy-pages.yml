@@ -27,6 +27,11 @@ jobs:
 
       - run: npm ci
 
+      - name: Rewrite CSS url() paths for subdirectory deployment
+        env:
+          NEXT_PUBLIC_BASE_PATH: /brain-rot
+        run: node scripts/fix-css-basepath.mjs
+
       - name: Build
         env:
           NEXT_PUBLIC_BASE_PATH: /brain-rot
