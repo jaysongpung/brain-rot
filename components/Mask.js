@@ -5,6 +5,8 @@ import Part1Content from "./part1";
 import Part2Content from "./part2";
 import Part3Content from "./part3";
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+
 export default function Mask() {
     const foregroundRef = useRef(null);
 
@@ -487,7 +489,7 @@ export default function Mask() {
                     <div
                         className={`brain-fixed-image ${shouldAnimate ? 'brain-animate' : ''}`}
                         style={{
-                            '--brain-bg-image': `url('/${currentBrainImage}.png')`
+                            '--brain-bg-image': `url('${basePath}/${currentBrainImage}.png')`
                         }}
                     />
                 )}

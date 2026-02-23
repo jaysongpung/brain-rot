@@ -1,5 +1,7 @@
 import { useEffect, useRef } from "react";
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+
 export default function Part1Content() {
     const instaRef = useRef(null);
     const recRef = useRef(null);
@@ -64,7 +66,7 @@ export default function Part1Content() {
             <div className="d30"></div>
             <div className="media instagram" id="insta_video" data-sync-id="p1-insta-video">
                 <div id="instaContainer">
-                    <video id="insta_vidvid" ref={instaRef} src="/instagram.mp4" muted playsInline autoPlay loop preload="metadata"></video>
+                    <video id="insta_vidvid" ref={instaRef} src={`${basePath}/instagram.mp4`} muted playsInline autoPlay loop preload="metadata"></video>
                     <div className="fadeLine" id="insta_line"></div>
                 </div>
             </div>
@@ -89,7 +91,7 @@ export default function Part1Content() {
             <div className="d30"></div>
             <div className="rec" data-sync-id="p1-rec">
                 <div className="recVidWrap">
-                    <video id="rec_vid" ref={recRef} src="/recommendation.mp4" muted playsInline autoPlay loop preload="metadata"></video>
+                    <video id="rec_vid" ref={recRef} src={`${basePath}/recommendation.mp4`} muted playsInline autoPlay loop preload="metadata"></video>
                     <div className="recImg fadeLine" id="recImgFg"></div>
                 </div>
             </div>
@@ -108,7 +110,7 @@ export default function Part1Content() {
             <div className="d30"></div>
             <div className="twitter" data-sync-id="p1-twitter">
                 <div id="twitterContainer">
-                    <video id="twitter_vid" ref={twitterRef} src="/twitter.mp4" muted playsInline autoPlay loop preload="metadata"></video>
+                    <video id="twitter_vid" ref={twitterRef} src={`${basePath}/twitter.mp4`} muted playsInline autoPlay loop preload="metadata"></video>
                     <div className="fadeLine" id="twitterLine"></div>
                 </div>
             </div>

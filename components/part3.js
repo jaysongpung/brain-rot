@@ -1,6 +1,8 @@
 'use client';
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+
 export default function Part3Content() {
     return (
         <>
@@ -63,7 +65,7 @@ export default function Part3Content() {
                 <div className="hourglass-text">많게는 58시간 32분</div>
                 <div className="lottie_hourglass">
                     <DotLottieReact
-                        src="/hourglass.json"
+                        src={`${basePath}/hourglass.json`}
                         loop
                         autoplay
                     />
