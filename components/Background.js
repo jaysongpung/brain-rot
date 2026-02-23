@@ -453,6 +453,7 @@ export default function Background() {
                 <div className="d30"></div>
                 <div className="d30"></div>
                 <div className="d30"></div>
+                {process.env.NEXT_PUBLIC_SANITY_TOKEN && (
                 <div className="paragraph" data-sync-id="p3-replies">
                     <span className="para_subtitle">여러분의 소중한 의견을 남겨주세요
                     </span>
@@ -462,6 +463,7 @@ export default function Background() {
                     <RepliesList />
                     <AddReplies />
                 </div>
+                )}
                 <div className="d30"></div>
                 <div className="d30"></div>
                 <div className="d30"></div>

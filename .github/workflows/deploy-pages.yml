@@ -30,7 +30,6 @@ jobs:
       - name: Build
         env:
           NEXT_PUBLIC_BASE_PATH: /brain-rot
-          NEXT_PUBLIC_SANITY_TOKEN: ${{ secrets.NEXT_PUBLIC_SANITY_TOKEN }}
         run: npm run build
 
       - name: Upload artifact
